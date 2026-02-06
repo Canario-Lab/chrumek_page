@@ -1,4 +1,5 @@
 :root {
+  color-scheme: only light;
   --accent: #ff2d55;
   --accent-soft: rgba(255, 45, 85, 0.85);
   --accent-strong: rgba(255, 45, 85, 0.95);
