@@ -352,18 +352,22 @@ h1 span {
 .appshots-item {
   margin: 0;
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .appshots-phone {
   position: relative;
+  isolation: isolate;
   aspect-ratio: 9 / 19.5;
   border-radius: 34px;
-  border: 1px solid var(--surface-border);
+  border: 1px solid var(--panel-border);
   background:
     radial-gradient(circle at 18% 14%, rgba(255, 45, 85, 0.16), transparent 38%),
     linear-gradient(155deg, var(--surface-grad-1), var(--surface-grad-2));
-  box-shadow: 0 10px 20px var(--surface-shadow);
+  box-shadow:
+    0 12px 22px rgba(255, 45, 85, 0.14),
+    0 6px 14px var(--surface-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.34);
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -375,11 +379,33 @@ h1 span {
   position: absolute;
   inset: 8px;
   border-radius: 26px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.26);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0) 35%),
-    linear-gradient(160deg, rgba(255, 45, 85, 0.08), rgba(255, 45, 85, 0.01));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 34%),
+    linear-gradient(160deg, rgba(255, 45, 85, 0.09), rgba(255, 45, 85, 0.02));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.05);
   pointer-events: none;
+  z-index: 0;
+}
+
+.appshots-phone::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 17%;
+  bottom: 17%;
+  left: 17%;
+  border-radius: 12px;
+  background:
+    linear-gradient(rgba(255, 45, 85, 0.2), rgba(255, 45, 85, 0.2)) left top / 44% 8px no-repeat,
+    linear-gradient(var(--line), var(--line)) left top 24px / 100% 6px no-repeat,
+    linear-gradient(var(--line), var(--line)) left top 40px / 86% 6px no-repeat,
+    linear-gradient(var(--line), var(--line)) left top 56px / 93% 6px no-repeat;
+  opacity: 0.32;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .appshots-notch {
@@ -390,22 +416,43 @@ h1 span {
   width: 42%;
   height: 18px;
   border-radius: 0 0 12px 12px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-top: none;
-  background: linear-gradient(180deg, var(--card), var(--bg-alt));
-  z-index: 2;
+  background: linear-gradient(180deg, rgba(24, 13, 19, 0.54), rgba(24, 13, 19, 0.34));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.24);
+  opacity: 0.94;
+  z-index: 3;
+}
+
+.appshots-notch::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34%;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18);
 }
 
 .appshots-placeholder {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0;
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px dashed var(--line);
-  background: var(--surface-soft);
+  padding: 8px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.42), rgba(255, 45, 85, 0.12));
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-align: center;
 }
