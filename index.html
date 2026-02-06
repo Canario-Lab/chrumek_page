@@ -3,11 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
   <meta
     name="description"
-    content="Chrumek pomaga zamieniać oszczędności z codziennych decyzji w realne kwoty odłożone na konto oszczędnościowe lub do skarbonki."
+    content="Chrumek to aplikacja do realnego oszczędzania: zapisujesz oszczędności, potwierdzasz przelew i budujesz postęp celu, wykresy oraz historię."
   />
-  <title>Chrumek | Chrumek wierzy w przelewy</title>
+  <title>Chrumek - oszczędzanie, które naprawdę odkładasz</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chrumek.app/" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="Chrumek" />
+  <meta property="og:title" content="Chrumek - oszczędzanie, które naprawdę odkładasz" />
+  <meta
+    property="og:description"
+    content="Chrumek pomaga zamieniać decyzje zakupowe w realne oszczędności: postęp celu, wykresy i historia liczą się dopiero po potwierdzonym przelewie."
+  />
+  <meta property="og:image" content="https://chrumek.app/chrumek-icon.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="Chrumek - asystent oszczędzania" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chrumek - oszczędzanie, które naprawdę odkładasz" />
+  <meta
+    name="twitter:description"
+    content="Realne oszczędzanie bez intencji: potwierdzasz przelew i dopiero wtedy rośnie postęp, wykresy oraz cele."
+  />
+  <meta name="twitter:image" content="https://chrumek.app/chrumek-icon.png" />
+
+  <link rel="canonical" href="https://chrumek.app/" />
+  <link rel="icon" type="image/png" href="chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="chrumekapp_scale44-kopia.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -28,10 +56,12 @@
       <nav class="top-nav">
         <a href="#jak-dziala">Jak działa</a>
         <a href="#funkcje">Funkcje</a>
+        <a href="#faq">FAQ</a>
         <a href="#start">Start</a>
       </nav>
       <button class="theme-toggle" id="themeToggle" type="button">
-        Ciemny motyw
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        <span class="theme-toggle-text">Motyw strony</span>
       </button>
     </div>
   </header>
@@ -240,12 +270,73 @@
       </div>
     </section>
 
+    <section class="faq container" id="faq" aria-label="Najczęstsze pytania">
+      <p class="features-kicker">FAQ</p>
+      <h3 class="faq-title">Najczęstsze pytania</h3>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Czy muszę podłączać bank?</summary>
+          <p>
+            Nie. Wystarczy oddzielne konto oszczędnościowe albo skarbonka.
+            Przelewy potwierdzasz ręcznie przyciskiem „Dodałem do oszczędności”.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy to działa offline?</summary>
+          <p>
+            Tak, kluczowe funkcje działają lokalnie na urządzeniu: dziennik,
+            historia, cele i wykresy.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Co jeśli nie przelałem jednak pieniędzy?</summary>
+          <p>
+            Nie klikaj „Dodałem do oszczędności”, dopóki przelew nie jest realny.
+            Jeśli potwierdziłeś przez pomyłkę, możesz cofnąć wpis w Historii.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Jak działa Premium / trial?</summary>
+          <p>
+            Masz 10 darmowych potwierdzonych przelewów. Od 11. działa Premium;
+            jeśli się kwalifikujesz, możesz rozpocząć trial 14 dni.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy dane są bezpieczne?</summary>
+          <p>
+            Tak. Dane są przechowywane lokalnie, bez wysyłania na zewnątrz.
+            Aplikacja działa bez konta i bez trackerów reklamowych.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy mogę eksportować dane?</summary>
+          <p>
+            Tak. Możesz wyeksportować dane do CSV (z zakresem dat), a plik zapisać
+            lokalnie lub np. w iCloud Drive.
+          </p>
+        </details>
+      </div>
+    </section>
+
     <section class="testimonial container">
-      <blockquote>
-        "Pierwszy raz widzę czarno na białym, ile naprawdę odłożyłam, a nie ile
-        tylko planowałam odłożyć. To robi różnicę."
-      </blockquote>
-      <p>Ola, nasza testerka aplikacji</p>
+      <p class="features-kicker">Co mówią testerzy</p>
+      <div class="testimonial-grid">
+        <article class="quote-card">
+          <blockquote>
+            "Pierwszy raz widzę czarno na białym, ile naprawdę odłożyłam, a nie ile
+            tylko planowałam odłożyć. To robi różnicę."
+          </blockquote>
+          <p class="quote-author">Ola, beta testerka</p>
+        </article>
+        <article class="quote-card">
+          <blockquote>
+            "Najbardziej działa to, że postęp rośnie dopiero po realnym przelewie.
+            Dzięki temu faktycznie odkładam, a nie tylko planuję."
+          </blockquote>
+          <p class="quote-author">Mateusz, tester wersji beta</p>
+        </article>
+      </div>
     </section>
 
     <section class="final-cta container" id="start">
@@ -267,18 +358,22 @@
       var storageKey = "chrum-theme";
       var body = document.body;
       var toggle = document.getElementById("themeToggle");
+      var toggleIcon = document.getElementById("themeToggleIcon");
 
-      if (!body || !toggle) return;
+      if (!body || !toggle || !toggleIcon) return;
 
       function applyTheme(theme) {
         var isDark = theme === "dark";
         body.setAttribute("data-theme", isDark ? "dark" : "light");
-        toggle.textContent = isDark ? "Jasny motyw" : "Ciemny motyw";
+        toggleIcon.textContent = isDark ? "☀" : "☾";
         toggle.setAttribute("aria-pressed", String(isDark));
         toggle.setAttribute(
           "aria-label",
-          isDark ? "Przełącz na jasny motyw" : "Przełącz na ciemny motyw"
+          isDark
+            ? "Motyw strony: ciemny. Przełącz na jasny."
+            : "Motyw strony: jasny. Przełącz na ciemny."
         );
+        toggle.title = isDark ? "Motyw strony: ciemny" : "Motyw strony: jasny";
       }
 
       var savedTheme = localStorage.getItem(storageKey);
