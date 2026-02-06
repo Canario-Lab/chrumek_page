@@ -252,6 +252,38 @@ h1 span {
   font-weight: 700;
 }
 
+.chrumek-badge {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface-soft);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chrumek-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 24px var(--panel-shadow);
+  flex: 0 0 auto;
+}
+
+.chrumek-name {
+  margin: 0;
+  font-weight: 800;
+  font-family: "Outfit", "Avenir Next", sans-serif;
+}
+
+.chrumek-desc {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .panel-card {
   background: var(--card-strong);
   border: 1px solid var(--line);
