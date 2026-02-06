@@ -118,20 +118,28 @@
         </div>
         <div class="panel-card">
           <div class="entry">
-            <span>1. Dziennik dnia</span>
-            <strong>+ 68 zł</strong>
+            <span>1. Zapisujesz oszczędność: nie kupujesz, wybierasz taniej albo anulujesz abonament.</span>
+            <strong class="entry-status checklist-item" aria-label="zapisane">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
           </div>
           <div class="entry muted">
-            <span>2. Przelew na oszczędności</span>
-            <strong>potwierdzony</strong>
+            <span>2. Chrumek przypomina wieczorem: przelej kwotę na konto oszczędnościowe albo wrzuć do skarbonki.</span>
+            <strong class="entry-status checklist-item" aria-label="przypomniane">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
           </div>
           <div class="entry muted">
-            <span>3. Historia + wykresy</span>
-            <strong>zaktualizowane</strong>
+            <span>3. Potwierdzasz przelew w apce: dopiero to liczy się do postępu.</span>
+            <strong class="entry-status checklist-item" aria-label="potwierdzone">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
           </div>
           <div class="entry muted">
-            <span>4. Poziom Chrumka</span>
-            <strong>rośnie</strong>
+            <span>4. Historia i wykresy rosną: widzisz efekty i odblokowujesz poziomy Chrumka.</span>
+            <strong class="entry-status checklist-item" aria-label="rośnie">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
           </div>
         </div>
       </aside>
@@ -504,6 +512,76 @@
 
           window.location.href = mailtoLink;
         });
+      }
+
+      var checklistCard = document.querySelector(".hero-panel .panel-card");
+      var checklistItems = Array.prototype.slice.call(document.querySelectorAll(".hero-panel .checklist-item"));
+
+      function setChecklistChecked(checked) {
+        checklistItems.forEach(function (item) {
+          item.classList.toggle("is-checked", checked);
+        });
+      }
+
+      if (checklistCard && checklistItems.length) {
+        var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (reduceMotion) {
+          setChecklistChecked(true);
+        } else {
+          var checklistStarted = false;
+          var cycleTimer = 0;
+          var stepTimers = [];
+          var stepDelay = 420;
+          var resetDelay = 260;
+          var holdDelay = 1300;
+
+          function clearChecklistTimers() {
+            clearTimeout(cycleTimer);
+            stepTimers.forEach(function (timerId) { clearTimeout(timerId); });
+            stepTimers = [];
+          }
+
+          function runChecklistLoop() {
+            clearChecklistTimers();
+            setChecklistChecked(false);
+
+            checklistItems.forEach(function (item, index) {
+              var stepTimer = setTimeout(function () {
+                item.classList.add("is-checked");
+              }, resetDelay + index * stepDelay);
+              stepTimers.push(stepTimer);
+            });
+
+            cycleTimer = setTimeout(
+              runChecklistLoop,
+              resetDelay + checklistItems.length * stepDelay + holdDelay
+            );
+          }
+
+          function startChecklistLoop() {
+            if (checklistStarted) return;
+            checklistStarted = true;
+            runChecklistLoop();
+          }
+
+          if (typeof IntersectionObserver === "undefined") {
+            startChecklistLoop();
+          } else {
+            var checklistObserver = new IntersectionObserver(function (entries) {
+              entries.forEach(function (entry) {
+                if (!entry.isIntersecting || entry.intersectionRatio < 0.4) return;
+                startChecklistLoop();
+              });
+            }, { threshold: [0.4] });
+
+            checklistObserver.observe(checklistCard);
+          }
+
+          window.addEventListener("beforeunload", function () {
+            clearChecklistTimers();
+          });
+        }
       }
     })();
   </script>

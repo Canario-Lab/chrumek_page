@@ -328,8 +328,51 @@ h1 span {
   font-family: "Outfit", "Avenir Next", sans-serif;
 }
 
+.entry-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14px;
+}
+
+.entry-status-box {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  position: relative;
+  flex: 0 0 auto;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.entry-status-box::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0.8);
+  transform-origin: center;
+  opacity: 0;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.checklist-item.is-checked .entry-status-box {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  border-color: transparent;
+}
+
+.checklist-item.is-checked .entry-status-box::after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+
 .entry.muted {
-  color: var(--muted);
+  color: var(--text);
   border-top: 1px solid var(--entry-divider);
 }
 
@@ -765,7 +808,7 @@ h1 span {
 }
 
 .faq-item {
-  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  background: linear-gradient(135deg, var(--surface-grad-2), var(--surface-grad-1));
   border: 1px solid var(--surface-border);
   box-shadow: 0 6px 10px var(--surface-shadow);
   border-radius: 14px;
