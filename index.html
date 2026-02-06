@@ -142,31 +142,56 @@
       <p class="appshots-description">
         Screeny wkrótce. Na razie dopracowujemy ostatnie detale w becie.
       </p>
-      <div class="appshots-grid">
-        <figure class="appshots-item">
-          <!-- TODO: podmień na screenshot -->
-          <div class="appshots-phone" role="img" aria-label="Placeholder ekranu aplikacji: Dziennik">
-            <span class="appshots-notch" aria-hidden="true"></span>
-            <span class="appshots-placeholder">Screen w przygotowaniu</span>
-          </div>
-          <figcaption class="appshots-caption">Dziennik</figcaption>
-        </figure>
-        <figure class="appshots-item">
-          <!-- TODO: podmień na screenshot -->
-          <div class="appshots-phone" role="img" aria-label="Placeholder ekranu aplikacji: Cele">
-            <span class="appshots-notch" aria-hidden="true"></span>
-            <span class="appshots-placeholder">Screen w przygotowaniu</span>
-          </div>
-          <figcaption class="appshots-caption">Cele</figcaption>
-        </figure>
-        <figure class="appshots-item">
-          <!-- TODO: podmień na screenshot -->
-          <div class="appshots-phone" role="img" aria-label="Placeholder ekranu aplikacji: Wykresy">
-            <span class="appshots-notch" aria-hidden="true"></span>
-            <span class="appshots-placeholder">Screen w przygotowaniu</span>
-          </div>
-          <figcaption class="appshots-caption">Wykresy</figcaption>
-        </figure>
+      <div class="appshots-carousel">
+        <div class="appshots-grid" id="appshotsCarousel" aria-label="Karuzela placeholderów ekranów">
+          <figure class="appshots-item">
+            <!-- TODO: podmień na screenshot -->
+            <div class="appshots-phone" role="img" aria-label="Placeholder ekranu aplikacji: Dziennik">
+              <span class="appshots-notch" aria-hidden="true"></span>
+              <span class="appshots-placeholder">Screen w przygotowaniu</span>
+            </div>
+            <figcaption class="appshots-caption">Dziennik</figcaption>
+          </figure>
+          <figure class="appshots-item">
+            <!-- TODO: podmień na screenshot -->
+            <div class="appshots-phone" role="img" aria-label="Placeholder ekranu aplikacji: Historia">
+              <span class="appshots-notch" aria-hidden="true"></span>
+              <span class="appshots-placeholder">Screen w przygotowaniu</span>
+            </div>
+            <figcaption class="appshots-caption">Historia</figcaption>
+          </figure>
+          <figure class="appshots-item">
+            <!-- TODO: podmień na screenshot -->
+            <div class="appshots-phone" role="img" aria-label="Placeholder ekranu aplikacji: Cele">
+              <span class="appshots-notch" aria-hidden="true"></span>
+              <span class="appshots-placeholder">Screen w przygotowaniu</span>
+            </div>
+            <figcaption class="appshots-caption">Cele</figcaption>
+          </figure>
+          <figure class="appshots-item">
+            <!-- TODO: podmień na screenshot -->
+            <div class="appshots-phone" role="img" aria-label="Placeholder ekranu aplikacji: Wykresy">
+              <span class="appshots-notch" aria-hidden="true"></span>
+              <span class="appshots-placeholder">Screen w przygotowaniu</span>
+            </div>
+            <figcaption class="appshots-caption">Wykresy</figcaption>
+          </figure>
+          <figure class="appshots-item">
+            <!-- TODO: podmień na screenshot -->
+            <div class="appshots-phone" role="img" aria-label="Placeholder ekranu aplikacji: Ustawienia">
+              <span class="appshots-notch" aria-hidden="true"></span>
+              <span class="appshots-placeholder">Screen w przygotowaniu</span>
+            </div>
+            <figcaption class="appshots-caption">Ustawienia</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="appshots-dots" aria-label="Nawigacja karuzeli">
+        <button class="appshots-dot is-active" type="button" data-index="0" aria-label="Pokaż ekran Dziennik" aria-current="true"></button>
+        <button class="appshots-dot" type="button" data-index="1" aria-label="Pokaż ekran Historia" aria-current="false"></button>
+        <button class="appshots-dot" type="button" data-index="2" aria-label="Pokaż ekran Cele" aria-current="false"></button>
+        <button class="appshots-dot" type="button" data-index="3" aria-label="Pokaż ekran Wykresy" aria-current="false"></button>
+        <button class="appshots-dot" type="button" data-index="4" aria-label="Pokaż ekran Ustawienia" aria-current="false"></button>
       </div>
     </section>
 
@@ -480,6 +505,237 @@
           window.location.href = mailtoLink;
         });
       }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var carousel = document.getElementById("appshotsCarousel"), dots = Array.prototype.slice.call(document.querySelectorAll(".appshots-dot"));
+      if (!carousel || !dots.length) return;
+
+      var threshold = 5;
+      var speed = 1.2;
+      var cloneCount = 3;
+      var snapThreshold = 24;
+      var isPointerDown = false;
+      var isTouching = false;
+      var isDragging = false;
+      var suppressClick = false;
+      var startX = 0;
+      var dragX = 0;
+      var dragStartReal = 0;
+      var animTimer = 0;
+      var scrollRaf = 0;
+
+      var originalSlides = Array.prototype.slice.call(carousel.querySelectorAll(".appshots-item"));
+      if (!originalSlides.length) return;
+      var realCount = originalSlides.length;
+
+      if (realCount > 1) {
+        originalSlides.slice(-cloneCount).forEach(function (slide) {
+          var clone = slide.cloneNode(true);
+          clone.setAttribute("data-clone", "start");
+          clone.setAttribute("aria-hidden", "true");
+          carousel.insertBefore(clone, carousel.firstChild);
+        });
+        originalSlides.slice(0, cloneCount).forEach(function (slide) {
+          var clone = slide.cloneNode(true);
+          clone.setAttribute("data-clone", "end");
+          clone.setAttribute("aria-hidden", "true");
+          carousel.appendChild(clone);
+        });
+      }
+
+      var allSlides = Array.prototype.slice.call(carousel.querySelectorAll(".appshots-item"));
+      var realSlides = allSlides.slice(cloneCount, cloneCount + realCount);
+
+      function setActive(index) {
+        dots.forEach(function (dot, dotIndex) {
+          var isActive = dotIndex === index;
+          dot.classList.toggle("is-active", isActive);
+          dot.setAttribute("aria-current", isActive ? "true" : "false");
+        });
+      }
+
+      function nearestSlideIndex() {
+        var position = carousel.scrollLeft;
+        var nearest = 0;
+        var minDist = Infinity;
+        allSlides.forEach(function (slide, index) {
+          var dist = Math.abs(slide.offsetLeft - position);
+          if (dist < minDist) {
+            minDist = dist;
+            nearest = index;
+          }
+        });
+        return nearest;
+      }
+
+      function normalizeIndex(index) {
+        if (index < cloneCount) return index + realCount;
+        if (index >= cloneCount + realCount) return index - realCount;
+        return index;
+      }
+
+      function syncActiveDot() {
+        var normalized = normalizeIndex(nearestSlideIndex());
+        setActive(normalized - cloneCount);
+      }
+
+      function clearAnimating() {
+        carousel.classList.remove("is-animating");
+      }
+
+      function withNoSmooth(fn) {
+        clearTimeout(animTimer);
+        clearAnimating();
+        carousel.classList.add("no-smooth");
+        fn();
+        requestAnimationFrame(function () {
+          carousel.classList.remove("no-smooth");
+        });
+      }
+
+      function smoothTo(left) {
+        clearTimeout(animTimer);
+        carousel.classList.add("is-animating");
+        carousel.scrollTo({ left: left, behavior: "smooth" });
+        animTimer = setTimeout(clearAnimating, 340);
+      }
+
+      function maybeTeleport() {
+        var from = nearestSlideIndex();
+        var to = normalizeIndex(from);
+        if (from === to) return;
+        withNoSmooth(function () {
+          carousel.scrollTo({ left: allSlides[to].offsetLeft, behavior: "auto" });
+        });
+      }
+
+      function clampRealIndex(index) {
+        return (index % realCount + realCount) % realCount;
+      }
+
+      function trackIndexForReal(realIndex) {
+        var normalizedReal = clampRealIndex(realIndex);
+        var candidates = [cloneCount + normalizedReal];
+        if (normalizedReal >= realCount - cloneCount) {
+          candidates.push(normalizedReal - (realCount - cloneCount));
+        }
+        if (normalizedReal < cloneCount) {
+          candidates.push(cloneCount + realCount + normalizedReal);
+        }
+
+        var current = carousel.scrollLeft;
+        var chosen = candidates[0];
+        var minDist = Infinity;
+        candidates.forEach(function (idx) {
+          var dist = Math.abs(allSlides[idx].offsetLeft - current);
+          if (dist < minDist) {
+            minDist = dist;
+            chosen = idx;
+          }
+        });
+        return chosen;
+      }
+
+      function syncLoopAndDots() {
+        if (scrollRaf) return;
+        scrollRaf = requestAnimationFrame(function () {
+          scrollRaf = 0;
+          maybeTeleport();
+          syncActiveDot();
+        });
+      }
+
+      function goToInitialSlide() {
+        if (!realSlides[0]) return;
+        withNoSmooth(function () {
+          carousel.scrollTo({ left: realSlides[0].offsetLeft, behavior: "auto" });
+        });
+      }
+
+      function endDrag() {
+        if (!isPointerDown) return;
+        isPointerDown = false;
+        carousel.classList.remove("is-dragging");
+        if (isDragging) {
+          var totalDelta = dragX - startX;
+          var targetReal = dragStartReal;
+          if (Math.abs(totalDelta) > snapThreshold) {
+            targetReal = dragStartReal + (totalDelta < 0 ? 1 : -1);
+          }
+          var targetTrack = trackIndexForReal(targetReal);
+
+          suppressClick = true;
+          smoothTo(allSlides[targetTrack].offsetLeft);
+          setTimeout(function () { suppressClick = false; }, 0);
+        }
+        isDragging = false;
+      }
+
+      carousel.addEventListener("mousedown", function (event) {
+        if (event.button !== 0) return;
+        isPointerDown = true;
+        isDragging = false;
+        startX = event.clientX;
+        dragX = event.clientX;
+        dragStartReal = normalizeIndex(nearestSlideIndex()) - cloneCount;
+      });
+
+      carousel.addEventListener("mousemove", function (event) {
+        if (!isPointerDown) return;
+        var delta = event.clientX - startX;
+        if (!isDragging && Math.abs(delta) > threshold) {
+          isDragging = true;
+          clearTimeout(animTimer);
+          carousel.classList.add("is-dragging");
+          dragX = event.clientX;
+        }
+        if (!isDragging) return;
+        event.preventDefault();
+        carousel.scrollLeft -= (event.clientX - dragX) * speed;
+        dragX = event.clientX;
+      });
+
+      carousel.addEventListener("mouseleave", endDrag);
+      window.addEventListener("mouseup", endDrag);
+      window.addEventListener("blur", endDrag);
+      carousel.addEventListener("touchstart", function () { isTouching = true; }, { passive: true });
+      carousel.addEventListener("touchend", function () {
+        isTouching = false;
+        maybeTeleport();
+        syncActiveDot();
+      }, { passive: true });
+      carousel.addEventListener("touchcancel", function () {
+        isTouching = false;
+        maybeTeleport();
+        syncActiveDot();
+      }, { passive: true });
+      carousel.addEventListener("dragstart", function (event) { event.preventDefault(); });
+      carousel.addEventListener("click", function (event) {
+        if (!suppressClick) return;
+        event.preventDefault();
+        event.stopPropagation();
+      }, true);
+
+      dots.forEach(function (dot, index) {
+        dot.addEventListener("click", function () {
+          var target = realSlides[index];
+          if (!target) return;
+          smoothTo(target.offsetLeft);
+          setActive(index);
+        });
+      });
+
+      carousel.addEventListener("scroll", syncLoopAndDots, { passive: true });
+      window.addEventListener("resize", function () {
+        maybeTeleport();
+        syncActiveDot();
+      });
+
+      goToInitialSlide();
+      syncActiveDot();
     })();
   </script>
 </body>
