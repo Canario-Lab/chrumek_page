@@ -1,32 +1,36 @@
 :root {
-  --accent: #ff4e76;
-  --accent-soft: #ff8ea8;
-  --accent-strong: #ff2e61;
+  --accent: #ff2d55;
+  --accent-soft: rgba(255, 45, 85, 0.85);
+  --accent-strong: rgba(255, 45, 85, 0.95);
 
-  --bg: #fff7f9;
-  --bg-alt: #ffeef2;
+  --bg: #ffffff;
+  --bg-alt: #ffffff;
   --card: #ffffff;
-  --card-strong: #fff9fb;
+  --card-strong: #ffffff;
   --text: #2b1520;
   --muted: #7a5c69;
-  --line: rgba(122, 92, 105, 0.24);
+  --line: rgba(122, 92, 105, 0.18);
 
-  --bg-glow-1: rgba(255, 78, 118, 0.24);
-  --bg-glow-2: rgba(255, 142, 168, 0.2);
+  --bg-glow-1: rgba(255, 45, 85, 0.2);
+  --bg-glow-2: rgba(255, 255, 255, 1);
   --surface-soft: rgba(255, 255, 255, 0.72);
-  --card-tint: rgba(255, 142, 168, 0.1);
+  --card-tint: rgba(255, 45, 85, 0.1);
+  --surface-grad-1: rgba(255, 255, 255, 0.8);
+  --surface-grad-2: rgba(255, 45, 85, 0.1);
+  --surface-border: rgba(0, 0, 0, 0);
+  --surface-shadow: rgba(255, 45, 85, 0.2);
 
-  --panel-grad-1: rgba(255, 78, 118, 0.16);
-  --panel-grad-2: rgba(255, 78, 118, 0.04);
-  --panel-border: rgba(255, 78, 118, 0.36);
-  --panel-shadow: rgba(241, 68, 110, 0.2);
+  --panel-grad-1: rgba(255, 45, 85, 0.16);
+  --panel-grad-2: rgba(255, 45, 85, 0.04);
+  --panel-border: rgba(255, 45, 85, 0.36);
+  --panel-shadow: rgba(255, 45, 85, 0.2);
 
   --entry-divider: rgba(122, 92, 105, 0.18);
-  --step-badge: rgba(255, 78, 118, 0.18);
+  --step-badge: rgba(255, 45, 85, 0.18);
 
-  --final-grad-1: rgba(255, 78, 118, 0.16);
-  --final-grad-2: rgba(255, 142, 168, 0.1);
-  --final-border: rgba(255, 78, 118, 0.35);
+  --final-grad-1: rgba(255, 45, 85, 0.16);
+  --final-grad-2: rgba(255, 45, 85, 0.1);
+  --final-border: rgba(255, 45, 85, 0.35);
 }
 
 body[data-theme="dark"] {
@@ -38,22 +42,26 @@ body[data-theme="dark"] {
   --muted: #b6b6c2;
   --line: rgba(255, 255, 255, 0.12);
 
-  --bg-glow-1: rgba(255, 78, 118, 0.24);
-  --bg-glow-2: rgba(255, 142, 168, 0.14);
+  --bg-glow-1: rgba(42, 15, 26, 0.65);
+  --bg-glow-2: rgba(11, 11, 16, 1);
   --surface-soft: rgba(255, 255, 255, 0.03);
-  --card-tint: rgba(255, 142, 168, 0.06);
+  --card-tint: rgba(255, 45, 85, 0.06);
+  --surface-grad-1: rgba(29, 29, 38, 1);
+  --surface-grad-2: rgba(21, 21, 28, 1);
+  --surface-border: rgba(42, 42, 54, 1);
+  --surface-shadow: rgba(0, 0, 0, 0.35);
 
-  --panel-grad-1: rgba(255, 78, 118, 0.13);
-  --panel-grad-2: rgba(255, 78, 118, 0.01);
-  --panel-border: rgba(255, 142, 168, 0.3);
-  --panel-shadow: rgba(255, 78, 118, 0.18);
+  --panel-grad-1: rgba(255, 45, 85, 0.13);
+  --panel-grad-2: rgba(255, 45, 85, 0.01);
+  --panel-border: rgba(255, 45, 85, 0.3);
+  --panel-shadow: rgba(255, 45, 85, 0.18);
 
   --entry-divider: rgba(255, 255, 255, 0.08);
-  --step-badge: rgba(255, 78, 118, 0.2);
+  --step-badge: rgba(255, 45, 85, 0.2);
 
-  --final-grad-1: rgba(255, 78, 118, 0.16);
-  --final-grad-2: rgba(255, 142, 168, 0.07);
-  --final-border: rgba(255, 142, 168, 0.42);
+  --final-grad-1: rgba(255, 45, 85, 0.16);
+  --final-grad-2: rgba(255, 45, 85, 0.07);
+  --final-border: rgba(255, 45, 85, 0.42);
 }
 
 * {
@@ -71,10 +79,7 @@ body {
   background: var(--bg);
   font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
   line-height: 1.45;
-  background-image:
-    radial-gradient(circle at 8% 0%, var(--bg-glow-1), transparent 36%),
-    radial-gradient(circle at 88% 18%, var(--bg-glow-2), transparent 32%),
-    linear-gradient(170deg, var(--bg), var(--bg-alt));
+  background-image: linear-gradient(180deg, var(--bg-glow-1), var(--bg-glow-2));
 }
 
 .container {
@@ -221,8 +226,9 @@ h1 span {
 }
 
 .stats li {
-  background: var(--surface-soft);
-  border: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 6px 10px var(--surface-shadow);
   border-radius: 14px;
   padding: 14px;
   display: grid;
@@ -255,9 +261,10 @@ h1 span {
 .chrumek-badge {
   margin-bottom: 12px;
   padding: 10px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--surface-border);
   border-radius: 14px;
-  background: var(--surface-soft);
+  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  box-shadow: 0 6px 10px var(--surface-shadow);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -285,8 +292,9 @@ h1 span {
 }
 
 .panel-card {
-  background: var(--card-strong);
-  border: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 6px 10px var(--surface-shadow);
   border-radius: 18px;
   padding: 16px;
 }
@@ -326,8 +334,9 @@ h1 span {
 }
 
 .steps article {
-  background: var(--surface-soft);
-  border: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 6px 10px var(--surface-shadow);
   border-radius: 16px;
   padding: 20px;
 }
@@ -353,18 +362,37 @@ h1 span {
   color: var(--muted);
 }
 
+.features-intro {
+  padding: 18px 0 8px;
+  border-top: 1px solid var(--line);
+}
+
+.features-kicker {
+  margin: 0;
+  color: var(--accent-soft);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.features-title {
+  margin: 8px 0 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  font-family: "Outfit", "Avenir Next", sans-serif;
+}
+
 .feature-grid {
-  padding: 42px 0 12px;
+  padding: 20px 0 12px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
 .card {
-  background:
-    linear-gradient(180deg, var(--card-tint), transparent 65%),
-    var(--card);
-  border: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 6px 10px var(--surface-shadow);
   border-radius: 16px;
   min-height: 214px;
   padding: 22px;
@@ -398,8 +426,9 @@ blockquote {
   margin: 0;
   padding: 24px;
   border-radius: 16px;
-  background: var(--surface-soft);
-  border: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 6px 10px var(--surface-shadow);
   font-size: clamp(1.1rem, 2.2vw, 1.5rem);
   font-family: "Outfit", "Avenir Next", sans-serif;
   line-height: 1.3;
@@ -457,6 +486,7 @@ blockquote,
 .site-header,
 .hero,
 .workflow,
+.features-intro,
 .feature-grid,
 .testimonial,
 .final-cta,
@@ -472,8 +502,12 @@ blockquote,
   animation-delay: 190ms;
 }
 
-.feature-grid {
+.features-intro {
   animation-delay: 280ms;
+}
+
+.feature-grid {
+  animation-delay: 340ms;
 }
 
 .testimonial {
