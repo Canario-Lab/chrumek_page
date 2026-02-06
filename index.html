@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Chrum Chrum pomaga zamieniać oszczędności z codziennych decyzji w realne kwoty odłożone na konto oszczędnościowe lub do skarbonki."
+  />
+  <title>Chrum Chrum | Chrum wierzy w przelewy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="#">Chrum Chrum</a>
+    <div class="header-actions">
+      <nav class="top-nav">
+        <a href="#jak-dziala">Jak działa</a>
+        <a href="#funkcje">Funkcje</a>
+        <a href="#start">Start</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        Ciemny motyw
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Aplikacja do realnego oszczędzania</p>
+        <h1>Chrum wierzy w <span>przelewy</span>, nie w intencje.</h1>
+        <p class="lead">
+          Zapisuj codzienne oszczędności, odkładaj je na oddzielne konto albo
+          do skarbonki i buduj postęp celu. W Chrum Chrum liczą się tylko
+          kwoty, które rzeczywiście odłożyłeś.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#start">Dołącz do listy oczekujących</a>
+          <a class="btn btn-ghost" href="#jak-dziala">Zobacz flow aplikacji</a>
+        </div>
+
+        <ul class="stats">
+          <li>
+            <strong>Dziennik</strong>
+            <span>3 karty oszczędzania</span>
+          </li>
+          <li>
+            <strong>Historia</strong>
+            <span>tylko realnie odłożone kwoty</span>
+          </li>
+          <li>
+            <strong>Wykresy</strong>
+            <span>na bazie prawdziwych przelewów</span>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="hero-panel" aria-label="Podgląd przepływu oszczędności">
+        <p class="panel-title">Przepływ oszczędności</p>
+        <div class="panel-card">
+          <div class="entry">
+            <span>1. Dziennik dnia</span>
+            <strong>+ 68 zł</strong>
+          </div>
+          <div class="entry muted">
+            <span>2. Przelew na oszczędności</span>
+            <strong>potwierdzony</strong>
+          </div>
+          <div class="entry muted">
+            <span>3. Historia + wykresy</span>
+            <strong>zaktualizowane</strong>
+          </div>
+          <div class="entry muted">
+            <span>4. Poziom Chrumka</span>
+            <strong>rośnie</strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="workflow container" id="jak-dziala">
+      <h2 class="section-title">Jak to działa</h2>
+      <div class="steps">
+        <article>
+          <span class="step-no">1</span>
+          <h3>Zapisz oszczędność</h3>
+          <p>
+            Dodaj wpis: rezygnacja z zakupu, tańszy zamiennik albo anulowany
+            abonament.
+          </p>
+        </article>
+        <article>
+          <span class="step-no">2</span>
+          <h3>Odkładaj realnie</h3>
+          <p>
+            Przelej kwotę na oddzielne konto oszczędnościowe lub wrzuć do
+            skarbonki.
+          </p>
+        </article>
+        <article>
+          <span class="step-no">3</span>
+          <h3>Potwierdź jednym kliknięciem</h3>
+          <p>
+            Kliknij "Dodałem do oszczędności" i dopiero wtedy kwota trafia do
+            historii, celów i wykresów.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-grid container" id="funkcje">
+      <article class="card">
+        <p class="tag">Dziennik</p>
+        <h2>Oszczędności z codziennych decyzji</h2>
+        <p>
+          Szybko zapisujesz ile zaoszczędziłeś i z jakiej kategorii. Bez
+          niepotrzebnego księgowania.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Cele</p>
+        <h2>Postęp celu i poziomy Chrumka</h2>
+        <p>
+          Ustawiasz cel oszczędności, śledzisz postęp i odblokowujesz kolejne
+          poziomy Chrumka na bazie potwierdzonych kwot.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Przypomnienia</p>
+        <h2>Codzienny ping o przelewie</h2>
+        <p>
+          Jeżeli masz kwotę czekającą na odłożenie, Chrum przypomina o przelewie
+          o wybranej godzinie.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Wykresy</p>
+        <h2>Rytm, droga i rok oszczędności</h2>
+        <p>
+          Widzisz realny rytm odkładania pieniędzy i rozkład kategorii, które
+          najbardziej zasilają Twoje oszczędności.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Historia</p>
+        <h2>Pełny ślad przelewów</h2>
+        <p>
+          Każdy potwierdzony przelew trafia do historii. Możesz cofnąć wpis albo
+          usunąć go, jeśli trzeba skorygować dane.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">CSV</p>
+        <h2>Eksport danych</h2>
+        <p>
+          Eksportujesz oszczędności i cele do CSV, z zakresem dat, kiedy
+          potrzebujesz raportu poza aplikacją.
+        </p>
+      </article>
+    </section>
+
+    <section class="testimonial container">
+      <blockquote>
+        "Pierwszy raz widzę czarno na białym, ile naprawdę odłożyłam, a nie ile
+        tylko planowałam odłożyć. To robi różnicę."
+      </blockquote>
+      <p>Użytkowniczka wersji beta</p>
+    </section>
+
+    <section class="final-cta container" id="start">
+      <h2>Wejdź do testów Chrum Chrum</h2>
+      <p>
+        Dostaniesz wczesny dostęp do aplikacji i nowe funkcje związane z celami,
+        historią i automatycznymi przypomnieniami.
+      </p>
+      <a class="btn btn-primary" href="#">Chcę dołączyć</a>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrum Chrum 2026. Realne oszczędności, nie deklaracje.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var storageKey = "chrum-theme";
+      var body = document.body;
+      var toggle = document.getElementById("themeToggle");
+
+      if (!body || !toggle) return;
+
+      function applyTheme(theme) {
+        var isDark = theme === "dark";
+        body.setAttribute("data-theme", isDark ? "dark" : "light");
+        toggle.textContent = isDark ? "Jasny motyw" : "Ciemny motyw";
+        toggle.setAttribute("aria-pressed", String(isDark));
+        toggle.setAttribute(
+          "aria-label",
+          isDark ? "Przełącz na jasny motyw" : "Przełącz na ciemny motyw"
+        );
+      }
+
+      var savedTheme = localStorage.getItem(storageKey);
+      var initialTheme = savedTheme === "dark" ? "dark" : "light";
+      applyTheme(initialTheme);
+
+      toggle.addEventListener("click", function () {
+        var currentTheme = body.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        var nextTheme = currentTheme === "dark" ? "light" : "dark";
+        applyTheme(nextTheme);
+        localStorage.setItem(storageKey, nextTheme);
+      });
+    })();
+  </script>
+</body>
+</html>
