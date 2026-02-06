@@ -333,6 +333,90 @@ h1 span {
   border-top: 1px solid var(--entry-divider);
 }
 
+.appshots {
+  padding: 4px 0 24px;
+}
+
+.appshots-description {
+  margin: 8px 0 18px;
+  color: var(--muted);
+  max-width: 62ch;
+}
+
+.appshots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.appshots-item {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.appshots-phone {
+  position: relative;
+  aspect-ratio: 9 / 19.5;
+  border-radius: 34px;
+  border: 1px solid var(--surface-border);
+  background:
+    radial-gradient(circle at 18% 14%, rgba(255, 45, 85, 0.16), transparent 38%),
+    linear-gradient(155deg, var(--surface-grad-1), var(--surface-grad-2));
+  box-shadow: 0 10px 20px var(--surface-shadow);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.appshots-phone::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 26px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0) 35%),
+    linear-gradient(160deg, rgba(255, 45, 85, 0.08), rgba(255, 45, 85, 0.01));
+  pointer-events: none;
+}
+
+.appshots-notch {
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 42%;
+  height: 18px;
+  border-radius: 0 0 12px 12px;
+  border: 1px solid var(--line);
+  border-top: none;
+  background: linear-gradient(180deg, var(--card), var(--bg-alt));
+  z-index: 2;
+}
+
+.appshots-placeholder {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px dashed var(--line);
+  background: var(--surface-soft);
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.appshots-caption {
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .workflow {
   padding: 8px 0 14px;
 }
@@ -525,6 +609,12 @@ h1 span {
 .free-start-item p {
   margin: 8px 0 0;
   color: var(--muted);
+}
+
+.free-start-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.96rem;
 }
 
 .faq {
@@ -760,6 +850,16 @@ body,
 }
 
 @media (max-width: 960px) {
+  .appshots-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .appshots-item:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(320px, 100%);
+  }
+
   .hero,
   .steps,
   .trust-grid,
@@ -782,6 +882,16 @@ body,
 }
 
 @media (max-width: 640px) {
+  .appshots-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .appshots-item:last-child {
+    grid-column: auto;
+    justify-self: stretch;
+    width: auto;
+  }
+
   .site-header {
     flex-direction: column;
     align-items: flex-start;
