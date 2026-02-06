@@ -340,12 +340,33 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Wejdź do testów Chrumek</h2>
+      <h2>Dołącz do listy beta</h2>
       <p>
-        Dostaniesz wczesny dostęp do aplikacji i nowe funkcje związane z celami,
-        historią i automatycznymi przypomnieniami.
+        Wyślemy zaproszenie do TestFlight, gdy tylko beta będzie dostępna. Bez spamu.
       </p>
-      <a class="btn btn-primary" href="#">Chcę dołączyć</a>
+      <form class="final-cta-form" id="betaForm">
+        <div class="final-cta-fields">
+          <input
+            class="final-cta-input"
+            id="betaEmail"
+            name="email"
+            type="email"
+            required
+            placeholder="Twój e-mail"
+          />
+          <input
+            class="final-cta-input"
+            id="betaName"
+            name="name"
+            type="text"
+            placeholder="Imię (opcjonalnie)"
+          />
+        </div>
+        <button class="btn btn-primary final-cta-submit" type="submit">Dołączam</button>
+      </form>
+      <small class="final-cta-note">
+        Wysyłając, otworzysz swoją aplikację pocztową z gotową wiadomością.
+      </small>
     </section>
   </main>
 
@@ -386,6 +407,43 @@
         applyTheme(nextTheme);
         localStorage.setItem(storageKey, nextTheme);
       });
+
+      var betaForm = document.getElementById("betaForm");
+      var betaEmail = document.getElementById("betaEmail");
+      var betaName = document.getElementById("betaName");
+
+      if (betaForm && betaEmail) {
+        betaForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var email = betaEmail.value.trim();
+          var name = betaName ? betaName.value.trim() : "";
+
+          if (!email) {
+            betaEmail.focus();
+            return;
+          }
+
+          var subject = "Chrumek beta – proszę o zaproszenie do TestFlight";
+          var bodyLines = [
+            "Chcę dołączyć do listy beta Chrumek.",
+            "",
+            "Email: " + email
+          ];
+
+          if (name) {
+            bodyLines.push("Imię: " + name);
+          }
+
+          var mailtoLink =
+            "mailto:chrumek@chrumek.app?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(bodyLines.join("\n"));
+
+          window.location.href = mailtoLink;
+        });
+      }
     })();
   </script>
 </body>

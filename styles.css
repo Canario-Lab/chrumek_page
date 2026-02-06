@@ -624,6 +624,52 @@ h1 span {
   max-width: 64ch;
 }
 
+.final-cta-form {
+  max-width: 760px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+
+.final-cta-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.final-cta-input {
+  width: 100%;
+  min-height: 46px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  color: var(--text);
+  padding: 10px 14px;
+  font: inherit;
+}
+
+.final-cta-input::placeholder {
+  color: var(--muted);
+}
+
+.final-cta-input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.final-cta-submit {
+  border: none;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.final-cta-note {
+  display: block;
+  margin: 10px 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
 .site-footer {
   padding: 14px 0 38px;
 }
@@ -719,6 +765,7 @@ body,
   .trust-grid,
   .feature-grid,
   .free-start-grid,
+  .final-cta-fields,
   .testimonial-grid,
   .stats {
     grid-template-columns: 1fr;
