@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta
+    name="description"
+    content="Chrumek to aplikacja do realnego oszczędzania: zapisujesz oszczędności, potwierdzasz przelew i budujesz postęp celu, wykresy oraz historię."
+  />
+  <title>Chrumek - oszczędzanie, które naprawdę odkładasz</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://canario-lab.github.io/chrumek_page/pl/" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:site_name" content="Chrumek" />
+  <meta property="og:title" content="Chrumek - oszczędzanie, które naprawdę odkładasz" />
+  <meta
+    property="og:description"
+    content="Chrumek pomaga zamieniać decyzje zakupowe w realne oszczędności: postęp celu, wykresy i historia liczą się dopiero po potwierdzonym przelewie."
+  />
+  <meta property="og:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="Chrumek - asystent oszczędzania" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chrumek - oszczędzanie, które naprawdę odkładasz" />
+  <meta
+    name="twitter:description"
+    content="Realne oszczędzanie bez intencji: potwierdzasz przelew i dopiero wtedy rośnie postęp, wykresy oraz cele."
+  />
+  <meta name="twitter:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
+
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/pl/" />
+  <link rel="alternate" hreflang="pl" href="https://canario-lab.github.io/chrumek_page/pl/" />
+  <link rel="alternate" hreflang="en" href="https://canario-lab.github.io/chrumek_page/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://canario-lab.github.io/chrumek_page/" />
+  <link rel="icon" type="image/png" href="../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="#">Chrumek</a>
+    <div class="header-actions">
+      <nav class="top-nav">
+        <a href="#jak-dziala">Jak działa</a>
+        <a href="#funkcje">Funkcje</a>
+        <a href="#faq">FAQ</a>
+        <a href="#start">Start</a>
+      </nav>
+      <div class="lang-switch" aria-label="Wybór języka">
+        <a class="lang-link is-active" href="../pl/" lang="pl" aria-current="page" aria-label="Polski">🇵🇱</a>
+        <a class="lang-link" href="../en/" lang="en" aria-label="English">🇬🇧</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        <span class="theme-toggle-text">Motyw strony</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Aplikacja do realnego oszczędzania</p>
+        <h1>Chrumek wierzy w <span>przelewy</span>, nie w intencje.</h1>
+        <p class="hero-audience">
+          Dla osób, które chcą odkładać realnie, a nie tylko „mniej wydawać”.
+        </p>
+        <p class="lead">
+          Zapisuj codzienne oszczędności, odkładaj je na oddzielne konto albo
+          do skarbonki i buduj postęp celu. W Chrumku liczą się tylko
+          kwoty, które rzeczywiście odłożyłeś.
+        </p>
+        <p class="lead-note">
+          To nie jest kolejny tracker wydatków. Tu wpisujesz tylko pokusy i
+          oszczędności.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#start">Dołącz do listy beta</a>
+          <a class="btn btn-ghost" href="#jak-dziala">Zobacz flow aplikacji</a>
+        </div>
+
+        <ul class="stats">
+          <li>
+            <strong>Dziennik</strong>
+            <span>3 karty oszczędzania</span>
+          </li>
+          <li>
+            <strong>Historia</strong>
+            <span>tylko realnie odłożone kwoty</span>
+          </li>
+          <li>
+            <strong>Wykresy</strong>
+            <span>na bazie prawdziwych przelewów</span>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="hero-panel" aria-label="Podgląd przepływu oszczędności">
+        <p class="panel-title">Przepływ oszczędności</p>
+        <div class="chrumek-badge">
+          <img
+            class="chrumek-icon"
+            src="../chrumekapp_scale44-kopia.png"
+            alt="Chrumek, asystent oszczędzania"
+            width="96"
+            height="96"
+          />
+          <div>
+            <p class="chrumek-name">To jest Chrumek</p>
+            <p class="chrumek-desc">Asystent oszczędzania, nie wydatków.</p>
+          </div>
+        </div>
+        <div class="panel-card">
+          <div class="entry">
+            <span>1. Zapisujesz oszczędność: nie kupujesz, wybierasz taniej albo anulujesz abonament.</span>
+            <strong class="entry-status checklist-item" aria-label="zapisane">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>2. Chrumek przypomina wieczorem: przelej kwotę na konto oszczędnościowe albo wrzuć do skarbonki.</span>
+            <strong class="entry-status checklist-item" aria-label="przypomniane">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>3. Potwierdzasz przelew w apce: dopiero to liczy się do postępu.</span>
+            <strong class="entry-status checklist-item" aria-label="potwierdzone">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>4. Historia i wykresy rosną: widzisz efekty i odblokowujesz poziomy Chrumka.</span>
+            <strong class="entry-status checklist-item" aria-label="rośnie">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="appshots container" aria-label="Podgląd ekranów aplikacji">
+      <h2 class="section-title">Zobacz aplikację</h2>
+      <div class="appshots-carousel">
+        <div class="appshots-grid" id="appshotsCarousel" aria-label="Karuzela placeholderów ekranów">
+          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Ekran aplikacji: Dziennik">
+              <img
+                class="appshots-image"
+                src="../assets_pl/dziennik.PNG"
+                alt="Ekran aplikacji Chrumek: Dziennik"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Dziennik</figcaption>
+          </figure>
+          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Ekran aplikacji: Historia">
+              <img
+                class="appshots-image"
+                src="../assets_pl/historia.PNG"
+                alt="Ekran aplikacji Chrumek: Historia"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Historia</figcaption>
+          </figure>
+          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Ekran aplikacji: Cele">
+              <img
+                class="appshots-image"
+                src="../assets_pl/cel.PNG"
+                alt="Ekran aplikacji Chrumek: Cele"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Cele</figcaption>
+          </figure>
+          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Ekran aplikacji: Wykresy">
+              <img
+                class="appshots-image"
+                src="../assets_pl/wykresy.PNG"
+                alt="Ekran aplikacji Chrumek: Wykresy"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Wykresy</figcaption>
+          </figure>
+          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Ekran aplikacji: Ustawienia">
+              <img
+                class="appshots-image"
+                src="../assets_pl/ustawienia.PNG"
+                alt="Ekran aplikacji Chrumek: Ustawienia"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Ustawienia</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="appshots-dots" aria-label="Nawigacja karuzeli">
+        <button class="appshots-dot is-active" type="button" data-index="0" aria-label="Pokaż ekran Dziennik" aria-current="true"></button>
+        <button class="appshots-dot" type="button" data-index="1" aria-label="Pokaż ekran Historia" aria-current="false"></button>
+        <button class="appshots-dot" type="button" data-index="2" aria-label="Pokaż ekran Cele" aria-current="false"></button>
+        <button class="appshots-dot" type="button" data-index="3" aria-label="Pokaż ekran Wykresy" aria-current="false"></button>
+        <button class="appshots-dot" type="button" data-index="4" aria-label="Pokaż ekran Ustawienia" aria-current="false"></button>
+      </div>
+    </section>
+
+    <section class="workflow container" id="jak-dziala">
+      <h2 class="section-title">Jak to działa</h2>
+      <div class="steps">
+        <article>
+          <span class="step-no">1</span>
+          <h3>Zapisz oszczędność</h3>
+          <p>
+            Dodaj wpis: rezygnacja z zakupu, tańszy zamiennik albo anulowany
+            abonament.
+          </p>
+        </article>
+        <article>
+          <span class="step-no">2</span>
+          <h3>Odkładaj realnie</h3>
+          <p>
+            Przelej kwotę na oddzielne konto oszczędnościowe lub wrzuć do
+            skarbonki.
+          </p>
+        </article>
+        <article>
+          <span class="step-no">3</span>
+          <h3>Potwierdź jednym kliknięciem</h3>
+          <p>
+            Kliknij "Dodałem do oszczędności" i dopiero wtedy kwota trafia do
+            postępu, wykresów i celów.
+          </p>
+        </article>
+      </div>
+      <p class="core-note">
+        <strong>Kluczowy moment:</strong> Dopiero po kliknięciu "Dodałem do oszczędności"
+        liczy się postęp, wykresy i cele.
+      </p>
+    </section>
+
+    <section class="features-intro container" aria-label="Przejście do listy funkcji">
+      <p class="features-kicker">Co dostajesz w aplikacji</p>
+      <h3 class="features-title">Najważniejsze funkcje Chrumka</h3>
+    </section>
+
+    <section class="trust container" aria-label="Prywatność i zaufanie">
+      <p class="features-kicker">Prywatność i zaufanie</p>
+      <div class="trust-grid">
+        <article class="trust-item">
+          <h4>Dane zostają na Twoim telefonie</h4>
+          <p>Twoje oszczędności są przechowywane lokalnie na urządzeniu.</p>
+        </article>
+        <article class="trust-item">
+          <h4>Bez konta</h4>
+          <p>Nie musisz tworzyć konta, żeby korzystać z aplikacji.</p>
+        </article>
+        <article class="trust-item">
+          <h4>Bez śledzenia</h4>
+          <p>Nie używamy trackerów reklamowych ani zewnętrznej analityki.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features-main-intro container" aria-label="Funkcje codzienne">
+      <p class="features-kicker">Funkcje codzienne</p>
+      <h3 class="features-main-title">Jak Chrumek pomaga Ci na co dzień</h3>
+    </section>
+
+    <section class="feature-grid container" id="funkcje">
+      <article class="card">
+        <p class="tag">Dziennik</p>
+        <h2>Oszczędności z codziennych decyzji</h2>
+        <p>
+          Szybko zapisujesz ile zaoszczędziłeś i z jakiej kategorii. Bez
+          niepotrzebnego księgowania.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Cele</p>
+        <h2>Postęp celu i poziomy Chrumka</h2>
+        <p>
+          Ustawiasz cel oszczędności, śledzisz postęp i odblokowujesz kolejne
+          poziomy Chrumka na bazie potwierdzonych kwot.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Przypomnienia</p>
+        <h2>Codzienny ping o przelewie</h2>
+        <p>
+          Jeżeli masz kwotę czekającą na odłożenie, Chrumek przypomina o przelewie
+          o wybranej godzinie.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Wykresy</p>
+        <h2>Rytm, droga i rok oszczędności</h2>
+        <p>
+          Widzisz realny rytm odkładania pieniędzy i rozkład kategorii, które
+          najbardziej zasilają Twoje oszczędności.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Historia</p>
+        <h2>Pełny ślad przelewów</h2>
+        <p>
+          Każdy potwierdzony przelew trafia do historii. Możesz cofnąć wpis albo
+          usunąć go, jeśli trzeba skorygować dane.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="tag">CSV</p>
+        <h2>Eksport danych</h2>
+        <p>
+          Eksportujesz oszczędności i cele do CSV, z zakresem dat, kiedy
+          potrzebujesz raportu poza aplikacją.
+        </p>
+      </article>
+    </section>
+
+    <section class="free-start container" aria-label="Start za darmo">
+      <p class="features-kicker">Start za darmo</p>
+      <h3 class="free-start-title">Najpierw sprawdzasz, potem decydujesz</h3>
+      <div class="free-start-grid">
+        <article class="free-start-item">
+          <h4>10 darmowych potwierdzonych przelewów</h4>
+          <p>Zacznij bez karty i zobacz, jak działa Chrumek w praktyce.</p>
+        </article>
+        <article class="free-start-item">
+          <h4>Potem Premium</h4>
+          <p>Od 11. przelewu działa Premium (trial 14 dni, jeśli się kwalifikujesz).</p>
+        </article>
+      </div>
+      <p class="free-start-note">
+        Licznik dotyczy kliknięć „Dodałem do oszczędności” (potwierdzeń), nie samych wpisów.
+      </p>
+    </section>
+
+    <section class="faq container" id="faq" aria-label="Najczęstsze pytania">
+      <p class="features-kicker">FAQ</p>
+      <h3 class="faq-title">Najczęstsze pytania</h3>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Czy muszę podłączać bank?</summary>
+          <p>
+            Nie. Wystarczy oddzielne konto oszczędnościowe albo skarbonka.
+            Przelewy potwierdzasz ręcznie przyciskiem „Dodałem do oszczędności”.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy to działa offline?</summary>
+          <p>
+            Tak, kluczowe funkcje działają lokalnie na urządzeniu: dziennik,
+            historia, cele i wykresy.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Co jeśli nie przelałem jednak pieniędzy?</summary>
+          <p>
+            Nie klikaj „Dodałem do oszczędności”, dopóki przelew nie jest realny.
+            Jeśli potwierdziłeś przez pomyłkę, możesz cofnąć wpis w Historii.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Jak działa Premium / trial?</summary>
+          <p>
+            Masz 10 darmowych potwierdzonych przelewów. Od 11. działa Premium;
+            jeśli się kwalifikujesz, możesz rozpocząć trial 14 dni.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy dane są bezpieczne?</summary>
+          <p>
+            Tak. Dane są przechowywane lokalnie, bez wysyłania na zewnątrz.
+            Aplikacja działa bez konta i bez trackerów reklamowych.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Czy mogę eksportować dane?</summary>
+          <p>
+            Tak. Możesz wyeksportować dane do CSV (z zakresem dat), a plik zapisać
+            lokalnie lub np. w iCloud Drive.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="testimonial container">
+      <p class="features-kicker">Co mówią testerzy</p>
+      <div class="testimonial-grid">
+        <article class="quote-card">
+          <blockquote>
+            "Pierwszy raz widzę czarno na białym, ile naprawdę odłożyłam, a nie ile
+            tylko planowałam odłożyć. To robi różnicę."
+          </blockquote>
+          <p class="quote-author">Ola, beta testerka</p>
+        </article>
+        <article class="quote-card">
+          <blockquote>
+            "Najbardziej działa to, że postęp rośnie dopiero po realnym przelewie.
+            Dzięki temu faktycznie odkładam, a nie tylko planuję."
+          </blockquote>
+          <p class="quote-author">Mateusz, tester wersji beta</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-cta container" id="start">
+      <h2>Dołącz do listy beta</h2>
+      <p>
+        Wyślemy zaproszenie do TestFlight, gdy tylko beta będzie dostępna. Bez spamu.
+      </p>
+      <form class="final-cta-form" id="betaForm">
+        <div class="final-cta-fields">
+          <input
+            class="final-cta-input"
+            id="betaEmail"
+            name="email"
+            type="email"
+            required
+            placeholder="Twój e-mail"
+          />
+          <input
+            class="final-cta-input"
+            id="betaName"
+            name="name"
+            type="text"
+            placeholder="Imię (opcjonalnie)"
+          />
+        </div>
+        <button class="btn btn-primary final-cta-submit" type="submit">Dołączam</button>
+      </form>
+      <small class="final-cta-note">
+        Wysyłając, otworzysz swoją aplikację pocztową z gotową wiadomością.
+      </small>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Realne oszczędności, nie deklaracje.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var storageKey = "chrum-theme";
+      var body = document.body;
+      var toggle = document.getElementById("themeToggle");
+      var toggleIcon = document.getElementById("themeToggleIcon");
+
+      if (!body || !toggle || !toggleIcon) return;
+
+      function applyTheme(theme) {
+        var isDark = theme === "dark";
+        body.setAttribute("data-theme", isDark ? "dark" : "light");
+        toggleIcon.textContent = isDark ? "☀" : "☾";
+        toggle.setAttribute("aria-pressed", String(isDark));
+        toggle.setAttribute(
+          "aria-label",
+          isDark
+            ? "Motyw strony: ciemny. Przełącz na jasny."
+            : "Motyw strony: jasny. Przełącz na ciemny."
+        );
+        toggle.title = isDark ? "Motyw strony: ciemny" : "Motyw strony: jasny";
+      }
+
+      var savedTheme = localStorage.getItem(storageKey);
+      var initialTheme = savedTheme === "dark" ? "dark" : "light";
+      applyTheme(initialTheme);
+
+      toggle.addEventListener("click", function () {
+        var currentTheme = body.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        var nextTheme = currentTheme === "dark" ? "light" : "dark";
+        applyTheme(nextTheme);
+        localStorage.setItem(storageKey, nextTheme);
+      });
+
+      var betaForm = document.getElementById("betaForm");
+      var betaEmail = document.getElementById("betaEmail");
+      var betaName = document.getElementById("betaName");
+
+      if (betaForm && betaEmail) {
+        betaForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var email = betaEmail.value.trim();
+          var name = betaName ? betaName.value.trim() : "";
+
+          if (!email) {
+            betaEmail.focus();
+            return;
+          }
+
+          var subject = "Chrumek beta – proszę o zaproszenie do TestFlight";
+          var bodyLines = [
+            "Chcę dołączyć do listy beta Chrumek.",
+            "",
+            "Email: " + email
+          ];
+
+          if (name) {
+            bodyLines.push("Imię: " + name);
+          }
+
+          var mailtoLink =
+            "mailto:chrumek@chrumek.app?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(bodyLines.join("\n"));
+
+          window.location.href = mailtoLink;
+        });
+      }
+
+      var checklistCard = document.querySelector(".hero-panel .panel-card");
+      var checklistItems = Array.prototype.slice.call(document.querySelectorAll(".hero-panel .checklist-item"));
+
+      function setChecklistChecked(checked) {
+        checklistItems.forEach(function (item) {
+          item.classList.toggle("is-checked", checked);
+        });
+      }
+
+      if (checklistCard && checklistItems.length) {
+        var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (reduceMotion) {
+          setChecklistChecked(true);
+        } else {
+          var checklistStarted = false;
+          var cycleTimer = 0;
+          var stepTimers = [];
+          var stepDelay = 420;
+          var resetDelay = 260;
+          var holdDelay = 1300;
+
+          function clearChecklistTimers() {
+            clearTimeout(cycleTimer);
+            stepTimers.forEach(function (timerId) { clearTimeout(timerId); });
+            stepTimers = [];
+          }
+
+          function runChecklistLoop() {
+            clearChecklistTimers();
+            setChecklistChecked(false);
+
+            checklistItems.forEach(function (item, index) {
+              var stepTimer = setTimeout(function () {
+                item.classList.add("is-checked");
+              }, resetDelay + index * stepDelay);
+              stepTimers.push(stepTimer);
+            });
+
+            cycleTimer = setTimeout(
+              runChecklistLoop,
+              resetDelay + checklistItems.length * stepDelay + holdDelay
+            );
+          }
+
+          function startChecklistLoop() {
+            if (checklistStarted) return;
+            checklistStarted = true;
+            runChecklistLoop();
+          }
+
+          if (typeof IntersectionObserver === "undefined") {
+            startChecklistLoop();
+          } else {
+            var checklistObserver = new IntersectionObserver(function (entries) {
+              entries.forEach(function (entry) {
+                if (!entry.isIntersecting || entry.intersectionRatio < 0.4) return;
+                startChecklistLoop();
+              });
+            }, { threshold: [0.4] });
+
+            checklistObserver.observe(checklistCard);
+          }
+
+          window.addEventListener("beforeunload", function () {
+            clearChecklistTimers();
+          });
+        }
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var carousel = document.getElementById("appshotsCarousel"), dots = Array.prototype.slice.call(document.querySelectorAll(".appshots-dot"));
+      if (!carousel || !dots.length) return;
+
+      var threshold = 5;
+      var speed = 1.2;
+      var cloneCount = 3;
+      var snapThreshold = 24;
+      var isPointerDown = false;
+      var isTouching = false;
+      var isDragging = false;
+      var suppressClick = false;
+      var startX = 0;
+      var dragX = 0;
+      var dragStartReal = 0;
+      var animTimer = 0;
+      var scrollRaf = 0;
+
+      var originalSlides = Array.prototype.slice.call(carousel.querySelectorAll(".appshots-item"));
+      if (!originalSlides.length) return;
+      var realCount = originalSlides.length;
+
+      if (realCount > 1) {
+        originalSlides.slice(-cloneCount).forEach(function (slide) {
+          var clone = slide.cloneNode(true);
+          clone.setAttribute("data-clone", "start");
+          clone.setAttribute("aria-hidden", "true");
+          carousel.insertBefore(clone, carousel.firstChild);
+        });
+        originalSlides.slice(0, cloneCount).forEach(function (slide) {
+          var clone = slide.cloneNode(true);
+          clone.setAttribute("data-clone", "end");
+          clone.setAttribute("aria-hidden", "true");
+          carousel.appendChild(clone);
+        });
+      }
+
+      var allSlides = Array.prototype.slice.call(carousel.querySelectorAll(".appshots-item"));
+      var realSlides = allSlides.slice(cloneCount, cloneCount + realCount);
+
+      function setActive(index) {
+        dots.forEach(function (dot, dotIndex) {
+          var isActive = dotIndex === index;
+          dot.classList.toggle("is-active", isActive);
+          dot.setAttribute("aria-current", isActive ? "true" : "false");
+        });
+      }
+
+      function nearestSlideIndex() {
+        var position = carousel.scrollLeft;
+        var nearest = 0;
+        var minDist = Infinity;
+        allSlides.forEach(function (slide, index) {
+          var dist = Math.abs(slide.offsetLeft - position);
+          if (dist < minDist) {
+            minDist = dist;
+            nearest = index;
+          }
+        });
+        return nearest;
+      }
+
+      function normalizeIndex(index) {
+        if (index < cloneCount) return index + realCount;
+        if (index >= cloneCount + realCount) return index - realCount;
+        return index;
+      }
+
+      function syncActiveDot() {
+        var normalized = normalizeIndex(nearestSlideIndex());
+        setActive(normalized - cloneCount);
+      }
+
+      function clearAnimating() {
+        carousel.classList.remove("is-animating");
+      }
+
+      function withNoSmooth(fn) {
+        clearTimeout(animTimer);
+        clearAnimating();
+        carousel.classList.add("no-smooth");
+        fn();
+        requestAnimationFrame(function () {
+          carousel.classList.remove("no-smooth");
+        });
+      }
+
+      function smoothTo(left) {
+        clearTimeout(animTimer);
+        carousel.classList.add("is-animating");
+        carousel.scrollTo({ left: left, behavior: "smooth" });
+        animTimer = setTimeout(clearAnimating, 340);
+      }
+
+      function maybeTeleport() {
+        var from = nearestSlideIndex();
+        var to = normalizeIndex(from);
+        if (from === to) return;
+        withNoSmooth(function () {
+          carousel.scrollTo({ left: allSlides[to].offsetLeft, behavior: "auto" });
+        });
+      }
+
+      function clampRealIndex(index) {
+        return (index % realCount + realCount) % realCount;
+      }
+
+      function trackIndexForReal(realIndex) {
+        var normalizedReal = clampRealIndex(realIndex);
+        var candidates = [cloneCount + normalizedReal];
+        if (normalizedReal >= realCount - cloneCount) {
+          candidates.push(normalizedReal - (realCount - cloneCount));
+        }
+        if (normalizedReal < cloneCount) {
+          candidates.push(cloneCount + realCount + normalizedReal);
+        }
+
+        var current = carousel.scrollLeft;
+        var chosen = candidates[0];
+        var minDist = Infinity;
+        candidates.forEach(function (idx) {
+          var dist = Math.abs(allSlides[idx].offsetLeft - current);
+          if (dist < minDist) {
+            minDist = dist;
+            chosen = idx;
+          }
+        });
+        return chosen;
+      }
+
+      function syncLoopAndDots() {
+        if (scrollRaf) return;
+        scrollRaf = requestAnimationFrame(function () {
+          scrollRaf = 0;
+          maybeTeleport();
+          syncActiveDot();
+        });
+      }
+
+      function goToInitialSlide() {
+        if (!realSlides[0]) return;
+        withNoSmooth(function () {
+          carousel.scrollTo({ left: realSlides[0].offsetLeft, behavior: "auto" });
+        });
+      }
+
+      function endDrag() {
+        if (!isPointerDown) return;
+        isPointerDown = false;
+        carousel.classList.remove("is-dragging");
+        if (isDragging) {
+          var totalDelta = dragX - startX;
+          var targetReal = dragStartReal;
+          if (Math.abs(totalDelta) > snapThreshold) {
+            targetReal = dragStartReal + (totalDelta < 0 ? 1 : -1);
+          }
+          var targetTrack = trackIndexForReal(targetReal);
+
+          suppressClick = true;
+          smoothTo(allSlides[targetTrack].offsetLeft);
+          setTimeout(function () { suppressClick = false; }, 0);
+        }
+        isDragging = false;
+      }
+
+      carousel.addEventListener("mousedown", function (event) {
+        if (event.button !== 0) return;
+        isPointerDown = true;
+        isDragging = false;
+        startX = event.clientX;
+        dragX = event.clientX;
+        dragStartReal = normalizeIndex(nearestSlideIndex()) - cloneCount;
+      });
+
+      carousel.addEventListener("mousemove", function (event) {
+        if (!isPointerDown) return;
+        var delta = event.clientX - startX;
+        if (!isDragging && Math.abs(delta) > threshold) {
+          isDragging = true;
+          clearTimeout(animTimer);
+          carousel.classList.add("is-dragging");
+          dragX = event.clientX;
+        }
+        if (!isDragging) return;
+        event.preventDefault();
+        carousel.scrollLeft -= (event.clientX - dragX) * speed;
+        dragX = event.clientX;
+      });
+
+      carousel.addEventListener("mouseleave", endDrag);
+      window.addEventListener("mouseup", endDrag);
+      window.addEventListener("blur", endDrag);
+      carousel.addEventListener("touchstart", function () { isTouching = true; }, { passive: true });
+      carousel.addEventListener("touchend", function () {
+        isTouching = false;
+        maybeTeleport();
+        syncActiveDot();
+      }, { passive: true });
+      carousel.addEventListener("touchcancel", function () {
+        isTouching = false;
+        maybeTeleport();
+        syncActiveDot();
+      }, { passive: true });
+      carousel.addEventListener("dragstart", function (event) { event.preventDefault(); });
+      carousel.addEventListener("click", function (event) {
+        if (!suppressClick) return;
+        event.preventDefault();
+        event.stopPropagation();
+      }, true);
+
+      dots.forEach(function (dot, index) {
+        dot.addEventListener("click", function () {
+          var target = realSlides[index];
+          if (!target) return;
+          smoothTo(target.offsetLeft);
+          setActive(index);
+        });
+      });
+
+      carousel.addEventListener("scroll", syncLoopAndDots, { passive: true });
+      window.addEventListener("resize", function () {
+        maybeTeleport();
+        syncActiveDot();
+      });
+
+      goToInitialSlide();
+      syncActiveDot();
+    })();
+  </script>
+</body>
+</html>
