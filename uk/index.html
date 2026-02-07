@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Chrumek — застосунок для реальних заощаджень: ти записуєш економію, підтверджуєш переказ і бачиш прогрес цілей, графіків та історії." />
+  <title>Chrumek - заощадження, які ти справді відкладаєш</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://canario-lab.github.io/chrumek_page/uk/" />
+  <meta property="og:locale" content="uk_UA" />
+  <meta property="og:site_name" content="Chrumek" />
+  <meta property="og:title" content="Chrumek - заощадження, які ти справді відкладаєш" />
+  <meta property="og:description" content="Chrumek перетворює щоденні рішення на реальні заощадження: прогрес, графіки й історія зараховуються лише після підтвердженого переказу." />
+  <meta property="og:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="Chrumek — асистент заощаджень" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chrumek - заощадження, які ти справді відкладаєш" />
+  <meta name="twitter:description" content="Реальні заощадження, а не наміри: спершу підтверджений переказ, потім зростають прогрес, графіки й цілі." />
+  <meta name="twitter:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
+
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/uk/" />
+  <link rel="alternate" hreflang="pl" href="https://canario-lab.github.io/chrumek_page/pl/" />
+  <link rel="alternate" hreflang="en" href="https://canario-lab.github.io/chrumek_page/en/" />
+  <link rel="alternate" hreflang="de" href="https://canario-lab.github.io/chrumek_page/de/" />
+  <link rel="alternate" hreflang="es" href="https://canario-lab.github.io/chrumek_page/es/" />
+  <link rel="alternate" hreflang="fr" href="https://canario-lab.github.io/chrumek_page/fr/" />
+  <link rel="alternate" hreflang="it" href="https://canario-lab.github.io/chrumek_page/it/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://canario-lab.github.io/chrumek_page/pt-BR/" />
+  <link rel="alternate" hreflang="tr" href="https://canario-lab.github.io/chrumek_page/tr/" />
+  <link rel="alternate" hreflang="uk" href="https://canario-lab.github.io/chrumek_page/uk/" />
+  <link rel="alternate" hreflang="x-default" href="https://canario-lab.github.io/chrumek_page/" />
+  <link rel="icon" type="image/png" href="../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Тема сторінки: темна. Перемкнути на світлу."
+  data-theme-label-light="Тема сторінки: світла. Перемкнути на темну."
+  data-theme-title-dark="Тема сторінки: темна"
+  data-theme-title-light="Тема сторінки: світла"
+  data-mail-subject="Chrumek beta – прошу запрошення в TestFlight"
+  data-mail-intro="Хочу приєднатися до бета-списку Chrumek."
+  data-mail-name-label="Ім&#x27;я"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="#">Chrumek</a>
+    <div class="header-actions">
+      <nav class="top-nav">
+        <a href="#jak-dziala">Як це працює</a>
+        <a href="#funkcje">Функції</a>
+        <a href="#faq">FAQ</a>
+        <a href="#start">Старт</a>
+      </nav>
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Вибір мови">
+          <span class="lang-toggle-icon" aria-hidden="true">🌐</span>
+          <span class="lang-toggle-text">Мова</span>
+        </button>
+        <div class="lang-menu" role="menu" aria-label="Вибір мови">
+        <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PL</span><span aria-hidden="true">🇵🇱</span><span>Polski</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../en/" data-base="../en/" lang="en" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">EN</span><span aria-hidden="true">🇬🇧</span><span>English</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../de/" data-base="../de/" lang="de" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">DE</span><span aria-hidden="true">🇩🇪</span><span>Deutsch</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../es/" data-base="../es/" lang="es" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">ES</span><span aria-hidden="true">🇪🇸</span><span>Español</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">FR</span><span aria-hidden="true">🇫🇷</span><span>Français</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../it/" data-base="../it/" lang="it" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">IT</span><span aria-hidden="true">🇮🇹</span><span>Italiano</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PT-BR</span><span aria-hidden="true">🇧🇷</span><span>Português (BR)</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">TR</span><span aria-hidden="true">🇹🇷</span><span>Türkçe</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option is-active" href="../uk/" data-base="../uk/" lang="uk" role="menuitem" aria-current="page">
+          <span class="lang-option-main"><span class="lang-option-code">UK</span><span aria-hidden="true">🇺🇦</span><span>Українська</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        <span class="theme-toggle-text">Тема сторінки</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Застосунок для реальних заощаджень</p>
+        <h1>Chrumek вірить у <span>перекази</span>, а не в наміри.</h1>
+        <p class="hero-audience">Для тих, хто хоче реально відкладати, а не просто «менше витрачати».</p>
+        <p class="lead">Записуй щоденну економію, переказуй її на окремий рахунок заощаджень або в скарбничку й будуй прогрес цілі. У Chrumek зараховуються лише суми, які ти справді відклав.</p>
+        <p class="lead-note">Це не черговий трекер витрат. Тут ти записуєш лише спокуси й заощадження.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#start">Приєднатися до бета-списку</a>
+          <a class="btn btn-ghost" href="#jak-dziala">Подивитися флоу застосунку</a>
+        </div>
+
+        <ul class="stats">
+          <li>
+            <strong>Щоденник</strong>
+            <span>3 картки заощаджень</span>
+          </li>
+          <li>
+            <strong>Історія</strong>
+            <span>лише реально відкладені суми</span>
+          </li>
+          <li>
+            <strong>Графіки</strong>
+            <span>на основі реальних переказів</span>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="hero-panel" aria-label="Попередній перегляд потоку заощаджень">
+        <p class="panel-title">Потік заощаджень</p>
+        <div class="chrumek-badge">
+          <img
+            class="chrumek-icon"
+            src="../chrumekapp_scale44-kopia.png"
+            alt="Chrumek, асистент заощаджень"
+            width="96"
+            height="96"
+          />
+          <div>
+            <p class="chrumek-name">Це Chrumek</p>
+            <p class="chrumek-desc">Асистент заощаджень, а не витрат.</p>
+          </div>
+        </div>
+        <div class="panel-card">
+          <div class="entry">
+            <span>1. Ти записуєш заощадження: не купуєш, обираєш дешевший варіант або скасовуєш підписку.</span>
+            <strong class="entry-status checklist-item" aria-label="записано">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>2. Chrumek нагадує ввечері: переказати суму на заощадження або покласти в скарбничку.</span>
+            <strong class="entry-status checklist-item" aria-label="нагадано">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>3. Ти підтверджуєш переказ у застосунку: тільки тоді це зараховується в прогрес.</span>
+            <strong class="entry-status checklist-item" aria-label="підтверджено">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>4. Історія та графіки зростають: ти бачиш результат і відкриваєш нові рівні Chrumek.</span>
+            <strong class="entry-status checklist-item" aria-label="зростає">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="appshots container" aria-label="Попередній перегляд екранів застосунку">
+      <h2 class="section-title">Подивитися застосунок</h2>
+      <div class="appshots-carousel">
+        <div class="appshots-grid" id="appshotsCarousel" aria-label="Карусель екранів застосунку">
+          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран застосунку: Щоденник">
+              <img
+                class="appshots-image"
+                src="../assets_pl/dziennik.PNG"
+                alt="Екран застосунку: Щоденник"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Щоденник</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран застосунку: Історія">
+              <img
+                class="appshots-image"
+                src="../assets_pl/historia.PNG"
+                alt="Екран застосунку: Історія"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Історія</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран застосунку: Цілі">
+              <img
+                class="appshots-image"
+                src="../assets_pl/cel.PNG"
+                alt="Екран застосунку: Цілі"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Цілі</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран застосунку: Графіки">
+              <img
+                class="appshots-image"
+                src="../assets_pl/wykresy.PNG"
+                alt="Екран застосунку: Графіки"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Графіки</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран застосунку: Налаштування">
+              <img
+                class="appshots-image"
+                src="../assets_pl/ustawienia.PNG"
+                alt="Екран застосунку: Налаштування"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Налаштування</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="appshots-dots" aria-label="Карусель екранів застосунку">
+        <button class="appshots-dot is-active" type="button" data-index="0" aria-label="Показати екран Щоденник" aria-current="true"></button>        <button class="appshots-dot" type="button" data-index="1" aria-label="Показати екран Історія" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="2" aria-label="Показати екран Цілі" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="3" aria-label="Показати екран Графіки" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="4" aria-label="Показати екран Налаштування" aria-current="false"></button>
+      </div>
+    </section>
+
+    <section class="workflow container" id="jak-dziala">
+      <h2 class="section-title">Як це працює</h2>
+      <div class="steps">
+        <article>
+          <span class="step-no">1</span>
+          <h3>Запиши заощадження</h3>
+          <p>Додай запис: скасована покупка, дешевший аналог або скасована підписка.</p>
+        </article>
+        <article>
+          <span class="step-no">2</span>
+          <h3>Відкладай реально</h3>
+          <p>Переказуй суму на окремий рахунок заощаджень або в скарбничку.</p>
+        </article>
+        <article>
+          <span class="step-no">3</span>
+          <h3>Підтверди одним натисканням</h3>
+          <p>Натисни «Додав до заощаджень» — лише після цього сума йде в прогрес, графіки та цілі.</p>
+        </article>
+      </div>
+      <p class="core-note">
+        <strong>Ключовий момент:</strong> Лише після «Додав до заощаджень» зараховуються прогрес, графіки й цілі.
+      </p>
+    </section>
+
+    <section class="features-intro container" aria-label="Перехід до списку функцій">
+      <p class="features-kicker">Що ти отримуєш у застосунку</p>
+      <h3 class="features-title">Найважливіші функції Chrumek</h3>
+    </section>
+
+    <section class="trust container" aria-label="Приватність і довіра">
+      <p class="features-kicker">Приватність і довіра</p>
+      <div class="trust-grid">
+        <article class="trust-item">
+          <h4>Дані залишаються на твоєму телефоні</h4>
+          <p>Твої заощадження зберігаються локально на пристрої.</p>
+        </article>
+        <article class="trust-item">
+          <h4>Без акаунта</h4>
+          <p>Не потрібно створювати акаунт, щоб користуватися застосунком.</p>
+        </article>
+        <article class="trust-item">
+          <h4>Без відстеження</h4>
+          <p>Ми не використовуємо рекламні трекери чи зовнішню аналітику.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features-main-intro container" aria-label="Щоденні функції">
+      <p class="features-kicker">Щоденні функції</p>
+      <h3 class="features-main-title">Як Chrumek допомагає щодня</h3>
+    </section>
+
+    <section class="feature-grid container" id="funkcje">
+      <article class="card">
+        <p class="tag">Щоденник</p>
+        <h2>Заощадження з щоденних рішень</h2>
+        <p>Ти швидко записуєш, скільки заощадив і з якої категорії. Без зайвої бухгалтерії.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Цілі</p>
+        <h2>Прогрес цілей і рівні Chrumek</h2>
+        <p>Ти ставиш цілі, відстежуєш прогрес і відкриваєш нові рівні Chrumek на основі підтверджених сум.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Нагадування</p>
+        <h2>Щоденний пінг про переказ</h2>
+        <p>Якщо є сума, яку треба відкласти, Chrumek нагадає у вибраний час.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Графіки</p>
+        <h2>Ритм, шлях і рік заощаджень</h2>
+        <p>Бачиш реальний ритм відкладання грошей і категорії, які найбільше поповнюють заощадження.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Історія</p>
+        <h2>Повний слід переказів</h2>
+        <p>Кожен підтверджений переказ потрапляє в історію. Можна скасувати або видалити запис, якщо треба виправити дані.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">CSV</p>
+        <h2>Експорт даних</h2>
+        <p>Експортуй заощадження і цілі в CSV з діапазоном дат, коли потрібен звіт поза застосунком.</p>
+      </article>
+    </section>
+
+    <section class="free-start container" aria-label="Початок безкоштовно">
+      <p class="features-kicker">Почни безкоштовно</p>
+      <h3 class="free-start-title">Спочатку перевіряєш, потім вирішуєш</h3>
+      <div class="free-start-grid">
+        <article class="free-start-item">
+          <h4>10 безкоштовних підтверджених переказів</h4>
+          <p>Почни без картки й подивись, як Chrumek працює на практиці.</p>
+        </article>
+        <article class="free-start-item">
+          <h4>Потім Premium</h4>
+          <p>З 11-го переказу діє Premium (14-денний trial, якщо ти підходиш).</p>
+        </article>
+      </div>
+      <p class="free-start-note">Лічильник рахує натискання «Додав до заощаджень» (підтвердження), а не просто записи.</p>
+    </section>
+
+    <section class="faq container" id="faq" aria-label="Поширені запитання">
+      <p class="features-kicker">FAQ</p>
+      <h3 class="faq-title">Поширені запитання</h3>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Чи потрібно підключати банк?</summary>
+          <p>Ні. Достатньо окремого рахунку заощаджень або скарбнички. Перекази підтверджуєш вручну кнопкою «Додав до заощаджень».</p>
+        </details>
+        <details class="faq-item">
+          <summary>Чи працює офлайн?</summary>
+          <p>Так, ключові функції працюють локально на пристрої: щоденник, історія, цілі та графіки.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Що, якщо я все ж не переказав гроші?</summary>
+          <p>Не натискай «Додав до заощаджень», доки переказ не реальний. Якщо підтвердив помилково, можна скасувати запис в Історії.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Як працює Premium / trial?</summary>
+          <p>Ти маєш 10 безкоштовних підтверджених переказів. Із 11-го діє Premium; якщо підходиш, доступний 14-денний trial.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Чи безпечні мої дані?</summary>
+          <p>Так. Дані зберігаються локально й не відправляються назовні. Застосунок працює без акаунта та рекламних трекерів.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Чи можу експортувати дані?</summary>
+          <p>Так. Можна експортувати дані у CSV (з діапазоном дат) і зберегти локально або, наприклад, в iCloud Drive.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="testimonial container">
+      <p class="features-kicker">Що кажуть тестери</p>
+      <div class="testimonial-grid">
+        <article class="quote-card">
+          <blockquote>«Уперше я чітко бачу, скільки реально відклала, а не скільки просто планувала. Це дуже змінює підхід.»</blockquote>
+          <p class="quote-author">Оля, бета-тестерка</p>
+        </article>
+        <article class="quote-card">
+          <blockquote>«Найкраще працює те, що прогрес росте лише після реального переказу. Так я справді відкладаю, а не просто планую.»</blockquote>
+          <p class="quote-author">Матеуш, бета-тестер</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-cta container" id="start">
+      <h2>Приєднуйся до бета-списку</h2>
+      <p>Надішлемо запрошення в TestFlight, щойно бета стане доступною. Без спаму.</p>
+      <form class="final-cta-form" id="betaForm">
+        <div class="final-cta-fields">
+          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Твій e-mail" />
+          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Ім&#x27;я (необов’язково)" />
+        </div>
+        <button class="btn btn-primary final-cta-submit" type="submit">Приєднуюсь</button>
+      </form>
+      <small class="final-cta-note">Після надсилання відкриється твій поштовий застосунок з готовим листом.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Реальні заощадження, не декларації.</p>
+  </footer>
+
+  <script src="../site.js" defer></script>
+</body>
+</html>

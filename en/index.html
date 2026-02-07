@@ -6,10 +6,7 @@
   <meta name="color-scheme" content="only light" />
   <meta name="theme-color" content="#ff2d55" />
   <meta name="robots" content="index, follow" />
-  <meta
-    name="description"
-    content="Chrumek is a real-savings app: log savings, confirm the transfer, and build progress across goals, charts, and history."
-  />
+  <meta name="description" content="Chrumek is a real-savings app: log savings, confirm the transfer, and build progress across goals, charts, and history." />
   <title>Chrumek - saving money you actually set aside</title>
 
   <meta property="og:type" content="website" />
@@ -17,10 +14,7 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Chrumek" />
   <meta property="og:title" content="Chrumek - saving money you actually set aside" />
-  <meta
-    property="og:description"
-    content="Chrumek helps turn daily decisions into real savings: progress, charts, and history update only after a confirmed transfer."
-  />
+  <meta property="og:description" content="Chrumek helps turn daily decisions into real savings: progress, charts, and history update only after a confirmed transfer." />
   <meta property="og:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
   <meta property="og:image:width" content="1024" />
   <meta property="og:image:height" content="1024" />
@@ -28,21 +22,33 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Chrumek - saving money you actually set aside" />
-  <meta
-    name="twitter:description"
-    content="Real saving without wishful thinking: confirm the transfer and only then progress, charts, and goals update."
-  />
+  <meta name="twitter:description" content="Real saving without wishful thinking: confirm the transfer and only then progress, charts, and goals update." />
   <meta name="twitter:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
 
   <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/en/" />
   <link rel="alternate" hreflang="pl" href="https://canario-lab.github.io/chrumek_page/pl/" />
   <link rel="alternate" hreflang="en" href="https://canario-lab.github.io/chrumek_page/en/" />
+  <link rel="alternate" hreflang="de" href="https://canario-lab.github.io/chrumek_page/de/" />
+  <link rel="alternate" hreflang="es" href="https://canario-lab.github.io/chrumek_page/es/" />
+  <link rel="alternate" hreflang="fr" href="https://canario-lab.github.io/chrumek_page/fr/" />
+  <link rel="alternate" hreflang="it" href="https://canario-lab.github.io/chrumek_page/it/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://canario-lab.github.io/chrumek_page/pt-BR/" />
+  <link rel="alternate" hreflang="tr" href="https://canario-lab.github.io/chrumek_page/tr/" />
+  <link rel="alternate" hreflang="uk" href="https://canario-lab.github.io/chrumek_page/uk/" />
   <link rel="alternate" hreflang="x-default" href="https://canario-lab.github.io/chrumek_page/" />
   <link rel="icon" type="image/png" href="../chrumekapp_scale44-kopia.png" />
   <link rel="apple-touch-icon" href="../chrumekapp_scale44-kopia.png" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
-<body>
+<body
+  data-theme-label-dark="Page theme: dark. Switch to light."
+  data-theme-label-light="Page theme: light. Switch to dark."
+  data-theme-title-dark="Page theme: dark"
+  data-theme-title-light="Page theme: light"
+  data-mail-subject="Chrumek beta – please invite me to TestFlight"
+  data-mail-intro="I want to join the Chrumek beta list."
+  data-mail-name-label="Name"
+>
   <script>
     (function () {
       try {
@@ -58,14 +64,54 @@
     <a class="brand" href="#">Chrumek</a>
     <div class="header-actions">
       <nav class="top-nav">
-        <a href="#how-it-works">How It Works</a>
-        <a href="#features">Features</a>
+        <a href="#jak-dziala">How It Works</a>
+        <a href="#funkcje">Features</a>
         <a href="#faq">FAQ</a>
         <a href="#start">Start</a>
       </nav>
-      <div class="lang-switch" aria-label="Language selector">
-        <a class="lang-link" href="../pl/" lang="pl" aria-label="Polski">🇵🇱</a>
-        <a class="lang-link is-active" href="../en/" lang="en" aria-current="page" aria-label="English">🇬🇧</a>
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language selector">
+          <span class="lang-toggle-icon" aria-hidden="true">🌐</span>
+          <span class="lang-toggle-text">Language</span>
+        </button>
+        <div class="lang-menu" role="menu" aria-label="Language selector">
+        <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PL</span><span aria-hidden="true">🇵🇱</span><span>Polski</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option is-active" href="../en/" data-base="../en/" lang="en" role="menuitem" aria-current="page">
+          <span class="lang-option-main"><span class="lang-option-code">EN</span><span aria-hidden="true">🇬🇧</span><span>English</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../de/" data-base="../de/" lang="de" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">DE</span><span aria-hidden="true">🇩🇪</span><span>Deutsch</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../es/" data-base="../es/" lang="es" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">ES</span><span aria-hidden="true">🇪🇸</span><span>Español</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">FR</span><span aria-hidden="true">🇫🇷</span><span>Français</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../it/" data-base="../it/" lang="it" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">IT</span><span aria-hidden="true">🇮🇹</span><span>Italiano</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PT-BR</span><span aria-hidden="true">🇧🇷</span><span>Português (BR)</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">TR</span><span aria-hidden="true">🇹🇷</span><span>Türkçe</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../uk/" data-base="../uk/" lang="uk" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">UK</span><span aria-hidden="true">🇺🇦</span><span>Українська</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        </div>
       </div>
       <button class="theme-toggle" id="themeToggle" type="button">
         <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
@@ -79,22 +125,13 @@
       <div class="hero-copy">
         <p class="eyebrow">An app for real saving</p>
         <h1>Chrumek believes in <span>transfers</span>, not intentions.</h1>
-        <p class="hero-audience">
-          For people who want to save for real, not just "spend less."
-        </p>
-        <p class="lead">
-          Log your everyday savings, move them to a separate savings account or
-          a piggy bank, and build goal progress. In Chrumek, only money you
-          actually set aside counts.
-        </p>
-        <p class="lead-note">
-          This is not another expense tracker. Here, you only log temptations
-          and savings.
-        </p>
+        <p class="hero-audience">For people who want to save for real, not just “spend less.”</p>
+        <p class="lead">Log your everyday savings, move them to a separate savings account or a piggy bank, and build goal progress. In Chrumek, only money you actually set aside counts.</p>
+        <p class="lead-note">This is not another expense tracker. Here, you only log temptations and savings.</p>
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="#start">Join the beta list</a>
-          <a class="btn btn-ghost" href="#how-it-works">See the app flow</a>
+          <a class="btn btn-ghost" href="#jak-dziala">See the app flow</a>
         </div>
 
         <ul class="stats">
@@ -166,59 +203,55 @@
               <img
                 class="appshots-image"
                 src="../assets_pl/dziennik.PNG"
-                alt="Chrumek app screen: Journal"
+                alt="App screen: Journal"
                 loading="lazy"
                 decoding="async"
               />
               <span class="appshots-notch" aria-hidden="true"></span>
             </div>
             <figcaption class="appshots-caption">Journal</figcaption>
-          </figure>
-          <figure class="appshots-item">
+          </figure>          <figure class="appshots-item">
             <div class="appshots-phone has-image" aria-label="App screen: History">
               <img
                 class="appshots-image"
                 src="../assets_pl/historia.PNG"
-                alt="Chrumek app screen: History"
+                alt="App screen: History"
                 loading="lazy"
                 decoding="async"
               />
               <span class="appshots-notch" aria-hidden="true"></span>
             </div>
             <figcaption class="appshots-caption">History</figcaption>
-          </figure>
-          <figure class="appshots-item">
+          </figure>          <figure class="appshots-item">
             <div class="appshots-phone has-image" aria-label="App screen: Goals">
               <img
                 class="appshots-image"
                 src="../assets_pl/cel.PNG"
-                alt="Chrumek app screen: Goals"
+                alt="App screen: Goals"
                 loading="lazy"
                 decoding="async"
               />
               <span class="appshots-notch" aria-hidden="true"></span>
             </div>
             <figcaption class="appshots-caption">Goals</figcaption>
-          </figure>
-          <figure class="appshots-item">
+          </figure>          <figure class="appshots-item">
             <div class="appshots-phone has-image" aria-label="App screen: Charts">
               <img
                 class="appshots-image"
                 src="../assets_pl/wykresy.PNG"
-                alt="Chrumek app screen: Charts"
+                alt="App screen: Charts"
                 loading="lazy"
                 decoding="async"
               />
               <span class="appshots-notch" aria-hidden="true"></span>
             </div>
             <figcaption class="appshots-caption">Charts</figcaption>
-          </figure>
-          <figure class="appshots-item">
+          </figure>          <figure class="appshots-item">
             <div class="appshots-phone has-image" aria-label="App screen: Settings">
               <img
                 class="appshots-image"
                 src="../assets_pl/ustawienia.PNG"
-                alt="Chrumek app screen: Settings"
+                alt="App screen: Settings"
                 loading="lazy"
                 decoding="async"
               />
@@ -228,52 +261,38 @@
           </figure>
         </div>
       </div>
-      <div class="appshots-dots" aria-label="Carousel navigation">
-        <button class="appshots-dot is-active" type="button" data-index="0" aria-label="Show Journal screen" aria-current="true"></button>
-        <button class="appshots-dot" type="button" data-index="1" aria-label="Show History screen" aria-current="false"></button>
-        <button class="appshots-dot" type="button" data-index="2" aria-label="Show Goals screen" aria-current="false"></button>
-        <button class="appshots-dot" type="button" data-index="3" aria-label="Show Charts screen" aria-current="false"></button>
-        <button class="appshots-dot" type="button" data-index="4" aria-label="Show Settings screen" aria-current="false"></button>
+      <div class="appshots-dots" aria-label="App screen carousel">
+        <button class="appshots-dot is-active" type="button" data-index="0" aria-label="Show screen Journal" aria-current="true"></button>        <button class="appshots-dot" type="button" data-index="1" aria-label="Show screen History" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="2" aria-label="Show screen Goals" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="3" aria-label="Show screen Charts" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="4" aria-label="Show screen Settings" aria-current="false"></button>
       </div>
     </section>
 
-    <section class="workflow container" id="how-it-works">
+    <section class="workflow container" id="jak-dziala">
       <h2 class="section-title">How It Works</h2>
       <div class="steps">
         <article>
           <span class="step-no">1</span>
           <h3>Log a saving</h3>
-          <p>
-            Add an entry: skipped purchase, cheaper alternative, or canceled
-            subscription.
-          </p>
+          <p>Add an entry: skipped purchase, cheaper alternative, or canceled subscription.</p>
         </article>
         <article>
           <span class="step-no">2</span>
           <h3>Set it aside for real</h3>
-          <p>
-            Transfer the amount to a separate savings account or drop it into
-            your piggy bank.
-          </p>
+          <p>Transfer the amount to a separate savings account or drop it into your piggy bank.</p>
         </article>
         <article>
           <span class="step-no">3</span>
           <h3>Confirm with one tap</h3>
-          <p>
-            Tap "Added to savings" and only then the amount counts toward
-            progress, charts, and goals.
-          </p>
+          <p>Tap “Added to savings” and only then the amount counts toward progress, charts, and goals.</p>
         </article>
       </div>
       <p class="core-note">
-        <strong>Key moment:</strong> Only after tapping "Added to savings" do
-        progress, charts, and goals update.
+        <strong>Key moment:</strong> Only after tapping “Added to savings” do progress, charts, and goals update.
       </p>
     </section>
 
     <section class="features-intro container" aria-label="Transition to feature list">
       <p class="features-kicker">What You Get in the App</p>
-      <h3 class="features-title">Chrumek's Key Features</h3>
+      <h3 class="features-title">Chrumek&#x27;s Key Features</h3>
     </section>
 
     <section class="trust container" aria-label="Privacy and trust">
@@ -285,11 +304,11 @@
         </article>
         <article class="trust-item">
           <h4>No account required</h4>
-          <p>You don't need to create an account to use the app.</p>
+          <p>You don&#x27;t need to create an account to use the app.</p>
         </article>
         <article class="trust-item">
           <h4>No tracking</h4>
-          <p>We don't use ad trackers or third-party analytics.</p>
+          <p>We don&#x27;t use ad trackers or third-party analytics.</p>
         </article>
       </div>
     </section>
@@ -299,59 +318,41 @@
       <h3 class="features-main-title">How Chrumek helps day to day</h3>
     </section>
 
-    <section class="feature-grid container" id="features">
+    <section class="feature-grid container" id="funkcje">
       <article class="card">
         <p class="tag">Journal</p>
         <h2>Savings from everyday decisions</h2>
-        <p>
-          Quickly log how much you saved and from which category, without
-          unnecessary bookkeeping.
-        </p>
+        <p>Quickly log how much you saved and from which category, without unnecessary bookkeeping.</p>
       </article>
 
       <article class="card">
         <p class="tag">Goals</p>
         <h2>Goal progress and Chrumek levels</h2>
-        <p>
-          Set a savings goal, track progress, and unlock new Chrumek levels
-          based on confirmed amounts.
-        </p>
+        <p>Set a savings goal, track progress, and unlock new Chrumek levels based on confirmed amounts.</p>
       </article>
 
       <article class="card">
         <p class="tag">Reminders</p>
         <h2>Daily transfer reminder</h2>
-        <p>
-          If you have money waiting to be set aside, Chrumek reminds you to
-          transfer it at your chosen time.
-        </p>
+        <p>If you have money waiting to be set aside, Chrumek reminds you to transfer it at your chosen time.</p>
       </article>
 
       <article class="card">
         <p class="tag">Charts</p>
         <h2>Pace, path, and yearly savings outlook</h2>
-        <p>
-          See your real saving rhythm and which categories contribute the most
-          to your savings.
-        </p>
+        <p>See your real saving rhythm and which categories contribute the most to your savings.</p>
       </article>
 
       <article class="card">
         <p class="tag">History</p>
         <h2>Complete transfer trail</h2>
-        <p>
-          Every confirmed transfer appears in history. You can revert an entry
-          or remove it when you need to correct data.
-        </p>
+        <p>Every confirmed transfer appears in history. You can revert an entry or remove it when you need to correct data.</p>
       </article>
 
       <article class="card">
         <p class="tag">CSV</p>
         <h2>Data export</h2>
-        <p>
-          Export savings and goals to CSV with a date range whenever you need a
-          report outside the app.
-        </p>
+        <p>Export savings and goals to CSV with a date range whenever you need a report outside the app.</p>
       </article>
     </section>
 
@@ -368,9 +369,7 @@
           <p>From the 11th transfer, Premium applies (14-day trial if eligible).</p>
         </article>
       </div>
-      <p class="free-start-note">
-        The counter tracks taps on "Added to savings" (confirmations), not just entries.
-      </p>
+      <p class="free-start-note">The counter tracks taps on “Added to savings” (confirmations), not just entries.</p>
     </section>
 
     <section class="faq container" id="faq" aria-label="Frequently asked questions">
@@ -379,45 +378,27 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>Do I need to connect my bank?</summary>
-          <p>
-            No. A separate savings account or piggy bank is enough. You confirm
-            transfers manually with the "Added to savings" button.
-          </p>
+          <p>No. A separate savings account or piggy bank is enough. You confirm transfers manually with the “Added to savings” button.</p>
         </details>
         <details class="faq-item">
           <summary>Does it work offline?</summary>
-          <p>
-            Yes, core features work locally on your device: journal, history,
-            goals, and charts.
-          </p>
+          <p>Yes, core features work locally on your device: journal, history, goals, and charts.</p>
         </details>
         <details class="faq-item">
           <summary>What if I did not transfer the money after all?</summary>
-          <p>
-            Do not tap "Added to savings" until the transfer is real. If you
-            confirmed by mistake, you can revert the entry in History.
-          </p>
+          <p>Do not tap “Added to savings” until the transfer is real. If you confirmed by mistake, you can revert the entry in History.</p>
         </details>
         <details class="faq-item">
           <summary>How does Premium / trial work?</summary>
-          <p>
-            You get 10 free confirmed transfers. From the 11th, Premium applies;
-            if eligible, you can start a 14-day trial.
-          </p>
+          <p>You get 10 free confirmed transfers. From the 11th, Premium applies; if eligible, you can start a 14-day trial.</p>
         </details>
         <details class="faq-item">
           <summary>Is my data safe?</summary>
-          <p>
-            Yes. Data is stored locally, with nothing sent externally. The app
-            works without accounts and without ad trackers.
-          </p>
+          <p>Yes. Data is stored locally, with nothing sent externally. The app works without accounts and without ad trackers.</p>
         </details>
         <details class="faq-item">
           <summary>Can I export data?</summary>
-          <p>
-            Yes. You can export data to CSV (with a date range) and save the
-            file locally or to iCloud Drive, for example.
-          </p>
+          <p>Yes. You can export data to CSV (with a date range) and save the file locally or to iCloud Drive, for example.</p>
         </details>
       </div>
     </section>
@@ -426,18 +407,11 @@
       <p class="features-kicker">What Testers Say</p>
       <div class="testimonial-grid">
         <article class="quote-card">
-          <blockquote>
-            "For the first time, I can clearly see how much I actually set
-            aside, not just how much I planned to save. That changes
-            everything."
-          </blockquote>
+          <blockquote>“For the first time, I can clearly see how much I actually set aside, not just how much I planned to save. That changes everything.”</blockquote>
           <p class="quote-author">Ola, beta tester</p>
         </article>
         <article class="quote-card">
-          <blockquote>
-            "What works best is that progress grows only after a real transfer.
-            Thanks to that, I actually save instead of just planning."
-          </blockquote>
+          <blockquote>“What works best is that progress grows only after a real transfer. Thanks to that, I actually save instead of just planning.”</blockquote>
           <p class="quote-author">Mateusz, beta tester</p>
         </article>
       </div>
@@ -445,32 +419,15 @@
 
     <section class="final-cta container" id="start">
       <h2>Join the beta list</h2>
-      <p>
-        We'll send you a TestFlight invite as soon as beta is available. No spam.
-      </p>
+      <p>We&#x27;ll send you a TestFlight invite as soon as beta is available. No spam.</p>
       <form class="final-cta-form" id="betaForm">
         <div class="final-cta-fields">
-          <input
-            class="final-cta-input"
-            id="betaEmail"
-            name="email"
-            type="email"
-            required
-            placeholder="Your email"
-          />
-          <input
-            class="final-cta-input"
-            id="betaName"
-            name="name"
-            type="text"
-            placeholder="Name (optional)"
-          />
+          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
+          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
         </div>
         <button class="btn btn-primary final-cta-submit" type="submit">Join</button>
       </form>
-      <small class="final-cta-note">
-        By sending, you'll open your email app with a pre-filled message.
-      </small>
+      <small class="final-cta-note">By sending, you&#x27;ll open your email app with a pre-filled message.</small>
     </section>
   </main>
 
@@ -478,378 +435,6 @@
     <p>Chrumek 2026. Real savings, not declarations.</p>
   </footer>
 
-  <script>
-    (function () {
-      var storageKey = "chrum-theme";
-      var body = document.body;
-      var toggle = document.getElementById("themeToggle");
-      var toggleIcon = document.getElementById("themeToggleIcon");
-
-      if (!body || !toggle || !toggleIcon) return;
-
-      function applyTheme(theme) {
-        var isDark = theme === "dark";
-        body.setAttribute("data-theme", isDark ? "dark" : "light");
-        toggleIcon.textContent = isDark ? "☀" : "☾";
-        toggle.setAttribute("aria-pressed", String(isDark));
-        toggle.setAttribute(
-          "aria-label",
-          isDark
-            ? "Page theme: dark. Switch to light."
-            : "Page theme: light. Switch to dark."
-        );
-        toggle.title = isDark ? "Page theme: dark" : "Page theme: light";
-      }
-
-      var savedTheme = localStorage.getItem(storageKey);
-      var initialTheme = savedTheme === "dark" ? "dark" : "light";
-      applyTheme(initialTheme);
-
-      toggle.addEventListener("click", function () {
-        var currentTheme = body.getAttribute("data-theme") === "dark" ? "dark" : "light";
-        var nextTheme = currentTheme === "dark" ? "light" : "dark";
-        applyTheme(nextTheme);
-        localStorage.setItem(storageKey, nextTheme);
-      });
-
-      var betaForm = document.getElementById("betaForm");
-      var betaEmail = document.getElementById("betaEmail");
-      var betaName = document.getElementById("betaName");
-
-      if (betaForm && betaEmail) {
-        betaForm.addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          var email = betaEmail.value.trim();
-          var name = betaName ? betaName.value.trim() : "";
-
-          if (!email) {
-            betaEmail.focus();
-            return;
-          }
-
-          var subject = "Chrumek beta – please invite me to TestFlight";
-          var bodyLines = [
-            "I want to join the Chrumek beta list.",
-            "",
-            "Email: " + email
-          ];
-
-          if (name) {
-            bodyLines.push("Name: " + name);
-          }
-
-          var mailtoLink =
-            "mailto:chrumek@chrumek.app?subject=" +
-            encodeURIComponent(subject) +
-            "&body=" +
-            encodeURIComponent(bodyLines.join("\n"));
-
-          window.location.href = mailtoLink;
-        });
-      }
-
-      var checklistCard = document.querySelector(".hero-panel .panel-card");
-      var checklistItems = Array.prototype.slice.call(document.querySelectorAll(".hero-panel .checklist-item"));
-
-      function setChecklistChecked(checked) {
-        checklistItems.forEach(function (item) {
-          item.classList.toggle("is-checked", checked);
-        });
-      }
-
-      if (checklistCard && checklistItems.length) {
-        var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-        if (reduceMotion) {
-          setChecklistChecked(true);
-        } else {
-          var checklistStarted = false;
-          var cycleTimer = 0;
-          var stepTimers = [];
-          var stepDelay = 420;
-          var resetDelay = 260;
-          var holdDelay = 1300;
-
-          function clearChecklistTimers() {
-            clearTimeout(cycleTimer);
-            stepTimers.forEach(function (timerId) { clearTimeout(timerId); });
-            stepTimers = [];
-          }
-
-          function runChecklistLoop() {
-            clearChecklistTimers();
-            setChecklistChecked(false);
-
-            checklistItems.forEach(function (item, index) {
-              var stepTimer = setTimeout(function () {
-                item.classList.add("is-checked");
-              }, resetDelay + index * stepDelay);
-              stepTimers.push(stepTimer);
-            });
-
-            cycleTimer = setTimeout(
-              runChecklistLoop,
-              resetDelay + checklistItems.length * stepDelay + holdDelay
-            );
-          }
-
-          function startChecklistLoop() {
-            if (checklistStarted) return;
-            checklistStarted = true;
-            runChecklistLoop();
-          }
-
-          if (typeof IntersectionObserver === "undefined") {
-            startChecklistLoop();
-          } else {
-            var checklistObserver = new IntersectionObserver(function (entries) {
-              entries.forEach(function (entry) {
-                if (!entry.isIntersecting || entry.intersectionRatio < 0.4) return;
-                startChecklistLoop();
-              });
-            }, { threshold: [0.4] });
-
-            checklistObserver.observe(checklistCard);
-          }
-
-          window.addEventListener("beforeunload", function () {
-            clearChecklistTimers();
-          });
-        }
-      }
-    })();
-  </script>
-
-  <script>
-    (function () {
-      var carousel = document.getElementById("appshotsCarousel"), dots = Array.prototype.slice.call(document.querySelectorAll(".appshots-dot"));
-      if (!carousel || !dots.length) return;
-
-      var threshold = 5;
-      var speed = 1.2;
-      var cloneCount = 3;
-      var snapThreshold = 24;
-      var isPointerDown = false;
-      var isTouching = false;
-      var isDragging = false;
-      var suppressClick = false;
-      var startX = 0;
-      var dragX = 0;
-      var dragStartReal = 0;
-      var animTimer = 0;
-      var scrollRaf = 0;
-
-      var originalSlides = Array.prototype.slice.call(carousel.querySelectorAll(".appshots-item"));
-      if (!originalSlides.length) return;
-      var realCount = originalSlides.length;
-
-      if (realCount > 1) {
-        originalSlides.slice(-cloneCount).forEach(function (slide) {
-          var clone = slide.cloneNode(true);
-          clone.setAttribute("data-clone", "start");
-          clone.setAttribute("aria-hidden", "true");
-          carousel.insertBefore(clone, carousel.firstChild);
-        });
-        originalSlides.slice(0, cloneCount).forEach(function (slide) {
-          var clone = slide.cloneNode(true);
-          clone.setAttribute("data-clone", "end");
-          clone.setAttribute("aria-hidden", "true");
-          carousel.appendChild(clone);
-        });
-      }
-
-      var allSlides = Array.prototype.slice.call(carousel.querySelectorAll(".appshots-item"));
-      var realSlides = allSlides.slice(cloneCount, cloneCount + realCount);
-
-      function setActive(index) {
-        dots.forEach(function (dot, dotIndex) {
-          var isActive = dotIndex === index;
-          dot.classList.toggle("is-active", isActive);
-          dot.setAttribute("aria-current", isActive ? "true" : "false");
-        });
-      }
-
-      function nearestSlideIndex() {
-        var position = carousel.scrollLeft;
-        var nearest = 0;
-        var minDist = Infinity;
-        allSlides.forEach(function (slide, index) {
-          var dist = Math.abs(slide.offsetLeft - position);
-          if (dist < minDist) {
-            minDist = dist;
-            nearest = index;
-          }
-        });
-        return nearest;
-      }
-
-      function normalizeIndex(index) {
-        if (index < cloneCount) return index + realCount;
-        if (index >= cloneCount + realCount) return index - realCount;
-        return index;
-      }
-
-      function syncActiveDot() {
-        var normalized = normalizeIndex(nearestSlideIndex());
-        setActive(normalized - cloneCount);
-      }
-
-      function clearAnimating() {
-        carousel.classList.remove("is-animating");
-      }
-
-      function withNoSmooth(fn) {
-        clearTimeout(animTimer);
-        clearAnimating();
-        carousel.classList.add("no-smooth");
-        fn();
-        requestAnimationFrame(function () {
-          carousel.classList.remove("no-smooth");
-        });
-      }
-
-      function smoothTo(left) {
-        clearTimeout(animTimer);
-        carousel.classList.add("is-animating");
-        carousel.scrollTo({ left: left, behavior: "smooth" });
-        animTimer = setTimeout(clearAnimating, 340);
-      }
-
-      function maybeTeleport() {
-        var from = nearestSlideIndex();
-        var to = normalizeIndex(from);
-        if (from === to) return;
-        withNoSmooth(function () {
-          carousel.scrollTo({ left: allSlides[to].offsetLeft, behavior: "auto" });
-        });
-      }
-
-      function clampRealIndex(index) {
-        return (index % realCount + realCount) % realCount;
-      }
-
-      function trackIndexForReal(realIndex) {
-        var normalizedReal = clampRealIndex(realIndex);
-        var candidates = [cloneCount + normalizedReal];
-        if (normalizedReal >= realCount - cloneCount) {
-          candidates.push(normalizedReal - (realCount - cloneCount));
-        }
-        if (normalizedReal < cloneCount) {
-          candidates.push(cloneCount + realCount + normalizedReal);
-        }
-
-        var current = carousel.scrollLeft;
-        var chosen = candidates[0];
-        var minDist = Infinity;
-        candidates.forEach(function (idx) {
-          var dist = Math.abs(allSlides[idx].offsetLeft - current);
-          if (dist < minDist) {
-            minDist = dist;
-            chosen = idx;
-          }
-        });
-        return chosen;
-      }
-
-      function syncLoopAndDots() {
-        if (scrollRaf) return;
-        scrollRaf = requestAnimationFrame(function () {
-          scrollRaf = 0;
-          maybeTeleport();
-          syncActiveDot();
-        });
-      }
-
-      function goToInitialSlide() {
-        if (!realSlides[0]) return;
-        withNoSmooth(function () {
-          carousel.scrollTo({ left: realSlides[0].offsetLeft, behavior: "auto" });
-        });
-      }
-
-      function endDrag() {
-        if (!isPointerDown) return;
-        isPointerDown = false;
-        carousel.classList.remove("is-dragging");
-        if (isDragging) {
-          var totalDelta = dragX - startX;
-          var targetReal = dragStartReal;
-          if (Math.abs(totalDelta) > snapThreshold) {
-            targetReal = dragStartReal + (totalDelta < 0 ? 1 : -1);
-          }
-          var targetTrack = trackIndexForReal(targetReal);
-
-          suppressClick = true;
-          smoothTo(allSlides[targetTrack].offsetLeft);
-          setTimeout(function () { suppressClick = false; }, 0);
-        }
-        isDragging = false;
-      }
-
-      carousel.addEventListener("mousedown", function (event) {
-        if (event.button !== 0) return;
-        isPointerDown = true;
-        isDragging = false;
-        startX = event.clientX;
-        dragX = event.clientX;
-        dragStartReal = normalizeIndex(nearestSlideIndex()) - cloneCount;
-      });
-
-      carousel.addEventListener("mousemove", function (event) {
-        if (!isPointerDown) return;
-        var delta = event.clientX - startX;
-        if (!isDragging && Math.abs(delta) > threshold) {
-          isDragging = true;
-          clearTimeout(animTimer);
-          carousel.classList.add("is-dragging");
-          dragX = event.clientX;
-        }
-        if (!isDragging) return;
-        event.preventDefault();
-        carousel.scrollLeft -= (event.clientX - dragX) * speed;
-        dragX = event.clientX;
-      });
-
-      carousel.addEventListener("mouseleave", endDrag);
-      window.addEventListener("mouseup", endDrag);
-      window.addEventListener("blur", endDrag);
-      carousel.addEventListener("touchstart", function () { isTouching = true; }, { passive: true });
-      carousel.addEventListener("touchend", function () {
-        isTouching = false;
-        maybeTeleport();
-        syncActiveDot();
-      }, { passive: true });
-      carousel.addEventListener("touchcancel", function () {
-        isTouching = false;
-        maybeTeleport();
-        syncActiveDot();
-      }, { passive: true });
-      carousel.addEventListener("dragstart", function (event) { event.preventDefault(); });
-      carousel.addEventListener("click", function (event) {
-        if (!suppressClick) return;
-        event.preventDefault();
-        event.stopPropagation();
-      }, true);
-
-      dots.forEach(function (dot, index) {
-        dot.addEventListener("click", function () {
-          var target = realSlides[index];
-          if (!target) return;
-          smoothTo(target.offsetLeft);
-          setActive(index);
-        });
-      });
-
-      carousel.addEventListener("scroll", syncLoopAndDots, { passive: true });
-      window.addEventListener("resize", function () {
-        maybeTeleport();
-        syncActiveDot();
-      });
-
-      goToInitialSlide();
-      syncActiveDot();
-    })();
-  </script>
+  <script src="../site.js" defer></script>
 </body>
 </html>

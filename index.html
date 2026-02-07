@@ -7,17 +7,42 @@
   <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/" />
   <link rel="alternate" hreflang="pl" href="https://canario-lab.github.io/chrumek_page/pl/" />
   <link rel="alternate" hreflang="en" href="https://canario-lab.github.io/chrumek_page/en/" />
+  <link rel="alternate" hreflang="de" href="https://canario-lab.github.io/chrumek_page/de/" />
+  <link rel="alternate" hreflang="es" href="https://canario-lab.github.io/chrumek_page/es/" />
+  <link rel="alternate" hreflang="fr" href="https://canario-lab.github.io/chrumek_page/fr/" />
+  <link rel="alternate" hreflang="it" href="https://canario-lab.github.io/chrumek_page/it/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://canario-lab.github.io/chrumek_page/pt-BR/" />
+  <link rel="alternate" hreflang="tr" href="https://canario-lab.github.io/chrumek_page/tr/" />
+  <link rel="alternate" hreflang="uk" href="https://canario-lab.github.io/chrumek_page/uk/" />
   <link rel="alternate" hreflang="x-default" href="https://canario-lab.github.io/chrumek_page/" />
   <script>
     (function () {
       var langs = Array.isArray(navigator.languages) && navigator.languages.length
         ? navigator.languages
         : [navigator.language || "en"];
-      var isPolish = langs.some(function (lang) {
-        return typeof lang === "string" && lang.toLowerCase().indexOf("pl") === 0;
-      });
-      var target = isPolish ? "./pl/" : "./en/";
-      window.location.replace(target);
+
+      function detectTargetLanguage(list) {
+        for (var i = 0; i < list.length; i += 1) {
+          var raw = list[i];
+          if (typeof raw !== "string") continue;
+          var lang = raw.trim().toLowerCase();
+
+          if (lang.indexOf("pt-br") === 0) return "pt-BR";
+          if (lang === "pt" || lang.indexOf("pt-") === 0) return "pt-BR";
+          if (lang.indexOf("pl") === 0) return "pl";
+          if (lang.indexOf("en") === 0) return "en";
+          if (lang.indexOf("de") === 0) return "de";
+          if (lang.indexOf("es") === 0) return "es";
+          if (lang.indexOf("fr") === 0) return "fr";
+          if (lang.indexOf("it") === 0) return "it";
+          if (lang.indexOf("tr") === 0) return "tr";
+          if (lang.indexOf("uk") === 0) return "uk";
+        }
+        return "en";
+      }
+
+      var target = detectTargetLanguage(langs);
+      window.location.replace("./" + target + "/");
     })();
   </script>
 </head>
@@ -25,8 +50,15 @@
   <noscript>
     <p>
       Choose language:
-      <a href="./pl/">Polski</a> |
-      <a href="./en/">English</a>
+      <a href="./pl/">Polski</a>,
+      <a href="./en/">English</a>,
+      <a href="./de/">Deutsch</a>,
+      <a href="./es/">Español</a>,
+      <a href="./fr/">Français</a>,
+      <a href="./it/">Italiano</a>,
+      <a href="./pt-BR/">Português (BR)</a>,
+      <a href="./tr/">Türkçe</a>,
+      <a href="./uk/">Українська</a>
     </p>
   </noscript>
 </body>

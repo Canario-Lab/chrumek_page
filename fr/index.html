@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Chrumek est une app d’épargne réelle : vous enregistrez une économie, confirmez le virement et suivez vos objectifs, graphiques et historique." />
+  <title>Chrumek - une épargne que vous mettez vraiment de côté</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://canario-lab.github.io/chrumek_page/fr/" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Chrumek" />
+  <meta property="og:title" content="Chrumek - une épargne que vous mettez vraiment de côté" />
+  <meta property="og:description" content="Chrumek transforme les décisions du quotidien en vraie épargne : progrès, graphiques et historique ne comptent qu’après un virement confirmé." />
+  <meta property="og:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="Chrumek - assistant d’épargne" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chrumek - une épargne que vous mettez vraiment de côté" />
+  <meta name="twitter:description" content="Épargner pour de vrai, pas en théorie : d’abord le virement confirmé, ensuite les progrès, graphiques et objectifs." />
+  <meta name="twitter:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
+
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/fr/" />
+  <link rel="alternate" hreflang="pl" href="https://canario-lab.github.io/chrumek_page/pl/" />
+  <link rel="alternate" hreflang="en" href="https://canario-lab.github.io/chrumek_page/en/" />
+  <link rel="alternate" hreflang="de" href="https://canario-lab.github.io/chrumek_page/de/" />
+  <link rel="alternate" hreflang="es" href="https://canario-lab.github.io/chrumek_page/es/" />
+  <link rel="alternate" hreflang="fr" href="https://canario-lab.github.io/chrumek_page/fr/" />
+  <link rel="alternate" hreflang="it" href="https://canario-lab.github.io/chrumek_page/it/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://canario-lab.github.io/chrumek_page/pt-BR/" />
+  <link rel="alternate" hreflang="tr" href="https://canario-lab.github.io/chrumek_page/tr/" />
+  <link rel="alternate" hreflang="uk" href="https://canario-lab.github.io/chrumek_page/uk/" />
+  <link rel="alternate" hreflang="x-default" href="https://canario-lab.github.io/chrumek_page/" />
+  <link rel="icon" type="image/png" href="../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Thème de la page : sombre. Passer en clair."
+  data-theme-label-light="Thème de la page : clair. Passer en sombre."
+  data-theme-title-dark="Thème de la page : sombre"
+  data-theme-title-light="Thème de la page : clair"
+  data-mail-subject="Chrumek bêta – merci de m’inviter sur TestFlight"
+  data-mail-intro="Je veux rejoindre la liste bêta de Chrumek."
+  data-mail-name-label="Prénom"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="#">Chrumek</a>
+    <div class="header-actions">
+      <nav class="top-nav">
+        <a href="#jak-dziala">Comment ça marche</a>
+        <a href="#funkcje">Fonctions</a>
+        <a href="#faq">FAQ</a>
+        <a href="#start">Départ</a>
+      </nav>
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sélecteur de langue">
+          <span class="lang-toggle-icon" aria-hidden="true">🌐</span>
+          <span class="lang-toggle-text">Langue</span>
+        </button>
+        <div class="lang-menu" role="menu" aria-label="Sélecteur de langue">
+        <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PL</span><span aria-hidden="true">🇵🇱</span><span>Polski</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../en/" data-base="../en/" lang="en" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">EN</span><span aria-hidden="true">🇬🇧</span><span>English</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../de/" data-base="../de/" lang="de" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">DE</span><span aria-hidden="true">🇩🇪</span><span>Deutsch</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../es/" data-base="../es/" lang="es" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">ES</span><span aria-hidden="true">🇪🇸</span><span>Español</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option is-active" href="../fr/" data-base="../fr/" lang="fr" role="menuitem" aria-current="page">
+          <span class="lang-option-main"><span class="lang-option-code">FR</span><span aria-hidden="true">🇫🇷</span><span>Français</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../it/" data-base="../it/" lang="it" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">IT</span><span aria-hidden="true">🇮🇹</span><span>Italiano</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PT-BR</span><span aria-hidden="true">🇧🇷</span><span>Português (BR)</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">TR</span><span aria-hidden="true">🇹🇷</span><span>Türkçe</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../uk/" data-base="../uk/" lang="uk" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">UK</span><span aria-hidden="true">🇺🇦</span><span>Українська</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+        <span class="theme-toggle-text">Thème de la page</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Une app pour épargner réellement</p>
+        <h1>Chrumek croit aux <span>virements</span>, pas aux intentions.</h1>
+        <p class="hero-audience">Pour celles et ceux qui veulent épargner pour de vrai, pas seulement “dépenser moins”.</p>
+        <p class="lead">Enregistrez vos économies quotidiennes, transférez-les vers un compte épargne séparé ou une tirelire, et faites progresser vos objectifs. Dans Chrumek, seul l’argent réellement mis de côté compte.</p>
+        <p class="lead-note">Ce n’est pas un énième tracker de dépenses. Ici, vous notez uniquement les tentations et les économies.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#start">Rejoindre la bêta</a>
+          <a class="btn btn-ghost" href="#jak-dziala">Voir le parcours de l’app</a>
+        </div>
+
+        <ul class="stats">
+          <li>
+            <strong>Journal</strong>
+            <span>3 cartes d’épargne</span>
+          </li>
+          <li>
+            <strong>Historique</strong>
+            <span>uniquement des montants réellement transférés</span>
+          </li>
+          <li>
+            <strong>Graphiques</strong>
+            <span>basés sur de vrais virements</span>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="hero-panel" aria-label="Aperçu du flux d’épargne">
+        <p class="panel-title">Flux d’épargne</p>
+        <div class="chrumek-badge">
+          <img
+            class="chrumek-icon"
+            src="../chrumekapp_scale44-kopia.png"
+            alt="Chrumek, assistant d’épargne"
+            width="96"
+            height="96"
+          />
+          <div>
+            <p class="chrumek-name">Voici Chrumek</p>
+            <p class="chrumek-desc">Assistant d’épargne, pas de dépenses.</p>
+          </div>
+        </div>
+        <div class="panel-card">
+          <div class="entry">
+            <span>1. Vous enregistrez une économie : achat évité, option moins chère ou abonnement annulé.</span>
+            <strong class="entry-status checklist-item" aria-label="enregistré">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>2. Chrumek vous rappelle le soir : transférez ce montant vers l’épargne ou votre tirelire.</span>
+            <strong class="entry-status checklist-item" aria-label="rappelé">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>3. Vous confirmez le virement dans l’app : c’est seulement là que le progrès compte.</span>
+            <strong class="entry-status checklist-item" aria-label="confirmé">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>4. Historique et graphiques progressent : vous voyez les résultats et débloquez de nouveaux niveaux Chrumek.</span>
+            <strong class="entry-status checklist-item" aria-label="progresse">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="appshots container" aria-label="Aperçu des écrans de l’app">
+      <h2 class="section-title">Voir l’app</h2>
+      <div class="appshots-carousel">
+        <div class="appshots-grid" id="appshotsCarousel" aria-label="Carrousel des écrans de l’app">
+          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Écran de l’app: Journal">
+              <img
+                class="appshots-image"
+                src="../assets_pl/dziennik.PNG"
+                alt="Écran de l’app: Journal"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Journal</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Écran de l’app: Historique">
+              <img
+                class="appshots-image"
+                src="../assets_pl/historia.PNG"
+                alt="Écran de l’app: Historique"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Historique</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Écran de l’app: Objectifs">
+              <img
+                class="appshots-image"
+                src="../assets_pl/cel.PNG"
+                alt="Écran de l’app: Objectifs"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Objectifs</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Écran de l’app: Graphiques">
+              <img
+                class="appshots-image"
+                src="../assets_pl/wykresy.PNG"
+                alt="Écran de l’app: Graphiques"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Graphiques</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Écran de l’app: Réglages">
+              <img
+                class="appshots-image"
+                src="../assets_pl/ustawienia.PNG"
+                alt="Écran de l’app: Réglages"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Réglages</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="appshots-dots" aria-label="Carrousel des écrans de l’app">
+        <button class="appshots-dot is-active" type="button" data-index="0" aria-label="Afficher l’écran Journal" aria-current="true"></button>        <button class="appshots-dot" type="button" data-index="1" aria-label="Afficher l’écran Historique" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="2" aria-label="Afficher l’écran Objectifs" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="3" aria-label="Afficher l’écran Graphiques" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="4" aria-label="Afficher l’écran Réglages" aria-current="false"></button>
+      </div>
+    </section>
+
+    <section class="workflow container" id="jak-dziala">
+      <h2 class="section-title">Comment ça marche</h2>
+      <div class="steps">
+        <article>
+          <span class="step-no">1</span>
+          <h3>Enregistrez une économie</h3>
+          <p>Ajoutez une entrée : achat abandonné, alternative moins chère ou abonnement annulé.</p>
+        </article>
+        <article>
+          <span class="step-no">2</span>
+          <h3>Mettez de côté réellement</h3>
+          <p>Transférez le montant vers un compte épargne séparé ou une tirelire.</p>
+        </article>
+        <article>
+          <span class="step-no">3</span>
+          <h3>Confirmez en un clic</h3>
+          <p>Appuyez sur « Ajouté à l’épargne » et seulement alors le montant compte pour les objectifs et graphiques.</p>
+        </article>
+      </div>
+      <p class="core-note">
+        <strong>Moment clé :</strong> Ce n’est qu’après « Ajouté à l’épargne » que le progrès, les graphiques et les objectifs sont mis à jour.
+      </p>
+    </section>
+
+    <section class="features-intro container" aria-label="Introduction à la liste des fonctions">
+      <p class="features-kicker">Ce que vous obtenez dans l’app</p>
+      <h3 class="features-title">Fonctions principales de Chrumek</h3>
+    </section>
+
+    <section class="trust container" aria-label="Confidentialité et confiance">
+      <p class="features-kicker">Confidentialité et confiance</p>
+      <div class="trust-grid">
+        <article class="trust-item">
+          <h4>Vos données restent sur votre téléphone</h4>
+          <p>Vos économies sont stockées localement sur votre appareil.</p>
+        </article>
+        <article class="trust-item">
+          <h4>Sans compte</h4>
+          <p>Aucun compte à créer pour utiliser l’app.</p>
+        </article>
+        <article class="trust-item">
+          <h4>Sans suivi</h4>
+          <p>Nous n’utilisons ni trackers publicitaires ni analytics externes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features-main-intro container" aria-label="Fonctions quotidiennes">
+      <p class="features-kicker">Fonctions quotidiennes</p>
+      <h3 class="features-main-title">Comment Chrumek vous aide au quotidien</h3>
+    </section>
+
+    <section class="feature-grid container" id="funkcje">
+      <article class="card">
+        <p class="tag">Journal</p>
+        <h2>Économies issues des décisions du quotidien</h2>
+        <p>Vous notez rapidement combien vous avez économisé et dans quelle catégorie, sans comptabilité inutile.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Objectifs</p>
+        <h2>Progression des objectifs et niveaux Chrumek</h2>
+        <p>Définissez un objectif d’épargne, suivez la progression et débloquez des niveaux selon les montants confirmés.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Rappels</p>
+        <h2>Rappel quotidien de virement</h2>
+        <p>Si une somme attend d’être mise de côté, Chrumek vous le rappelle à l’heure choisie.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Graphiques</p>
+        <h2>Rythme, parcours et année d’épargne</h2>
+        <p>Visualisez votre rythme réel d’épargne et les catégories qui alimentent le plus votre cagnotte.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Historique</p>
+        <h2>Trace complète des virements</h2>
+        <p>Chaque virement confirmé apparaît dans l’historique. Vous pouvez annuler ou supprimer une entrée pour corriger des données.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">CSV</p>
+        <h2>Export des données</h2>
+        <p>Exportez économies et objectifs en CSV avec plage de dates lorsque vous avez besoin d’un rapport hors app.</p>
+      </article>
+    </section>
+
+    <section class="free-start container" aria-label="Commencer gratuitement">
+      <p class="features-kicker">Commencer gratuitement</p>
+      <h3 class="free-start-title">Vous testez d’abord, vous décidez ensuite</h3>
+      <div class="free-start-grid">
+        <article class="free-start-item">
+          <h4>10 virements confirmés gratuits</h4>
+          <p>Commencez sans carte et voyez comment Chrumek fonctionne en vrai.</p>
+        </article>
+        <article class="free-start-item">
+          <h4>Ensuite Premium</h4>
+          <p>À partir du 11e virement, Premium s’applique (essai 14 jours si éligible).</p>
+        </article>
+      </div>
+      <p class="free-start-note">Le compteur suit les clics sur « Ajouté à l’épargne » (confirmations), pas seulement les entrées.</p>
+    </section>
+
+    <section class="faq container" id="faq" aria-label="Questions fréquentes">
+      <p class="features-kicker">FAQ</p>
+      <h3 class="faq-title">Questions fréquentes</h3>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Dois-je connecter ma banque ?</summary>
+          <p>Non. Un compte épargne séparé ou une tirelire suffit. Vous confirmez manuellement les virements avec « Ajouté à l’épargne ».</p>
+        </details>
+        <details class="faq-item">
+          <summary>Ça fonctionne hors ligne ?</summary>
+          <p>Oui, les fonctions clés marchent localement : journal, historique, objectifs et graphiques.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Et si je n’ai finalement pas fait le virement ?</summary>
+          <p>N’appuyez pas sur « Ajouté à l’épargne » tant que le virement n’est pas réel. En cas d’erreur, vous pouvez corriger l’entrée dans l’historique.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Comment fonctionne Premium / essai ?</summary>
+          <p>Vous avez 10 virements confirmés gratuits. À partir du 11e, Premium s’applique ; si vous êtes éligible, vous avez 14 jours d’essai.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Mes données sont-elles en sécurité ?</summary>
+          <p>Oui. Les données restent locales et ne sont pas envoyées à l’extérieur. L’app fonctionne sans compte et sans trackers pub.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Puis-je exporter mes données ?</summary>
+          <p>Oui. Vous pouvez exporter vos données en CSV (avec plage de dates) et enregistrer le fichier localement ou sur iCloud Drive.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="testimonial container">
+      <p class="features-kicker">Ce que disent les testeurs</p>
+      <div class="testimonial-grid">
+        <article class="quote-card">
+          <blockquote>« Pour la première fois, je vois clairement combien j’ai vraiment mis de côté, et pas seulement combien je comptais épargner. »</blockquote>
+          <p class="quote-author">Ola, bêta-testeuse</p>
+        </article>
+        <article class="quote-card">
+          <blockquote>« Ce qui marche le mieux, c’est que la progression monte seulement après un vrai virement. Du coup, j’épargne vraiment. »</blockquote>
+          <p class="quote-author">Mateusz, bêta-testeur</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-cta container" id="start">
+      <h2>Rejoindre la liste bêta</h2>
+      <p>Nous vous enverrons une invitation TestFlight dès que la bêta sera disponible. Sans spam.</p>
+      <form class="final-cta-form" id="betaForm">
+        <div class="final-cta-fields">
+          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Votre e-mail" />
+          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Prénom (optionnel)" />
+        </div>
+        <button class="btn btn-primary final-cta-submit" type="submit">Je rejoins</button>
+      </form>
+      <small class="final-cta-note">En envoyant, vous ouvrirez votre application e-mail avec un message prérempli.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. De vraies économies, pas des déclarations.</p>
+  </footer>
+
+  <script src="../site.js" defer></script>
+</body>
+</html>
