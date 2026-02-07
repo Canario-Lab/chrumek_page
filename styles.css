@@ -200,6 +200,13 @@ h1 span {
   font-size: 1.06rem;
 }
 
+.lead-note {
+  margin: -16px 0 30px;
+  color: var(--muted);
+  max-width: 58ch;
+  font-size: 0.98rem;
+}
+
 .hero-actions {
   display: flex;
   gap: 12px;
