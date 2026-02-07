@@ -474,6 +474,17 @@ h1 span {
   padding: 16px;
 }
 
+.appshots-phone.has-image {
+  padding: 0;
+  border: 1px solid rgba(8, 8, 10, 0.96);
+  border-radius: 30px;
+  background: #0b0b0e;
+  box-shadow:
+    0 8px 14px rgba(0, 0, 0, 0.2),
+    0 2px 6px rgba(0, 0, 0, 0.16),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.05);
+}
+
 .appshots-phone::before {
   content: "";
   position: absolute;
@@ -488,6 +499,10 @@ h1 span {
     inset 0 -1px 0 rgba(0, 0, 0, 0.05);
   pointer-events: none;
   z-index: 0;
+}
+
+.appshots-phone.has-image::before {
+  display: none;
 }
 
 .appshots-phone::after {
@@ -506,6 +521,49 @@ h1 span {
   opacity: 0.32;
   pointer-events: none;
   z-index: 1;
+}
+
+.appshots-phone.has-image::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  background: none;
+  box-shadow:
+    inset 1px 0 0 rgba(255, 255, 255, 0.06),
+    inset -1px 0 0 rgba(255, 255, 255, 0.06);
+  opacity: 1;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.appshots-phone.has-image .appshots-notch {
+  top: 0;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(8, 8, 10, 0.98), rgba(20, 20, 24, 0.94));
+  box-shadow:
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.03),
+    inset 0 -2px 5px rgba(0, 0, 0, 0.45);
+  opacity: 1;
+}
+
+.appshots-phone.has-image .appshots-notch::after {
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.appshots-image {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border-radius: 22px;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
 }
 
 .appshots-notch {
