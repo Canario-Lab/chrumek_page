@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Política de Privacidade do app Chrumek." />
+  <title>Política de Privacidade - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/pt-BR/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Tema da página: escuro. Mudar para claro."
+  data-theme-label-light="Tema da página: claro. Mudar para escuro."
+  data-theme-title-dark="Tema da página: escuro"
+  data-theme-title-light="Tema da página: claro"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Voltar</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Política de Privacidade</h1>
+
+      <section class="legal-section">
+        <h2>1) Controlador de dados</h2>
+        <p>O controlador dos dados pessoais é:<br />Canario-Lab / Chrumek App<br />E-mail de contato: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Escopo e finalidade</h2>
+        <p>O app Chrumek é um app para acompanhar economias por meio de registros de "tentações" e transferências/valores guardados confirmados.</p>
+        <p>Não mantemos contas de usuário e não coletamos dados que permitam identificar você diretamente.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Dados tratados no app (localmente no dispositivo)</h2>
+        <p>Os dados que você insere no app (por exemplo: registros de economia, valores, datas, categorias, metas, configurações) são armazenados localmente no seu dispositivo.</p>
+        <p>Eles não são enviados automaticamente para nós nem para nossos servidores.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Funções que exigem acesso ao sistema</h2>
+        <p>O app pode usar funções do sistema e dados relacionados somente na medida necessária para funcionar:</p>
+        <ul>
+          <li>Notificações (UNUserNotificationCenter) - se você ativar lembretes, o sistema iOS entrega notificações de acordo com suas configurações.</li>
+          <li>Idioma / região / moeda / tema - usados para formatar conteúdo e aparência do app (sem envio para nós).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Relato de erros / contato com suporte</h2>
+        <p>Se você usar a opção "Reportar erro" ou entrar em contato com o suporte:</p>
+        <ul>
+          <li>o app pode criar um rascunho de e-mail no seu aplicativo de e-mail,</li>
+          <li>o conteúdo pode incluir informações de diagnóstico (por exemplo: versão do app, iOS, configurações de idioma/moeda) - exatamente o que você vê no conteúdo do e-mail antes de enviar,</li>
+          <li>o envio só acontece se você mesmo confirmar.</li>
+        </ul>
+        <p>O e-mail enviado é tratado pelo seu provedor de e-mail e por nós como destinatário, exclusivamente para tratar a solicitação.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Compras e assinaturas (Apple + RevenueCat)</h2>
+        <p>Se houver recursos pagos (assinaturas) no app:</p>
+        <ul>
+          <li>os pagamentos são processados pela Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>o app usa a RevenueCat como provedora de infraestrutura para gerenciamento de assinaturas (incluindo apresentação de ofertas, verificação do status da assinatura e concessão de acesso premium).</li>
+        </ul>
+        <p>No contexto de gerenciamento de assinaturas, podem ser tratados dados técnicos relacionados à compra, como:</p>
+        <ul>
+          <li>identificadores de transação/compra e informações do produto,</li>
+          <li>status da assinatura (ativa/inativa, renovações),</li>
+          <li>identificador técnico do usuário usado para vincular o status da assinatura (por exemplo, App User ID anônimo gerado pelo SDK).</li>
+        </ul>
+        <p>A RevenueCat trata esses dados para prestar o serviço de gerenciamento de assinaturas (como operadora), e a Apple trata os dados relacionados ao pagamento de acordo com suas próprias políticas.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Análise e rastreamento</h2>
+        <p>O app não usa ferramentas analíticas nem SDKs de publicidade para rastrear usuários e não vende dados.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Site (landing page)</h2>
+        <p>Se você visitar nosso site, o provedor de hospedagem (por exemplo, GitHub Pages) pode tratar automaticamente dados técnicos padrão nos logs do servidor (incluindo endereço IP, tipo de navegador, data e hora da requisição) para fins de segurança, diagnóstico e garantia de continuidade do serviço. O escopo e as regras de tratamento decorrem das políticas do provedor de hospedagem.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Destinatários dos dados</h2>
+        <p>Os dados podem ser divulgados exclusivamente para:</p>
+        <ul>
+          <li>provedores de serviços de pagamento e assinatura: Apple e RevenueCat (gestão de assinaturas),</li>
+          <li>autoridades públicas, se exigido por lei.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Prazo de armazenamento</h2>
+        <ul>
+          <li>Os dados inseridos no app são armazenados localmente até que você os exclua (por exemplo, excluindo registros ou removendo o app).</li>
+          <li>Dados de correspondência por e-mail são armazenados pelo tempo necessário para tratar a solicitação e defesa contra reivindicações (se necessário).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Direitos do usuário (UE/EEE)</h2>
+        <p>Se, em determinado caso, tratarmos seus dados pessoais (por exemplo, quando você nos enviar um e-mail), você tem direito a:</p>
+        <ul>
+          <li>acesso, retificação, exclusão e limitação do tratamento,</li>
+          <li>oposição,</li>
+          <li>apresentar reclamação à autoridade supervisora competente.</li>
+        </ul>
+        <p>O escopo dos deveres de informação decorre, em especial, do art. 13 do GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Segurança</h2>
+        <p>Aplicamos medidas organizacionais e técnicas razoáveis, adequadas à natureza do serviço. Como os dados do app são armazenados localmente, um elemento importante de segurança também é a proteção do seu dispositivo (código/Face ID).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Alterações da política</h2>
+        <p>A política pode ser atualizada junto com mudanças nas funções do app ou nos requisitos legais. A versão atual será publicada no site do app.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Economia real, não promessa.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>

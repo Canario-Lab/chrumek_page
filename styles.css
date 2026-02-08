@@ -1148,6 +1148,80 @@ h1 span {
   color: var(--muted);
 }
 
+.legal-page {
+  padding: 10px 0 28px;
+}
+
+.legal-article {
+  background: linear-gradient(135deg, var(--surface-grad-1), var(--surface-grad-2));
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 6px 10px var(--surface-shadow);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.legal-article h1 {
+  margin: 0;
+  font-family: "Outfit", "Avenir Next", sans-serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.legal-back {
+  margin: 14px 0 0;
+}
+
+.legal-return {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--control-border);
+  background: linear-gradient(135deg, var(--control-bg-1), var(--control-bg-2));
+  color: var(--text);
+  border-radius: 999px;
+  min-height: 38px;
+  padding: 8px 14px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 10px var(--control-shadow);
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.legal-return:hover {
+  transform: translateY(-1px);
+}
+
+.legal-return:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.legal-section {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.legal-section h2 {
+  margin: 0 0 10px;
+  font-family: "Outfit", "Avenir Next", sans-serif;
+  font-size: 1.16rem;
+}
+
+.legal-section p {
+  margin: 0 0 10px;
+}
+
+.legal-section ul {
+  margin: 0 0 10px 20px;
+  padding: 0;
+}
+
+.legal-section li {
+  margin: 0 0 8px;
+}
+
 .site-footer {
   padding: 14px 0 38px;
 }
@@ -1156,6 +1230,10 @@ h1 span {
   margin: 0;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.site-footer a {
+  text-underline-offset: 2px;
 }
 
 body,
@@ -1296,6 +1374,10 @@ body,
 
   .final-cta {
     padding: 24px 18px;
+  }
+
+  .legal-article {
+    padding: 20px 16px;
   }
 
   .btn,

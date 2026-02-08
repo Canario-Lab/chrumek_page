@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Política de privacidad de la app Chrumek." />
+  <title>Política de privacidad - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/es/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Tema de la página: oscuro. Cambiar a claro."
+  data-theme-label-light="Tema de la página: claro. Cambiar a oscuro."
+  data-theme-title-dark="Tema de la página: oscuro"
+  data-theme-title-light="Tema de la página: claro"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Volver</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Política de privacidad</h1>
+
+      <section class="legal-section">
+        <h2>1) Responsable del tratamiento</h2>
+        <p>El responsable de los datos personales es:<br />Canario-Lab / Chrumek App<br />E-mail de contacto: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Alcance y finalidad</h2>
+        <p>La app Chrumek es una app para el seguimiento del ahorro mediante registros de "tentaciones" y transferencias/cantidades ahorradas confirmadas.</p>
+        <p>No gestionamos cuentas de usuario ni recopilamos datos que permitan identificarle directamente.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Datos tratados en la app (localmente en el dispositivo)</h2>
+        <p>Los datos que introduce en la app (p. ej., registros de ahorro, importes, fechas, categorías, metas, ajustes) se almacenan localmente en su dispositivo.</p>
+        <p>No se envían automáticamente a nosotros ni a nuestros servidores.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Funciones que requieren acceso del sistema</h2>
+        <p>La app puede utilizar funciones del sistema y datos relacionados únicamente en la medida necesaria para su funcionamiento:</p>
+        <ul>
+          <li>Notificaciones (UNUserNotificationCenter) - si activa recordatorios, el sistema iOS entrega notificaciones según su configuración.</li>
+          <li>Idioma / región / moneda / tema - se utilizan para el formato del contenido y el aspecto de la app (sin envío a nosotros).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Reporte de errores / contacto con soporte</h2>
+        <p>Si utiliza la opción "Reportar un error" o contacta con soporte:</p>
+        <ul>
+          <li>la app puede crear un borrador de e-mail en su aplicación de correo,</li>
+          <li>el contenido puede incluir información de diagnóstico (p. ej., versión de la app, iOS, ajustes de idioma/moneda) - exactamente lo que ve en el contenido del correo antes de enviarlo,</li>
+          <li>el envío solo se realiza si usted lo aprueba.</li>
+        </ul>
+        <p>El e-mail enviado es tratado por su proveedor de correo y por nosotros como destinatario, exclusivamente para gestionar la solicitud.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Compras y suscripciones (Apple + RevenueCat)</h2>
+        <p>Si en la app hay funciones de pago (suscripciones):</p>
+        <ul>
+          <li>los pagos se procesan por Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>la app utiliza RevenueCat como proveedor de infraestructura para la gestión de suscripciones (incluida la presentación de ofertas, la verificación del estado de la suscripción y la concesión de acceso premium).</li>
+        </ul>
+        <p>Como parte de la gestión de suscripciones, pueden tratarse datos técnicos relacionados con la compra, como:</p>
+        <ul>
+          <li>identificadores de transacción/compra e información del producto,</li>
+          <li>estado de la suscripción (activa/inactiva, renovaciones),</li>
+          <li>identificador técnico del usuario utilizado para vincular el estado de la suscripción (p. ej., un App User ID anónimo generado por el SDK).</li>
+        </ul>
+        <p>RevenueCat trata estos datos para prestar el servicio de gestión de suscripciones (como encargado del tratamiento), y Apple trata los datos relacionados con el pago de acuerdo con sus propias políticas.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analítica y seguimiento</h2>
+        <p>La app no utiliza herramientas analíticas ni SDK publicitarios para rastrear usuarios y no vende datos.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Sitio web (landing page)</h2>
+        <p>Si visita nuestro sitio web, el proveedor de hosting (p. ej., GitHub Pages) puede tratar automáticamente datos técnicos estándar en los registros del servidor (incluidos dirección IP, tipo de navegador, fecha y hora de la solicitud) con fines de seguridad, diagnóstico y garantía de continuidad del servicio. El alcance y las normas del tratamiento derivan de las políticas del proveedor de hosting.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Destinatarios de los datos</h2>
+        <p>Los datos solo pueden divulgarse a:</p>
+        <ul>
+          <li>proveedores de servicios de pago y suscripción: Apple y RevenueCat (gestión de suscripciones),</li>
+          <li>autoridades públicas, si lo exige la ley.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Periodo de conservación</h2>
+        <ul>
+          <li>Los datos introducidos en la app se almacenan localmente hasta que usted los elimine (p. ej., eliminando entradas o eliminando la app).</li>
+          <li>Los datos de correspondencia por e-mail se conservan durante el tiempo necesario para gestionar la solicitud y defendernos frente a reclamaciones (si fuera necesario).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Derechos del usuario (UE/EEE)</h2>
+        <p>Si en un caso concreto tratamos sus datos personales (p. ej., cuando nos escribe un e-mail), usted tiene derecho a:</p>
+        <ul>
+          <li>acceso, rectificación, supresión y limitación del tratamiento,</li>
+          <li>oponerse,</li>
+          <li>presentar una reclamación ante la autoridad de control competente.</li>
+        </ul>
+        <p>El alcance de las obligaciones de información se deriva en particular del artículo 13 del GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Seguridad</h2>
+        <p>Aplicamos medidas organizativas y técnicas razonables y adecuadas a la naturaleza del servicio. Dado que los datos de la app se almacenan localmente, un elemento importante de la seguridad también es la protección de su dispositivo (código/Face ID).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Cambios en la política</h2>
+        <p>La política puede actualizarse junto con cambios en las funciones de la app o en los requisitos legales. La versión actual se publicará en el sitio web de la app.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Ahorro real, no declaraciones.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>

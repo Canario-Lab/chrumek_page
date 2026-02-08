@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Chrumek uygulamasının gizlilik politikası." />
+  <title>Gizlilik Politikası - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/tr/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Sayfa teması: koyu. Açık temaya geç."
+  data-theme-label-light="Sayfa teması: açık. Koyu temaya geç."
+  data-theme-title-dark="Sayfa teması: koyu"
+  data-theme-title-light="Sayfa teması: açık"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Geri</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Gizlilik Politikası</h1>
+
+      <section class="legal-section">
+        <h2>1) Veri sorumlusu</h2>
+        <p>Kişisel verilerin veri sorumlusu:<br />Canario-Lab / Chrumek App<br />İletişim e-postası: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Kapsam ve amaç</h2>
+        <p>Chrumek uygulaması, "cazibe" kayıtları ve onaylanmış transferler/ayrılan tutarlar üzerinden tasarruf takibi için kullanılan bir uygulamadır.</p>
+        <p>Kullanıcı hesabı tutmuyoruz ve sizi doğrudan tanımlamaya imkân veren verileri toplamıyoruz.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Uygulamada işlenen veriler (cihazda yerel olarak)</h2>
+        <p>Uygulamaya girdiğiniz veriler (ör. tasarruf kayıtları, tutarlar, tarihler, kategoriler, hedefler, ayarlar) cihazınızda yerel olarak saklanır.</p>
+        <p>Bu veriler bize veya sunucularımıza otomatik olarak gönderilmez.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Sistem erişimi gerektiren işlevler</h2>
+        <p>Uygulama, sistem işlevlerini ve ilgili verileri yalnızca çalışması için gerekli ölçüde kullanabilir:</p>
+        <ul>
+          <li>Bildirimler (UNUserNotificationCenter) - hatırlatmaları açarsanız iOS sistemi bildirimleri ayarlarınıza göre iletir.</li>
+          <li>Dil / bölge / para birimi / tema - uygulama içeriğinin ve görünümünün biçimlendirilmesi için kullanılır (bize gönderilmeden).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Hata bildirimi / destekle iletişim</h2>
+        <p>"Hata bildir" seçeneğini kullanırsanız veya destekle iletişime geçerseniz:</p>
+        <ul>
+          <li>uygulama, posta uygulamanızda bir e-posta taslağı oluşturabilir,</li>
+          <li>içerik teşhis bilgileri içerebilir (ör. uygulama sürümü, iOS, dil/para birimi ayarları) - gönderimden önce e-posta içeriğinde gördüğünüzle birebir aynıdır,</li>
+          <li>gönderim yalnızca siz onaylarsanız gerçekleşir.</li>
+        </ul>
+        <p>Gönderilen e-posta, e-posta sağlayıcınız tarafından ve alıcı olarak tarafımızca yalnızca bildirimin işlenmesi amacıyla işlenir.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Satın alımlar ve abonelikler (Apple + RevenueCat)</h2>
+        <p>Uygulamada ücretli özellikler (abonelikler) mevcutsa:</p>
+        <ul>
+          <li>ödemeler Apple tarafından işlenir (App Store / In-App Purchases / StoreKit),</li>
+          <li>uygulama, abonelik yönetimi altyapısı sağlayıcısı olarak RevenueCat kullanır (tekliflerin gösterilmesi, abonelik durumunun doğrulanması, premium erişimin verilmesi dâhil).</li>
+        </ul>
+        <p>Abonelik yönetimi kapsamında satın alımla ilgili teknik veriler işlenebilir; örneğin:</p>
+        <ul>
+          <li>işlem/satın alma kimlikleri ve ürün bilgileri,</li>
+          <li>abonelik durumu (aktif/pasif, yenilemeler),</li>
+          <li>abonelik durumunu ilişkilendirmek için kullanılan teknik kullanıcı kimliği (ör. SDK tarafından oluşturulan anonim App User ID).</li>
+        </ul>
+        <p>RevenueCat bu verileri abonelik hizmetini sağlamak amacıyla (veri işleyen olarak) işler; Apple ise ödemeyle ilgili verileri kendi kurallarına göre işler.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analitik ve izleme</h2>
+        <p>Uygulama, kullanıcıları izlemek amacıyla analitik araçlar veya reklam SDK'ları kullanmaz ve veri satmaz.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Web sitesi (landing page)</h2>
+        <p>Web sitemizi ziyaret ederseniz, barındırma sağlayıcısı (ör. GitHub Pages) sunucu loglarında standart teknik verileri (IP adresi, tarayıcı türü, istek tarihi ve saati dâhil) güvenlik, teşhis ve hizmet sürekliliğini sağlama amaçlarıyla otomatik olarak işleyebilir. İşleme kapsamı ve kuralları, barındırma sağlayıcısının politikalarından kaynaklanır.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Verilerin alıcıları</h2>
+        <p>Veriler yalnızca şu taraflara açıklanabilir:</p>
+        <ul>
+          <li>ödeme ve abonelik hizmeti sağlayıcıları: Apple ve RevenueCat (abonelik yönetimi),</li>
+          <li>kanunun gerektirdiği durumlarda kamu kurumları.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Saklama süresi</h2>
+        <ul>
+          <li>Uygulamaya girilen veriler, siz silene kadar cihazda yerel olarak saklanır (ör. kayıtları silme veya uygulamayı kaldırma).</li>
+          <li>E-posta yazışması verilerini, bildirimin işlenmesi ve taleplere karşı savunma için gerekli olduğu süre boyunca saklarız (gerekliyse).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Kullanıcı hakları (AB/AEA)</h2>
+        <p>Belirli bir durumda kişisel verilerinizi işlersek (ör. bize e-posta yazdığınızda), şu haklara sahipsiniz:</p>
+        <ul>
+          <li>verilere erişim, düzeltme, silme, işlemenin kısıtlanması,</li>
+          <li>itiraz etme,</li>
+          <li>yetkili denetim makamına şikâyette bulunma.</li>
+        </ul>
+        <p>Bilgilendirme yükümlülüklerinin kapsamı özellikle GDPR Madde 13'ten kaynaklanır.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Güvenlik</h2>
+        <p>Hizmetin niteliğine uygun makul idari ve teknik önlemler uyguluyoruz. Uygulama verileri yerel olarak saklandığı için cihazınızın korunması da (kod/Face ID) güvenliğin önemli bir unsurudur.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Politika değişiklikleri</h2>
+        <p>Politika, uygulama işlevlerindeki veya yasal gerekliliklerdeki değişikliklerle birlikte güncellenebilir. Güncel sürüm uygulamanın web sitesinde yayımlanacaktır.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Gerçek tasarruf, boş vaat değil.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>
