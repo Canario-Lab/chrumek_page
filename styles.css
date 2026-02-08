@@ -1218,6 +1218,11 @@ h1 span {
   padding: 0;
 }
 
+.legal-section ol {
+  margin: 0 0 10px 20px;
+  padding: 0;
+}
+
 .legal-section li {
   margin: 0 0 8px;
 }
