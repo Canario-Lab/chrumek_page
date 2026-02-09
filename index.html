@@ -12,8 +12,22 @@
   <link rel="alternate" hreflang="fr" href="https://canario-lab.github.io/chrumek_page/fr/" />
   <link rel="alternate" hreflang="it" href="https://canario-lab.github.io/chrumek_page/it/" />
   <link rel="alternate" hreflang="pt-BR" href="https://canario-lab.github.io/chrumek_page/pt-BR/" />
+  <link rel="alternate" hreflang="pt-PT" href="https://canario-lab.github.io/chrumek_page/pt-PT/" />
   <link rel="alternate" hreflang="tr" href="https://canario-lab.github.io/chrumek_page/tr/" />
   <link rel="alternate" hreflang="uk" href="https://canario-lab.github.io/chrumek_page/uk/" />
+  <link rel="alternate" hreflang="bg" href="https://canario-lab.github.io/chrumek_page/bg/" />
+  <link rel="alternate" hreflang="cs" href="https://canario-lab.github.io/chrumek_page/cs/" />
+  <link rel="alternate" hreflang="da" href="https://canario-lab.github.io/chrumek_page/da/" />
+  <link rel="alternate" hreflang="el" href="https://canario-lab.github.io/chrumek_page/el/" />
+  <link rel="alternate" hreflang="fi" href="https://canario-lab.github.io/chrumek_page/fi/" />
+  <link rel="alternate" hreflang="hr" href="https://canario-lab.github.io/chrumek_page/hr/" />
+  <link rel="alternate" hreflang="hu" href="https://canario-lab.github.io/chrumek_page/hu/" />
+  <link rel="alternate" hreflang="nl" href="https://canario-lab.github.io/chrumek_page/nl/" />
+  <link rel="alternate" hreflang="no" href="https://canario-lab.github.io/chrumek_page/no/" />
+  <link rel="alternate" hreflang="ro" href="https://canario-lab.github.io/chrumek_page/ro/" />
+  <link rel="alternate" hreflang="sk" href="https://canario-lab.github.io/chrumek_page/sk/" />
+  <link rel="alternate" hreflang="sl" href="https://canario-lab.github.io/chrumek_page/sl/" />
+  <link rel="alternate" hreflang="sv" href="https://canario-lab.github.io/chrumek_page/sv/" />
   <link rel="alternate" hreflang="x-default" href="https://canario-lab.github.io/chrumek_page/" />
   <script>
     (function () {
@@ -21,12 +35,13 @@
         ? navigator.languages
         : [navigator.language || "en"];
 
-      function detectTargetLanguage(list) {
+            function detectTargetLanguage(list) {
         for (var i = 0; i < list.length; i += 1) {
           var raw = list[i];
           if (typeof raw !== "string") continue;
           var lang = raw.trim().toLowerCase();
 
+          if (lang.indexOf("pt-pt") === 0) return "pt-PT";
           if (lang.indexOf("pt-br") === 0) return "pt-BR";
           if (lang === "pt" || lang.indexOf("pt-") === 0) return "pt-BR";
           if (lang.indexOf("pl") === 0) return "pl";
@@ -37,6 +52,19 @@
           if (lang.indexOf("it") === 0) return "it";
           if (lang.indexOf("tr") === 0) return "tr";
           if (lang.indexOf("uk") === 0) return "uk";
+          if (lang.indexOf("bg") === 0) return "bg";
+          if (lang.indexOf("cs") === 0) return "cs";
+          if (lang.indexOf("da") === 0) return "da";
+          if (lang.indexOf("el") === 0) return "el";
+          if (lang.indexOf("fi") === 0) return "fi";
+          if (lang.indexOf("hr") === 0) return "hr";
+          if (lang.indexOf("hu") === 0) return "hu";
+          if (lang.indexOf("nl") === 0) return "nl";
+          if (lang.indexOf("no") === 0) return "no";
+          if (lang.indexOf("ro") === 0) return "ro";
+          if (lang.indexOf("sk") === 0) return "sk";
+          if (lang.indexOf("sl") === 0) return "sl";
+          if (lang.indexOf("sv") === 0) return "sv";
         }
         return "en";
       }
@@ -50,15 +78,30 @@
   <noscript>
     <p>
       Choose language:
-      <a href="./pl/">Polski</a>,
-      <a href="./en/">English</a>,
-      <a href="./de/">Deutsch</a>,
-      <a href="./es/">Español</a>,
-      <a href="./fr/">Français</a>,
-      <a href="./it/">Italiano</a>,
-      <a href="./pt-BR/">Português (BR)</a>,
-      <a href="./tr/">Türkçe</a>,
-      <a href="./uk/">Українська</a>
+            <a href="./pl/">Polski</a>,
+            <a href="./en/">English</a>,
+            <a href="./de/">Deutsch</a>,
+            <a href="./es/">Español</a>,
+            <a href="./fr/">Français</a>,
+            <a href="./it/">Italiano</a>,
+            <a href="./pt-BR/">Português (BR)</a>,
+            <a href="./pt-PT/">Português (PT)</a>,
+            <a href="./tr/">Türkçe</a>,
+            <a href="./uk/">Українська</a>,
+            <a href="./bg/">Български</a>,
+            <a href="./cs/">Čeština</a>,
+            <a href="./da/">Dansk</a>,
+            <a href="./el/">Ελληνικά</a>,
+            <a href="./fi/">Suomi</a>,
+            <a href="./hr/">Hrvatski</a>,
+            <a href="./hu/">Magyar</a>,
+            <a href="./nl/">Nederlands</a>,
+            <a href="./no/">Norsk</a>,
+            <a href="./ro/">Română</a>,
+            <a href="./sk/">Slovenčina</a>,
+            <a href="./sl/">Slovenščina</a>,
+            <a href="./sv/">Svenska</a>
+
     </p>
   </noscript>
 </body>

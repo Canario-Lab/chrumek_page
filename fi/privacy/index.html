@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="leveys = laitteen leveys, alkumittakaava = 1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Chrumek-sovelluksen tietosuojakäytäntö." />
+  <title>Tietosuojakäytäntö - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/fi/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Sivun teema: tumma. Vaihda valoon."
+  data-theme-label-light="Sivun teema: valo. Vaihda pimeään."
+  data-theme-title-dark="Sivun teema: tumma"
+  data-theme-title-light="Sivun teema: valo"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Takaisin</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Tietosuojakäytäntö</h1>
+
+      <section class="legal-section">
+        <h2>1) Rekisterinpitäjä</h2>
+        <p>Henkilötietojen rekisterinpitäjä on:<br />Canario-Lab / Chrumek App<br />Ota yhteyttä sähköpostitse: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Soveltamisala ja tarkoitus</h2>
+        <p>Chrumek-sovellus on sovellus, jolla seurataan säästöjä "kiusauksia" ja vahvistettuja siirtoja/säästöjä koskevien tietueiden kautta.</p>
+        <p>Emme käytä käyttäjätilejä, emmekä kerää tietoja, joiden avulla voimme tunnistaa sinut suoraan.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Sovelluksessa käsitellyt tiedot (paikallisesti laitteella)</h2>
+        <p>Sovellukseen syöttämäsi tiedot (esim. säästömerkinnät, summat, päivämäärät, luokat, tavoitteet, asetukset) tallennetaan paikallisesti laitteellesi.</p>
+        <p>Sitä ei lähetetä automaattisesti meille tai palvelimillemme.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Ominaisuudet, jotka vaativat pääsyn järjestelmään</h2>
+        <p>Sovellus saa käyttää järjestelmän ominaisuuksia ja niihin liittyviä tietoja vain siinä määrin kuin se on tarpeen toiminnan kannalta:</p>
+        <ul>
+          <li>Ilmoitukset (UNUserNotificationCenter) – jos otat muistutukset käyttöön, iOS-järjestelmä toimittaa ilmoitukset asetustesi mukaisesti.</li>
+          <li>Kieli / alue / valuutta / teema - käytetään muotoilemaan sovelluksen sisältöä ja ulkoasua (lähettämättä meille).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Virheraportit / tukiyhteystiedot</h2>
+        <p>Jos käytät Ilmoita virheestä -vaihtoehtoa tai otat yhteyttä tukeen:</p>
+        <ul>
+          <li>sovellus voi luoda sähköpostiluonnoksen sähköpostisovellukseesi,</li>
+          <li>sisältö voi sisältää diagnostiikkatietoja (esim. sovelluksen versio, iOS, kieli-/valuutta-asetukset) – tarkalleen mitä näet sähköpostin sisällössä ennen lähettämistä,</li>
+          <li>lähetys tapahtuu vain, jos hyväksyt sen itse.</li>
+        </ul>
+        <p>Postintarjoajasi ja me vastaanottajana käsittelevät lähetetyn sähköpostin vain pyyntösi käsittelemiseksi.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Ostot ja tilaukset (Apple + RevenueCat)</h2>
+        <p>Jos maksullisia ominaisuuksia (tilauksia) on saatavilla sovelluksessa:</p>
+        <ul>
+          <li>Apple käsittelee maksut (App Store / In-App Purchases / StoreKit),</li>
+          <li>sovellus käyttää RevenueCatia infrastruktuurin tarjoajana tilausten hallintaan (mukaan lukien tarjouksen esittäminen, tilauksen tilan tarkistaminen ja premium-käyttöoikeuden myöntäminen).</li>
+        </ul>
+        <p>Osana tilausten käsittelyä voidaan käsitellä ostoon liittyviä teknisiä tietoja, kuten:</p>
+        <ul>
+          <li>tapahtuma-/ostotunnisteet ja tuotetiedot,</li>
+          <li>tilauksen tila (aktiivinen/ei-aktiivinen, uusimiset),</li>
+          <li>tekninen käyttäjätunnus, jota käytetään tilauksen tilan linkittämiseen (esim. SDK:n luoma anonyymi sovelluksen käyttäjätunnus).</li>
+        </ul>
+        <p>RevenueCat käsittelee nämä tiedot tarjotakseen tilausten käsittelypalveluita (käsittelijänä), ja Apple käsittelee maksuihin liittyviä tietoja omien käytäntöjensä mukaisesti.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analytics ja seuranta</h2>
+        <p>Sovellus ei käytä analytiikkatyökaluja tai mainonta-SDK:ita käyttäjien seuraamiseen eikä myy tietoja.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Verkkosivusto (aloitussivu)</h2>
+        <p>Jos vierailet verkkosivustollamme, isännöintipalveluntarjoaja (esim. GitHub-sivut) voi automaattisesti käsitellä palvelimen lokeissa olevia tavallisia teknisiä tietoja (mukaan lukien IP-osoite, selaintyyppi, pyynnön päivämäärä ja kellonaika) turvallisuus-, diagnostiikka- ja palvelun jatkuvuuden vuoksi. Käsittelyn laajuus ja säännöt perustuvat palveluntarjoajan käytäntöihin.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Tietojen vastaanottajat</h2>
+        <p>Tietoja saa luovuttaa vain:</p>
+        <ul>
+          <li>maksu- ja tilauspalveluntarjoajat: Apple ja RevenueCat (tilausten käsittely),</li>
+          <li>viranomaisille, jos laki niin vaatii.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Varastointiaika</h2>
+        <ul>
+          <li>Sovellukseen syötetyt tiedot säilytetään paikallisesti, kunnes poistat ne (esim. poistamalla merkintöjä tai poistamalla sovelluksen).</li>
+          <li>Sähköpostin kirjeenvaihtotietoja säilytetään niin kauan kuin on tarpeen pyynnön käsittelemiseksi ja vaatimuksia vastaan ​​puolustamiseksi (tarvittaessa).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Käyttäjäoikeudet (EU/ETA)</h2>
+        <p>Jos tietyssä tapauksessa käsittelemme henkilötietojasi (esim. kun lähetät meille sähköpostia), sinulla on oikeus:</p>
+        <ul>
+          <li>pääsy, oikaisu, poistaminen ja käsittelyn rajoittaminen,</li>
+          <li>esine,</li>
+          <li>tehdä valituksen toimivaltaiselle valvontaviranomaiselle.</li>
+        </ul>
+        <p>Tietovelvollisuuden laajuus seuraa erityisesti GDPR:n artiklasta 13.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Turvallisuus</h2>
+        <p>Käytämme kohtuullisia organisatorisia ja teknisiä toimenpiteitä, jotka sopivat palvelun luonteeseen. Koska sovellustiedot tallennetaan paikallisesti, tärkeä osa turvallisuutta on myös laitteesi suojaaminen (salasana/kasvotunnus).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Käytännön muutokset</h2>
+        <p>Käytäntöä voidaan päivittää sovelluksen toimintojen tai lakivaatimusten muutoksilla. Nykyinen versio julkaistaan ​​sovelluksen verkkosivustolla.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Todellisia säästöjä, ei ilmoituksia.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>

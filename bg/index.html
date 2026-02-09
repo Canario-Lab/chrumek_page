@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="ширина=ширина на устройството, начален мащаб=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Chrumek е приложение за реални спестявания: записвайте спестявания, потвърждавайте прехвърлянето и изграждайте напредък в цели, диаграми и история." />
+  <title>Chrumek - спестяване на пари, които всъщност сте заделили</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://canario-lab.github.io/chrumek_page/bg/" />
+  <meta property="og:locale" content="bg_BG" />
+  <meta property="og:site_name" content="Чрумек" />
+  <meta property="og:title" content="Chrumek - спестяване на пари, които всъщност сте заделили" />
+  <meta property="og:description" content="Chrumek помага да превърнете ежедневните решения в реални спестявания: прогрес, диаграми и актуализация на историята само след потвърдено прехвърляне." />
+  <meta property="og:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="Чрумек - спасителен помощник" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chrumek - спестяване на пари, които всъщност сте заделили" />
+  <meta name="twitter:description" content="Истинско спестяване без пожелателно мислене: потвърдете трансфера и едва след това прогресът, графиките и целите се актуализират." />
+  <meta name="twitter:image" content="https://canario-lab.github.io/chrumek_page/chrumek-icon.png" />
+
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/bg/" />
+  <link rel="alternate" hreflang="pl" href="https://canario-lab.github.io/chrumek_page/pl/" />
+  <link rel="alternate" hreflang="en" href="https://canario-lab.github.io/chrumek_page/en/" />
+  <link rel="alternate" hreflang="de" href="https://canario-lab.github.io/chrumek_page/de/" />
+  <link rel="alternate" hreflang="es" href="https://canario-lab.github.io/chrumek_page/es/" />
+  <link rel="alternate" hreflang="fr" href="https://canario-lab.github.io/chrumek_page/fr/" />
+  <link rel="alternate" hreflang="it" href="https://canario-lab.github.io/chrumek_page/it/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://canario-lab.github.io/chrumek_page/pt-BR/" />
+  <link rel="alternate" hreflang="pt-PT" href="https://canario-lab.github.io/chrumek_page/pt-PT/" />
+  <link rel="alternate" hreflang="tr" href="https://canario-lab.github.io/chrumek_page/tr/" />
+  <link rel="alternate" hreflang="uk" href="https://canario-lab.github.io/chrumek_page/uk/" />
+  <link rel="alternate" hreflang="bg" href="https://canario-lab.github.io/chrumek_page/bg/" />
+  <link rel="alternate" hreflang="cs" href="https://canario-lab.github.io/chrumek_page/cs/" />
+  <link rel="alternate" hreflang="da" href="https://canario-lab.github.io/chrumek_page/da/" />
+  <link rel="alternate" hreflang="el" href="https://canario-lab.github.io/chrumek_page/el/" />
+  <link rel="alternate" hreflang="fi" href="https://canario-lab.github.io/chrumek_page/fi/" />
+  <link rel="alternate" hreflang="hr" href="https://canario-lab.github.io/chrumek_page/hr/" />
+  <link rel="alternate" hreflang="hu" href="https://canario-lab.github.io/chrumek_page/hu/" />
+  <link rel="alternate" hreflang="nl" href="https://canario-lab.github.io/chrumek_page/nl/" />
+  <link rel="alternate" hreflang="no" href="https://canario-lab.github.io/chrumek_page/no/" />
+  <link rel="alternate" hreflang="ro" href="https://canario-lab.github.io/chrumek_page/ro/" />
+  <link rel="alternate" hreflang="sk" href="https://canario-lab.github.io/chrumek_page/sk/" />
+  <link rel="alternate" hreflang="sl" href="https://canario-lab.github.io/chrumek_page/sl/" />
+  <link rel="alternate" hreflang="sv" href="https://canario-lab.github.io/chrumek_page/sv/" />
+  <link rel="alternate" hreflang="x-default" href="https://canario-lab.github.io/chrumek_page/" />
+  <link rel="icon" type="image/png" href="../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Тема на страницата: тъмна. Превключете на светлина."
+  data-theme-label-light="Тема на страницата: светлина. Превключете на тъмно."
+  data-theme-title-dark="Тема на страницата: тъмна"
+  data-theme-title-light="Тема на страницата: светлина"
+  data-mail-subject="Chrumek бета – моля, поканете ме в TestFlight"
+  data-mail-intro="Искам да се присъединя към бета списъка на Chrumek."
+  data-mail-name-label="Име"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="#">Чрумек</a>
+    <div class="header-actions">
+      <nav class="top-nav">
+        <a href="#jak-dziala">Как работи</a>
+        <a href="#funkcje">Характеристики</a>
+        <a href="#faq">ЧЗВ</a>
+        <a href="#start">Започнете</a>
+      </nav>
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Селектор на език">
+          <span class="lang-toggle-icon" aria-hidden="true">🌐</span>
+          <span class="lang-toggle-text">език</span>
+        </button>
+        <div class="lang-menu" role="menu" aria-label="Селектор на език">
+        <a class="lang-option" href="../pl/" data-base="../pl/" lang="pl" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PL</span><span aria-hidden="true">🇵🇱</span><span>Polski</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../en/" data-base="../en/" lang="en" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">EN</span><span aria-hidden="true">🇬🇧</span><span>English</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../de/" data-base="../de/" lang="de" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">DE</span><span aria-hidden="true">🇩🇪</span><span>Deutsch</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../es/" data-base="../es/" lang="es" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">ES</span><span aria-hidden="true">🇪🇸</span><span>Español</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../fr/" data-base="../fr/" lang="fr" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">FR</span><span aria-hidden="true">🇫🇷</span><span>Français</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../it/" data-base="../it/" lang="it" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">IT</span><span aria-hidden="true">🇮🇹</span><span>Italiano</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../pt-BR/" data-base="../pt-BR/" lang="pt-BR" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PT-BR</span><span aria-hidden="true">🇧🇷</span><span>Português (BR)</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../pt-PT/" data-base="../pt-PT/" lang="pt-PT" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">PT-PT</span><span aria-hidden="true">🇵🇹</span><span>Português (PT)</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../tr/" data-base="../tr/" lang="tr" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">TR</span><span aria-hidden="true">🇹🇷</span><span>Türkçe</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../uk/" data-base="../uk/" lang="uk" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">UK</span><span aria-hidden="true">🇺🇦</span><span>Українська</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option is-active" href="../bg/" data-base="../bg/" lang="bg" role="menuitem" aria-current="page">
+          <span class="lang-option-main"><span class="lang-option-code">BG</span><span aria-hidden="true">🇧🇬</span><span>Български</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../cs/" data-base="../cs/" lang="cs" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">CS</span><span aria-hidden="true">🇨🇿</span><span>Čeština</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../da/" data-base="../da/" lang="da" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">DA</span><span aria-hidden="true">🇩🇰</span><span>Dansk</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../el/" data-base="../el/" lang="el" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">EL</span><span aria-hidden="true">🇬🇷</span><span>Ελληνικά</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../fi/" data-base="../fi/" lang="fi" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">FI</span><span aria-hidden="true">🇫🇮</span><span>Suomi</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../hr/" data-base="../hr/" lang="hr" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">HR</span><span aria-hidden="true">🇭🇷</span><span>Hrvatski</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../hu/" data-base="../hu/" lang="hu" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">HU</span><span aria-hidden="true">🇭🇺</span><span>Magyar</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../nl/" data-base="../nl/" lang="nl" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">NL</span><span aria-hidden="true">🇳🇱</span><span>Nederlands</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../no/" data-base="../no/" lang="no" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">NO</span><span aria-hidden="true">🇳🇴</span><span>Norsk</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../ro/" data-base="../ro/" lang="ro" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">RO</span><span aria-hidden="true">🇷🇴</span><span>Română</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../sk/" data-base="../sk/" lang="sk" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">SK</span><span aria-hidden="true">🇸🇰</span><span>Slovenčina</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../sl/" data-base="../sl/" lang="sl" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">SL</span><span aria-hidden="true">🇸🇮</span><span>Slovenščina</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+        <a class="lang-option" href="../sv/" data-base="../sv/" lang="sv" role="menuitem">
+          <span class="lang-option-main"><span class="lang-option-code">SV</span><span aria-hidden="true">🇸🇪</span><span>Svenska</span></span>
+          <span class="lang-option-check" aria-hidden="true">✓</span>
+        </a>
+
+
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Приложение за истинско спестяване</p>
+        <h1>Чумек вярва в <span>трансфери</span>, а не намерения.</h1>
+        <p class="hero-audience">За хора, които искат да спестяват наистина, а не просто да „харчат по-малко“.</p>
+        <p class="lead">Регистрирайте ежедневните си спестявания, преместете ги в отделна спестовна сметка или касичка и изградете напредък към целта. В Chrumek се броят само парите, които наистина сте заделили.</p>
+        <p class="lead-note">Това не е друг инструмент за проследяване на разходите. Тук регистрирате само изкушенията, на които сте устояли, и спестяванията, които действително сте направили.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#start">Присъединете се към бета списъка</a>
+          <a class="btn btn-ghost" href="#jak-dziala">Вижте потока на приложението</a>
+        </div>
+
+        <ul class="stats">
+          <li>
+            <strong>Журнал</strong>
+            <span>3 спестяващи карти</span>
+          </li>
+          <li>
+            <strong>История</strong>
+            <span>само реално преведени суми</span>
+          </li>
+          <li>
+            <strong>Графики</strong>
+            <span>въз основа на реални трансфери</span>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="hero-panel" aria-label="Визуализация на потока от спестявания">
+        <p class="panel-title">Поток на спестяванията</p>
+        <div class="chrumek-badge">
+          <img
+            class="chrumek-icon"
+            src="../chrumekapp_scale44-kopia.png"
+            alt="Чумек, спасителен помощник"
+            width="96"
+            height="96"
+          />
+          <div>
+            <p class="chrumek-name">Запознайте се с Чумек</p>
+            <p class="chrumek-desc">Помощник за спестявания, а не инструмент за проследяване на разходите.</p>
+          </div>
+        </div>
+        <div class="panel-card">
+          <div class="entry">
+            <span>1. Регистрирате спестяване: пропуснете покупка, изберете по-евтин вариант или анулирайте абонамент.</span>
+            <strong class="entry-status checklist-item" aria-label="запазени">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>2. Chrumek ви напомня вечер: прехвърлете тази сума в спестявания или я пуснете в касичката си.</span>
+            <strong class="entry-status checklist-item" aria-label="напомня">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>3. Потвърждавате прехвърлянето в приложението: само тогава то се брои за напредък.</span>
+            <strong class="entry-status checklist-item" aria-label="потвърдено">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+          <div class="entry muted">
+            <span>4. Историята и графиките растат: виждате резултати и отключвате нови нива на Chrumek.</span>
+            <strong class="entry-status checklist-item" aria-label="нарастващ">
+              <span class="entry-status-box" aria-hidden="true"></span>
+            </strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="appshots container" aria-label="Визуализация на екраните на приложението">
+      <h2 class="section-title">Вижте приложението</h2>
+      <div class="appshots-carousel">
+        <div class="appshots-grid" id="appshotsCarousel" aria-label="Въртележка на екрана на приложението">
+          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран на приложението: Журнал">
+              <img
+                class="appshots-image"
+                src="../assets_en/dziennik_en.PNG"
+                alt="Екран на приложението: Журнал"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Журнал</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран на приложението: История">
+              <img
+                class="appshots-image"
+                src="../assets_en/Historia_en.PNG"
+                alt="Екран на приложението: История"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">История</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран на приложението: цели">
+              <img
+                class="appshots-image"
+                src="../assets_en/cel_en.PNG"
+                alt="Екран на приложението: цели"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">цели</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран на приложението: Графики">
+              <img
+                class="appshots-image"
+                src="../assets_en/wykres_en.PNG"
+                alt="Екран на приложението: Графики"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Графики</figcaption>
+          </figure>          <figure class="appshots-item">
+            <div class="appshots-phone has-image" aria-label="Екран на приложението: Настройки">
+              <img
+                class="appshots-image"
+                src="../assets_en/ustawienia_en.PNG"
+                alt="Екран на приложението: Настройки"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="appshots-notch" aria-hidden="true"></span>
+            </div>
+            <figcaption class="appshots-caption">Настройки</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="appshots-dots" aria-label="Въртележка на екрана на приложението">
+        <button class="appshots-dot is-active" type="button" data-index="0" aria-label="Показване на екрана Журнал" aria-current="true"></button>        <button class="appshots-dot" type="button" data-index="1" aria-label="Показване на хронология на екрана" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="2" aria-label="Показване на целите на екрана" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="3" aria-label="Показване на диаграми на екрана" aria-current="false"></button>        <button class="appshots-dot" type="button" data-index="4" aria-label="Показване на настройките на екрана" aria-current="false"></button>
+      </div>
+    </section>
+
+    <section class="workflow container" id="jak-dziala">
+      <h2 class="section-title">Как работи</h2>
+      <div class="steps">
+        <article>
+          <span class="step-no">1</span>
+          <h3>Регистрирайте спестяване</h3>
+          <p>Добавете запис: пропусната покупка, по-евтина алтернатива или анулиран абонамент.</p>
+        </article>
+        <article>
+          <span class="step-no">2</span>
+          <h3>Оставете го настрана наистина</h3>
+          <p>Прехвърлете сумата в отделна спестовна сметка или я пуснете в касичката си.</p>
+        </article>
+        <article>
+          <span class="step-no">3</span>
+          <h3>Потвърдете с едно докосване</h3>
+          <p>Докоснете „Добавено към спестяванията“ и едва тогава сумата се отчита към напредъка, графиките и целите.</p>
+        </article>
+      </div>
+      <p class="core-note">
+        <strong>Ключов момент:</strong> Само след като докоснете „Добавено към спестяванията“, прогресът, диаграмите и целите се актуализират.
+      </p>
+    </section>
+
+    <section class="features-intro container" id="funkcje" aria-label="Преход към списък с функции">
+      <p class="features-kicker">Какво получавате в приложението</p>
+      <h3 class="features-title">Основни характеристики на Chrumek</h3>
+    </section>
+
+    <section class="trust container" aria-label="Поверителност и доверие">
+      <p class="features-kicker">Поверителност и доверие</p>
+      <div class="trust-grid">
+        <article class="trust-item">
+          <h4>Вашите данни остават на телефона ви</h4>
+          <p>Данните за вашите спестявания се съхраняват локално на вашето устройство.</p>
+        </article>
+        <article class="trust-item">
+          <h4>Не е необходим акаунт</h4>
+          <p>Не е необходимо да създавате акаунт, за да използвате приложението.</p>
+        </article>
+        <article class="trust-item">
+          <h4>Без проследяване</h4>
+          <p>Ние не използваме програми за проследяване на реклами или анализи на трети страни.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features-main-intro container" aria-label="Ежедневни функции">
+      <p class="features-kicker">Ежедневни функции</p>
+      <h3 class="features-main-title">Как Chrumek помага всеки ден</h3>
+    </section>
+
+    <section class="feature-grid container">
+      <article class="card">
+        <p class="tag">Журнал</p>
+        <h2>Спестявания от ежедневни решения</h2>
+        <p>Бързо регистрирайте колко сте спестили и от коя категория, без ненужно счетоводство.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">цели</p>
+        <h2>Напредък на целта и нива на Chrumek</h2>
+        <p>Задайте цел за спестяване, проследете напредъка и отключете нови нива на Chrumek въз основа на потвърдени суми.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Напомняния</p>
+        <h2>Ежедневно напомняне за трансфер</h2>
+        <p>Ако имате пари, чакащи да бъдат заделени, Chrumek ви напомня да ги преведете в избраното от вас време.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">Графики</p>
+        <h2>Темпо, път и перспектива за годишни спестявания</h2>
+        <p>Вижте реалния си ритъм на спестяване и кои категории допринасят най-много за вашите спестявания.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">История</p>
+        <h2>Пълна пътека за прехвърляне</h2>
+        <p>Всеки потвърден трансфер се появява в историята. Можете да върнете запис или да го премахнете, когато трябва да коригирате данни.</p>
+      </article>
+
+      <article class="card">
+        <p class="tag">CSV</p>
+        <h2>Експорт на данни</h2>
+        <p>Експортирайте спестявания и цели в CSV с период от време, когато имате нужда от отчет извън приложението.</p>
+      </article>
+    </section>
+
+    <section class="free-start container" aria-label="Започнете безплатно">
+      <p class="features-kicker">Започнете безплатно</p>
+      <h3 class="free-start-title">Първо опитайте, решете по-късно</h3>
+      <div class="free-start-grid">
+        <article class="free-start-item">
+          <h4>10 безплатни потвърдени трансфера</h4>
+          <p>Започнете без карта и вижте как Chrumek работи в реалния живот.</p>
+        </article>
+        <article class="free-start-item">
+          <h4>След това Premium</h4>
+          <p>От 11-ия трансфер се прилага Premium (14-дневен пробен период, ако отговаря на условията).</p>
+        </article>
+      </div>
+      <p class="free-start-note">Броячът проследява докосванията върху „Добавено към спестявания“ (потвърждения), а не само записи.</p>
+    </section>
+
+    <section class="faq container" id="faq" aria-label="Често задавани въпроси">
+      <p class="features-kicker">ЧЗВ</p>
+      <h3 class="faq-title">Често задавани въпроси</h3>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Трябва ли да свържа моята банка?</summary>
+          <p>Не. Отделна спестовна сметка или касичка е достатъчна. Потвърждавате преводите ръчно с бутона „Добавено към спестяванията“.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Работи ли офлайн?</summary>
+          <p>Да, основните функции работят локално на вашето устройство: дневник, история, цели и диаграми.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Ами ако все пак не съм превел парите?</summary>
+          <p>Не докосвайте „Добавено към спестявания“, докато преводът не стане реален. Ако сте потвърдили по погрешка, можете да върнете записа в История.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Как работи Premium / пробен период?</summary>
+          <p>Получавате 10 безплатни потвърдени трансфера. От 11-ти се прилага Premium; ако отговаряте на условията, можете да започнете 14-дневен пробен период.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Безопасни ли са данните ми?</summary>
+          <p>да Данните се съхраняват локално, без нищо да се изпраща навън. Приложението работи без акаунти и без рекламни тракери.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Мога ли да експортирам данни?</summary>
+          <p>да Можете да експортирате данни в CSV (с диапазон от дати) и да запишете файла локално или в iCloud Drive, например.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="testimonial container">
+      <p class="features-kicker">Какво казва авторът</p>
+      <article class="quote-card">
+        <blockquote>"Класическите средства за проследяване на разходи ви превръщат в счетоводител на пълен работен ден: въвеждате разписки, категории и бележки и в края на месеца получавате отчет, казващ: "Поздравления, похарчихте пари". Chrumek работи обратното: улавя момента, когато не сте харчили (или сте харчили по-малко) и го превръща в конкретна сума, "за прехвърляне" към спестяванията. Информираността за разходите е страхотна, но само прехвърлянето на истински спестявания прави разлика.”</blockquote>
+        <p class="quote-author">Пьотр, автор</p>
+      </article>
+      <p class="features-kicker testimonial-kicker">Какво казват тестерите</p>
+      <div class="testimonial-grid">
+        <article class="quote-card">
+          <blockquote>"За първи път мога ясно да видя колко всъщност съм заделил, а не само колко съм планирал да спестя. Това променя всичко."</blockquote>
+          <p class="quote-author">Ола, бета тестер</p>
+        </article>
+        <article class="quote-card">
+          <blockquote>"Това приложение не е дневник за вина. Chrumek не пита дали сте били "добри". То проверява дали наистина сте прехвърлили спестяванията си. И не възнаграждава добрите намерения. Само това, което наистина сте оставили настрана, се брои."</blockquote>
+          <p class="quote-author">Матеуш, бета тестер</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-cta container" id="start">
+      <h2>Присъединете се към бета списъка</h2>
+      <p>Ще ви изпратим покана за TestFlight веднага щом бета версията е налична. Без спам.</p>
+      <form class="final-cta-form" id="betaForm">
+        <div class="final-cta-fields">
+          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
+          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+        </div>
+        <button class="btn btn-primary final-cta-submit" type="submit">Присъединете се</button>
+      </form>
+      <small class="final-cta-note">Изпращайки, ще отворите вашето имейл приложение с предварително попълнено съобщение.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Чрумек 2026. Реални спестявания, а не декларации. <a href="./privacy/">Политика за поверителност</a> | <a href="./terms/">Условия за ползване</a>.</p>
+  </footer>
+
+  <script src="../site.js" defer></script>
+</body>
+</html>

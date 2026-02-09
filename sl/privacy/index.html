@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="širina=širina naprave, začetna lestvica=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Politika zasebnosti za aplikacijo Chrumek." />
+  <title>Politika zasebnosti - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/sl/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Tema strani: temna. Preklopite na svetlobo."
+  data-theme-label-light="Tema strani: svetloba. Preklopite na temno."
+  data-theme-title-dark="Tema strani: temna"
+  data-theme-title-light="Tema strani: svetloba"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Nazaj</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Politika zasebnosti</h1>
+
+      <section class="legal-section">
+        <h2>1) Upravljavec podatkov</h2>
+        <p>Upravljavec osebnih podatkov je:<br />Canario-Lab / aplikacija Chrumek<br />Kontaktni e-naslov: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Obseg in namen</h2>
+        <p>Aplikacija Chrumek je aplikacija za sledenje prihrankov preko evidenc »skušnjav« in potrjenih nakazil/privarčevanih zneskov.</p>
+        <p>Ne upravljamo uporabniških računov in ne zbiramo podatkov, ki bi nam omogočali, da vas neposredno identificiramo.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Podatki, obdelani v aplikaciji (lokalno v napravi)</h2>
+        <p>Podatki, ki jih vnesete v aplikacijo (npr. vnosi prihrankov, zneski, datumi, kategorije, cilji, nastavitve), so shranjeni lokalno v vaši napravi.</p>
+        <p>Ni samodejno poslano nam ali našim strežnikom.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Funkcije, ki zahtevajo sistemski dostop</h2>
+        <p>Aplikacija lahko uporablja sistemske funkcije in povezane podatke samo v obsegu, ki je potreben za delovanje:</p>
+        <ul>
+          <li>Obvestila (UNUserNotificationCenter) - če omogočite opomnike, sistem iOS dostavlja obvestila glede na vaše nastavitve.</li>
+          <li>Jezik/regija/valuta/tema – uporablja se za oblikovanje vsebine in videza aplikacije (brez pošiljanja k nam).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Poročila o napakah/Stik s podporo</h2>
+        <p>Če uporabljate možnost »Prijavi napako« ali se obrnete na podporo:</p>
+        <ul>
+          <li>aplikacija lahko ustvari osnutek e-pošte v vaši poštni aplikaciji,</li>
+          <li>vsebina lahko vključuje diagnostične informacije (npr. različico aplikacije, iOS, nastavitve jezika/valute) – točno to, kar vidite v vsebini e-pošte pred pošiljanjem,</li>
+          <li>pošiljanje poteka samo, če to sami odobrite.</li>
+        </ul>
+        <p>Poslano e-pošto obdelamo vaš ponudnik pošte in mi kot prejemnik, izključno za obravnavo vaše zahteve.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Nakupi in naročnine (Apple + RevenueCat)</h2>
+        <p>Če so v aplikaciji na voljo plačljive funkcije (naročnine):</p>
+        <ul>
+          <li>plačila obdeluje Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>aplikacija uporablja RevenueCat kot ponudnika infrastrukture za upravljanje naročnin (vključno s predstavitvijo ponudbe, preverjanjem statusa naročnine in odobritvijo premium dostopa).</li>
+        </ul>
+        <p>V okviru obravnave naročnine se lahko obdelujejo tehnični podatki v zvezi z nakupom, kot so:</p>
+        <ul>
+          <li>identifikatorje transakcije/nakupa in informacije o izdelku,</li>
+          <li>stanje naročnine (aktivno/neaktivno, podaljšanje),</li>
+          <li>tehnični identifikator uporabnika, ki se uporablja za povezavo statusa naročnine (npr. anonimni ID uporabnika aplikacije, ki ga ustvari SDK).</li>
+        </ul>
+        <p>RevenueCat obdeluje te podatke za zagotavljanje storitev upravljanja z naročninami (kot procesor), Apple pa obdeluje podatke v zvezi s plačili v skladu s svojimi pravilniki.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analitika in sledenje</h2>
+        <p>Aplikacija ne uporablja analitičnih orodij ali oglaševalskih SDK-jev za sledenje uporabnikom in ne prodaja podatkov.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Spletno mesto (ciljna stran)</h2>
+        <p>Če obiščete naše spletno mesto, lahko ponudnik gostovanja (npr. GitHub Pages) samodejno obdela standardne tehnične podatke v strežniških dnevnikih (vključno z naslovom IP, vrsto brskalnika, datumom in časom zahteve) za namene varnosti, diagnostike in neprekinjenosti storitve. Obseg in pravila obdelave izhajajo iz politik ponudnika gostovanja.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Prejemniki podatkov</h2>
+        <p>Podatki se lahko razkrijejo le:</p>
+        <ul>
+          <li>ponudniki plačilnih in naročniških storitev: Apple in RevenueCat (obravnava naročnin),</li>
+          <li>javnih organov, če to zahteva zakon.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Obdobje shranjevanja</h2>
+        <ul>
+          <li>Podatki, vneseni v aplikacijo, so shranjeni lokalno, dokler jih ne izbrišete (npr. z brisanjem vnosov ali izbrisom aplikacije).</li>
+          <li>Podatki o e-poštni korespondenci se hranijo toliko časa, kolikor je potrebno za obravnavo zahteve in obrambo pred zahtevki (če je potrebno).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Uporabniške pravice (EU/EGP)</h2>
+        <p>Če v danem primeru obdelujemo vaše osebne podatke (npr. ko nam pošljete e-pošto), imate pravico do:</p>
+        <ul>
+          <li>dostop, popravek, izbris in omejitev obdelave,</li>
+          <li>predmet,</li>
+          <li>vložiti pritožbo pri pristojnem nadzornem organu.</li>
+        </ul>
+        <p>Obseg obveznosti obveščanja izhaja zlasti iz 13. člena GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Varnost</h2>
+        <p>Uporabljamo razumne organizacijske in tehnične ukrepe, ki ustrezajo naravi storitve. Ker so podatki aplikacije shranjeni lokalno, je pomemben element varnosti tudi zaščita vaše naprave (geslo/Face ID).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Spremembe politike</h2>
+        <p>Politika se lahko posodobi s spremembami funkcij aplikacije ali zakonskih zahtev. Trenutna različica bo objavljena na spletni strani aplikacije.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Pravi prihranki, ne izjave.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>

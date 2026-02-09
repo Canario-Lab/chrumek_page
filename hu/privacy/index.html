@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="szélesség=eszköz-szélesség, kezdeti lépték=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="A Chrumek alkalmazás adatvédelmi szabályzata." />
+  <title>Adatvédelmi szabályzat - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/hu/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Oldal témája: sötét. Váltson fényre."
+  data-theme-label-light="Oldal témája: fény. Váltson sötétre."
+  data-theme-title-dark="Oldal témája: sötét"
+  data-theme-title-light="Oldal témája: fény"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Vissza</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Adatvédelmi szabályzat</h1>
+
+      <section class="legal-section">
+        <h2>1) Adatkezelő</h2>
+        <p>A személyes adatok kezelője:<br />Canario-Lab / Chrumek App<br />Kapcsolatfelvételi e-mail: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Hatály és cél</h2>
+        <p>A Chrumek alkalmazás a megtakarítások nyomon követésére szolgál a „kísértések” és a visszaigazolt átutalások/megtakarított összegek nyilvántartásán keresztül.</p>
+        <p>Nem működtetünk felhasználói fiókokat, és nem gyűjtünk olyan adatokat, amelyek lehetővé tennék az Ön közvetlen azonosítását.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Az Alkalmazásban feldolgozott adatok (helyben az eszközön)</h2>
+        <p>Az alkalmazásban megadott adatok (pl. megtakarítási bejegyzések, összegek, dátumok, kategóriák, célok, beállítások) helyben tárolódnak az eszközön.</p>
+        <p>Nem kerül automatikusan elküldésre sem nekünk, sem a szervereinknek.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Rendszerhozzáférést igénylő szolgáltatások</h2>
+        <p>Az alkalmazás csak a működéshez szükséges mértékben használhatja a rendszerfunkciókat és a kapcsolódó adatokat:</p>
+        <ul>
+          <li>Értesítések (UNUserNotificationCenter) – ha engedélyezi az emlékeztetőket, az iOS rendszer az Ön beállításai szerint küld értesítéseket.</li>
+          <li>Nyelv / régió / pénznem / téma – az alkalmazás tartalmának és megjelenésének formázására szolgál (anélkül, hogy elküldené nekünk).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Hibajelentések / Támogatási kapcsolat</h2>
+        <p>Ha a "Hiba bejelentése" opciót használja, vagy forduljon az ügyfélszolgálathoz:</p>
+        <ul>
+          <li>az alkalmazás létrehozhat egy e-mail piszkozatot a levelezőalkalmazásában,</li>
+          <li>a tartalom tartalmazhat diagnosztikai információkat (pl. alkalmazás verziója, iOS, nyelvi/pénznembeállítások) – pontosan mit lát az e-mail tartalmában a küldés előtt,</li>
+          <li>a küldés csak akkor történik meg, ha Ön jóváhagyja.</li>
+        </ul>
+        <p>Az elküldött e-mailt az Ön levelezőszolgáltatója és mi, mint címzett dolgozzuk fel, kizárólag az Ön kérésének kezelésére.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Vásárlások és előfizetések (Apple + RevenueCat)</h2>
+        <p>Ha fizetős szolgáltatások (előfizetések) elérhetők az alkalmazásban:</p>
+        <ul>
+          <li>a fizetéseket az Apple dolgozza fel (App Store / Alkalmazáson belüli vásárlások / StoreKit),</li>
+          <li>az alkalmazás a RevenueCat infrastruktúra-szolgáltatót használja az előfizetések kezeléséhez (beleértve az ajánlatok bemutatását, az előfizetés állapotának ellenőrzését és a prémium hozzáférés biztosítását).</li>
+        </ul>
+        <p>Az előfizetéskezelés részeként a vásárláshoz kapcsolódó technikai adatok feldolgozhatók, mint pl.</p>
+        <ul>
+          <li>tranzakciós/vásárlási azonosítók és termékinformációk,</li>
+          <li>előfizetés állapota (aktív/inaktív, megújítások),</li>
+          <li>az előfizetés állapotának összekapcsolására használt technikai felhasználói azonosító (pl. az SDK által generált névtelen alkalmazás-felhasználói azonosító).</li>
+        </ul>
+        <p>A RevenueCat feldolgozza ezeket az adatokat, hogy előfizetés-kezelési szolgáltatásokat nyújtson (feldolgozóként), az Apple pedig saját szabályzatának megfelelően dolgozza fel a fizetéssel kapcsolatos adatokat.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analytics és nyomon követés</h2>
+        <p>Az alkalmazás nem használ analitikai eszközöket vagy hirdetési SDK-kat a felhasználók nyomon követésére, és nem értékesít adatokat.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Webhely (céloldal)</h2>
+        <p>Ha meglátogatja weboldalunkat, a tárhelyszolgáltató (pl. GitHub Pages) biztonsági, diagnosztikai és szolgáltatásfolytonossági okokból automatikusan feldolgozhatja a szervernaplókban szereplő szabványos műszaki adatokat (beleértve az IP-címet, a böngésző típusát, a kérés dátumát és időpontját). Az adatkezelés köre és szabályai a tárhelyszolgáltató szabályzatából erednek.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Adatcímzettek</h2>
+        <p>Az adatokat csak a következőkkel lehet közölni:</p>
+        <ul>
+          <li>fizetési és előfizetési szolgáltatók: Apple és RevenueCat (előfizetés kezelése),</li>
+          <li>hatóságok, ha azt törvény előírja.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Tárolási időszak</h2>
+        <ul>
+          <li>Az alkalmazásba bevitt adatokat a rendszer mindaddig helyileg tárolja, amíg Ön nem törli azokat (például bejegyzések törlésével vagy az alkalmazás törlésével).</li>
+          <li>Az e-mail levelezés adatait addig őrizzük meg, ameddig a kérelem kezeléséhez és a követelésekkel szembeni védekezéshez szükséges (ha szükséges).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Felhasználói jogok (EU/EGT)</h2>
+        <p>Ha egy adott esetben az Ön személyes adatait kezeljük (például amikor e-mailt küld nekünk), Önnek jogában áll:</p>
+        <ul>
+          <li>hozzáférés, helyesbítés, törlés és a feldolgozás korlátozása,</li>
+          <li>objektum,</li>
+          <li>panaszt tehet az illetékes felügyeleti hatóságnál.</li>
+        </ul>
+        <p>A tájékoztatási kötelezettségek köre különösen a GDPR 13. cikkéből következik.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Biztonság</h2>
+        <p>A szolgáltatás jellegének megfelelő ésszerű szervezési és technikai intézkedéseket alkalmazunk. Mivel az alkalmazásadatokat helyben tárolják, a biztonság fontos eleme az eszköz védelme is (jelszó/arcazonosító).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Az irányelvek változásai</h2>
+        <p>A szabályzat az alkalmazás funkcióinak vagy a jogi követelmények változásaival együtt frissülhet. A jelenlegi verziót az alkalmazás honlapján teszik közzé.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Valódi megtakarítás, nem bevallás.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>

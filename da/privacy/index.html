@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=enhedsbredde, initial-skala=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Privatlivspolitik for Chrumek-appen." />
+  <title>Privatlivspolitik - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/da/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Sidetema: mørk. Skift til lys."
+  data-theme-label-light="Sidetema: lys. Skift til mørkt."
+  data-theme-title-dark="Sidetema: mørk"
+  data-theme-title-light="Sidetema: lys"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Tilbage</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Privatlivspolitik</h1>
+
+      <section class="legal-section">
+        <h2>1) Dataansvarlig</h2>
+        <p>Den dataansvarlige for personoplysninger er:<br />Canario-Lab / Chrumek App<br />Kontakt e-mail: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Omfang og formål</h2>
+        <p>Chrumek-appen er en app til sporing af besparelser gennem registreringer af "fristelser" og bekræftede overførsler/opsparede beløb.</p>
+        <p>Vi driver ikke brugerkonti, og vi indsamler ikke data, der gør det muligt for os at identificere dig direkte.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Data behandlet i appen (lokalt på enheden)</h2>
+        <p>Data, som du indtaster i appen (f.eks. opsparingsposter, beløb, datoer, kategorier, mål, indstillinger) gemmes lokalt på din enhed.</p>
+        <p>Det sendes ikke automatisk til os eller til vores servere.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Funktioner, der kræver systemadgang</h2>
+        <p>Appen må kun bruge systemfunktioner og relaterede data i det omfang, det er nødvendigt for driften:</p>
+        <ul>
+          <li>Notifikationer (UNUserNotificationCenter) - hvis du aktiverer påmindelser, leverer iOS-systemet notifikationer i henhold til dine indstillinger.</li>
+          <li>Sprog / region / valuta / tema - bruges til at formatere appindhold og udseende (uden at sende til os).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Fejlrapporter / Supportkontakt</h2>
+        <p>Hvis du bruger muligheden "Rapportér en fejl" eller kontakter support:</p>
+        <ul>
+          <li>appen kan oprette en e-mail-kladde i din mailapplikation,</li>
+          <li>indholdet kan indeholde diagnostiske oplysninger (f.eks. appversion, iOS, sprog-/valutaindstillinger) - præcis det, du ser i e-mail-indholdet før afsendelse,</li>
+          <li>afsendelse sker kun, hvis du selv godkender det.</li>
+        </ul>
+        <p>En sendt e-mail behandles af din mailudbyder og af os som modtager, udelukkende til håndtering af din anmodning.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Køb og abonnementer (Apple + RevenueCat)</h2>
+        <p>Hvis betalte funktioner (abonnementer) er tilgængelige i appen:</p>
+        <ul>
+          <li>betalinger behandles af Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>appen bruger RevenueCat som en infrastrukturudbyder til abonnementsstyring (herunder tilbudspræsentation, verifikation af abonnementsstatus og tildeling af premium-adgang).</li>
+        </ul>
+        <p>Som en del af abonnementshåndteringen kan tekniske data relateret til købet blive behandlet, såsom:</p>
+        <ul>
+          <li>transaktions-/købsidentifikatorer og produktoplysninger,</li>
+          <li>abonnementsstatus (aktiv/inaktiv, fornyelser),</li>
+          <li>en teknisk bruger-id, der bruges til at linke abonnementsstatus (f.eks. et anonymt appbruger-id genereret af SDK'et).</li>
+        </ul>
+        <p>RevenueCat behandler disse data for at levere abonnementshåndteringstjenester (som databehandler), og Apple behandler betalingsrelaterede data i overensstemmelse med sine egne politikker.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analyse og sporing</h2>
+        <p>Appen bruger ikke analyseværktøjer eller reklame-SDK'er til at spore brugere og sælger ikke data.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Hjemmeside (landingsside)</h2>
+        <p>Hvis du besøger vores hjemmeside, kan hostingudbyderen (f.eks. GitHub-sider) automatisk behandle standard tekniske data i serverlogfiler (inklusive IP-adresse, browsertype, dato og tidspunkt for anmodningen) af hensyn til sikkerhed, diagnostik og servicekontinuitet. Omfanget og reglerne for behandling er et resultat af hostingudbyderens politikker.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Datamodtagere</h2>
+        <p>Data må kun videregives til:</p>
+        <ul>
+          <li>betalings- og abonnementstjenesteudbydere: Apple og RevenueCat (abonnementshåndtering),</li>
+          <li>offentlige myndigheder, hvis loven kræver det.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Opbevaringsperiode</h2>
+        <ul>
+          <li>Data, der indtastes i appen, gemmes lokalt, indtil du sletter dem (f.eks. ved at slette poster eller slette appen).</li>
+          <li>E-mail-korrespondancedata opbevares så længe det er nødvendigt for at håndtere anmodningen og for at forsvare sig mod krav (hvis nødvendigt).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Brugerrettigheder (EU/EØS)</h2>
+        <p>Hvis vi i et givet tilfælde behandler dine personoplysninger (f.eks. når du sender os en e-mail), har du ret til:</p>
+        <ul>
+          <li>adgang, berigtigelse, sletning og begrænsning af behandling,</li>
+          <li>objekt,</li>
+          <li>indgive en klage til den kompetente tilsynsmyndighed.</li>
+        </ul>
+        <p>Omfanget af informationsforpligtelser følger især af artikel 13 GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Sikkerhed</h2>
+        <p>Vi anvender rimelige organisatoriske og tekniske foranstaltninger, der passer til tjenestens art. Da appdata gemmes lokalt, er et vigtigt sikkerhedselement også at beskytte din enhed (adgangskode/ansigts-id).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Politikændringer</h2>
+        <p>Politikken kan blive opdateret med ændringer af appfunktioner eller juridiske krav. Den aktuelle version vil blive offentliggjort på appens hjemmeside.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Reelle besparelser, ikke erklæringer.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>

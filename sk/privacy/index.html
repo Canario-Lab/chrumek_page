@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Zásady ochrany osobných údajov pre aplikáciu Chrumek." />
+  <title>Zásady ochrany osobných údajov - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/sk/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Téma stránky: tmavý. Prepnite na svetlo."
+  data-theme-label-light="Téma stránky: svetlo. Prepnúť na tmavú."
+  data-theme-title-dark="Téma stránky: tmavý"
+  data-theme-title-light="Téma stránky: svetlo"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Späť</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Zásady ochrany osobných údajov</h1>
+
+      <section class="legal-section">
+        <h2>1) Prevádzkovateľ údajov</h2>
+        <p>Prevádzkovateľom osobných údajov je:<br />Canario-Lab / Chrumek App<br />Kontaktný e-mail: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Rozsah a účel</h2>
+        <p>Aplikácia Chrumek je aplikácia na sledovanie úspor prostredníctvom záznamov „pokušení“ a potvrdených prevodov/nasporených súm.</p>
+        <p>Neprevádzkujeme používateľské účty a nezhromažďujeme údaje, ktoré nám umožňujú priamo vás identifikovať.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Údaje spracované v aplikácii (lokálne v zariadení)</h2>
+        <p>Údaje, ktoré zadáte do aplikácie (napr. položky úspor, sumy, dátumy, kategórie, ciele, nastavenia), sa ukladajú lokálne vo vašom zariadení.</p>
+        <p>Neposiela sa automaticky nám ani na naše servery.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Funkcie vyžadujúce prístup k systému</h2>
+        <p>Aplikácia môže využívať funkcie systému a súvisiace údaje iba v rozsahu potrebnom na prevádzku:</p>
+        <ul>
+          <li>Upozornenia (UNUserNotificationCenter) – ak povolíte pripomienky, systém iOS doručuje upozornenia podľa vašich nastavení.</li>
+          <li>Jazyk / región / mena / téma - používa sa na formátovanie obsahu a vzhľadu aplikácie (bez toho, aby ste nám ju posielali).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Hlásenia chýb / Kontakt na podporu</h2>
+        <p>Ak použijete možnosť „Nahlásiť chybu“ alebo kontaktujte podporu:</p>
+        <ul>
+          <li>aplikácia môže vytvoriť koncept e-mailu vo vašej poštovej aplikácii,</li>
+          <li>obsah môže zahŕňať diagnostické informácie (napr. verziu aplikácie, iOS, nastavenia jazyka/meny) – presne to, čo vidíte v obsahu e-mailu pred odoslaním,</li>
+          <li>odoslanie sa uskutoční iba vtedy, ak ho sami schválite.</li>
+        </ul>
+        <p>Odoslaný e-mail spracováva váš poskytovateľ pošty a my ako príjemca výlučne na vybavenie vašej požiadavky.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Nákupy a predplatné (Apple + RevenueCat)</h2>
+        <p>Ak sú v aplikácii dostupné platené funkcie (predplatné):</p>
+        <ul>
+          <li>platby spracováva Apple (App Store / Nákupy v aplikácii / StoreKit),</li>
+          <li>aplikácia používa RevenueCat ako poskytovateľa infraštruktúry na správu predplatného (vrátane prezentácie ponuky, overenia stavu predplatného a udeľovania prémiového prístupu).</li>
+        </ul>
+        <p>V rámci spracovania predplatného môžu byť spracované technické údaje súvisiace s nákupom, ako napríklad:</p>
+        <ul>
+          <li>identifikátory transakcie/nákupu a informácie o produkte,</li>
+          <li>stav predplatného (aktívne/neaktívne, obnovenia),</li>
+          <li>technický identifikátor používateľa používaný na prepojenie stavu odberu (napr. anonymné ID používateľa aplikácie vygenerované súpravou SDK).</li>
+        </ul>
+        <p>RevenueCat spracúva tieto údaje na poskytovanie služieb spracovania predplatného (ako spracovateľ) a spoločnosť Apple spracúva údaje súvisiace s platbami v súlade so svojimi vlastnými zásadami.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analýza a sledovanie</h2>
+        <p>Aplikácia nepoužíva analytické nástroje ani reklamné súpravy SDK na sledovanie používateľov a nepredáva údaje.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Webová stránka (vstupná stránka)</h2>
+        <p>Ak navštívite našu webovú stránku, poskytovateľ hostingu (napr. stránky GitHub) môže automaticky spracovať štandardné technické údaje v protokoloch servera (vrátane IP adresy, typu prehliadača, dátumu a času požiadavky) na účely zabezpečenia, diagnostiky a kontinuity služieb. Rozsah a pravidlá spracovania vyplývajú zo zásad poskytovateľa hostingu.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Príjemcovia údajov</h2>
+        <p>Údaje môžu byť poskytnuté iba:</p>
+        <ul>
+          <li>poskytovatelia platobných a predplatených služieb: Apple a RevenueCat (spracovanie predplatného),</li>
+          <li>orgány verejnej moci, ak to vyžaduje zákon.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Doba skladovania</h2>
+        <ul>
+          <li>Údaje zadané do aplikácie sú uložené lokálne, kým ich neodstránite (napr. vymazaním záznamov alebo odstránením aplikácie).</li>
+          <li>Údaje z e-mailovej korešpondencie sa uchovávajú tak dlho, ako je potrebné na vybavenie žiadosti a na obranu pred nárokmi (ak je to potrebné).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Používateľské práva (EÚ/EHP)</h2>
+        <p>Ak v danom prípade spracúvame Vaše osobné údaje (napr. keď nám pošlete e-mail), máte právo:</p>
+        <ul>
+          <li>prístup, opravu, vymazanie a obmedzenie spracovania,</li>
+          <li>objekt,</li>
+          <li>podať sťažnosť príslušnému dozornému orgánu.</li>
+        </ul>
+        <p>Rozsah informačných povinností vyplýva najmä z článku 13 GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Bezpečnosť</h2>
+        <p>Uplatňujeme primerané organizačné a technické opatrenia primerané charakteru služby. Keďže dáta aplikácií sú uložené lokálne, dôležitým prvkom zabezpečenia je aj ochrana vášho zariadenia (prístupový kód/Face ID).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Zmeny zásad</h2>
+        <p>Zásady môžu byť aktualizované so zmenami funkcií aplikácie alebo právnych požiadaviek. Aktuálna verzia bude zverejnená na webovej stránke aplikácie.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Reálne úspory, nie priznania.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>

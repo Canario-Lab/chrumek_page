@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="lățime=lățime-dispozitiv, scară inițială=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Politica de confidențialitate pentru aplicația Chrumek." />
+  <title>Politica de confidențialitate - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/ro/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Tema paginii: întunecat. Comutați la lumină."
+  data-theme-label-light="Tema paginii: lumina. Treceți la întuneric."
+  data-theme-title-dark="Tema paginii: întunecat"
+  data-theme-title-light="Tema paginii: lumina"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Spate</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Politica de confidențialitate</h1>
+
+      <section class="legal-section">
+        <h2>1) Operator de date</h2>
+        <p>Operatorul datelor cu caracter personal este:<br />Aplicația Canario-Lab / Chrumek<br />E-mail de contact: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Domeniul de aplicare și Scopul</h2>
+        <p>Aplicația Chrumek este o aplicație pentru urmărirea economiilor prin înregistrări ale „ispitelor” și transferurilor confirmate/sumele economisite.</p>
+        <p>Nu operăm conturi de utilizator și nu colectăm date care ne permit să vă identificăm direct.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Datele procesate în aplicație (local pe dispozitiv)</h2>
+        <p>Datele pe care le introduceți în aplicație (de exemplu, intrări de economii, sume, date, categorii, obiective, setări) sunt stocate local pe dispozitivul dvs.</p>
+        <p>Nu este trimis automat la noi sau la serverele noastre.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Caracteristici care necesită acces la sistem</h2>
+        <p>Aplicația poate utiliza funcțiile sistemului și datele aferente numai în măsura în care este necesar pentru funcționare:</p>
+        <ul>
+          <li>Notificări (UNUserNotificationCenter) - dacă activați mementourile, sistemul iOS oferă notificări conform setărilor dvs.</li>
+          <li>Limbă / regiune / monedă / temă - folosită pentru a formata conținutul și aspectul aplicației (fără a ni se trimite).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Rapoarte de erori / Contact de asistență</h2>
+        <p>Dacă utilizați opțiunea „Raportați o eroare” sau contactați asistența:</p>
+        <ul>
+          <li>aplicația poate crea o schiță de e-mail în aplicația dvs. de e-mail,</li>
+          <li>conținutul poate include informații de diagnosticare (de exemplu, versiunea aplicației, iOS, setările de limbă/monedă) - exact ceea ce vedeți în conținutul e-mailului înainte de a trimite,</li>
+          <li>trimiterea are loc numai dacă o aprobi singur.</li>
+        </ul>
+        <p>Un e-mail trimis este procesat de furnizorul dvs. de e-mail și de noi, în calitate de destinatar, numai pentru tratarea cererii dvs.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Achiziții și abonamente (Apple + RevenueCat)</h2>
+        <p>Dacă funcțiile plătite (abonamentele) sunt disponibile în aplicație:</p>
+        <ul>
+          <li>plățile sunt procesate de Apple (App Store / Achiziții în aplicație / StoreKit),</li>
+          <li>aplicația folosește RevenueCat ca furnizor de infrastructură pentru gestionarea abonamentului (inclusiv prezentarea ofertei, verificarea stării abonamentului și acordarea accesului premium).</li>
+        </ul>
+        <p>Ca parte a gestionării abonamentului, pot fi procesate date tehnice legate de achiziție, cum ar fi:</p>
+        <ul>
+          <li>identificatori de tranzacție/cumpărare și informații despre produs,</li>
+          <li>starea abonamentului (activ/inactiv, reînnoiri),</li>
+          <li>un identificator tehnic de utilizator utilizat pentru a lega starea abonamentului (de exemplu, un ID de utilizator anonim al aplicației generat de SDK-ul).</li>
+        </ul>
+        <p>RevenueCat prelucrează aceste date pentru a furniza servicii de gestionare a abonamentelor (în calitate de procesator), iar Apple procesează datele legate de plăți în conformitate cu propriile sale politici.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analytics și urmărire</h2>
+        <p>Aplicația nu folosește instrumente de analiză sau SDK-uri de publicitate pentru a urmări utilizatorii și nu vinde date.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Site-ul web (pagina de destinație)</h2>
+        <p>Dacă vizitați site-ul nostru web, furnizorul de găzduire (de exemplu, Pagini GitHub) poate procesa automat date tehnice standard în jurnalele serverului (inclusiv adresa IP, tipul browserului, data și ora solicitării) în scopuri de securitate, diagnosticare și continuitate a serviciului. Sfera și regulile de prelucrare rezultă din politicile furnizorului de găzduire.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Destinatarii datelor</h2>
+        <p>Datele pot fi dezvăluite numai către:</p>
+        <ul>
+          <li>furnizori de servicii de plată și abonament: Apple și RevenueCat (gestionarea abonamentului),</li>
+          <li>autorităţile publice, dacă legea prevede acest lucru.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Perioada de depozitare</h2>
+        <ul>
+          <li>Datele introduse în aplicație sunt stocate local până când le ștergeți (de exemplu, prin ștergerea intrărilor sau ștergerea aplicației).</li>
+          <li>Datele de corespondență prin e-mail sunt păstrate atât timp cât este necesar pentru a gestiona cererea și pentru a apăra împotriva reclamațiilor (dacă este necesar).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Drepturile utilizatorului (UE/SEE)</h2>
+        <p>Dacă, într-un caz dat, prelucrăm datele dumneavoastră cu caracter personal (de exemplu, atunci când ne trimiteți un e-mail), aveți dreptul de a:</p>
+        <ul>
+          <li>accesul, rectificarea, ștergerea și restricționarea prelucrării,</li>
+          <li>obiect,</li>
+          <li>depune o plângere la autoritatea de supraveghere competentă.</li>
+        </ul>
+        <p>Sfera de aplicare a obligațiilor de informare rezultă în special din articolul 13 GDPR.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Securitate</h2>
+        <p>Aplicăm măsuri organizatorice și tehnice rezonabile adecvate naturii serviciului. Deoarece datele aplicației sunt stocate local, un element important de securitate este, de asemenea, protejarea dispozitivului dvs. (parola/Face ID).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Modificări ale politicii</h2>
+        <p>Politica poate fi actualizată cu modificări ale funcțiilor aplicației sau ale cerințelor legale. Versiunea actuală va fi publicată pe site-ul aplicației.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Economii reale, nu declarații.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>

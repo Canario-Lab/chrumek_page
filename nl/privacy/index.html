@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="breedte=apparaatbreedte, initiële schaal=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Privacybeleid voor de Chrumek-app." />
+  <title>Privacybeleid - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/nl/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="Paginathema: donker. Schakel over naar licht."
+  data-theme-label-light="Paginathema: licht. Schakel over naar donker."
+  data-theme-title-dark="Paginathema: donker"
+  data-theme-title-light="Paginathema: licht"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">Rug</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>Privacybeleid</h1>
+
+      <section class="legal-section">
+        <h2>1) Gegevensbeheerder</h2>
+        <p>De verwerkingsverantwoordelijke van persoonsgegevens is:<br />Canario-Lab / Chrumek-app<br />E-mailadres voor contact: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) Reikwijdte en doel</h2>
+        <p>De Chrumek-app is een app waarmee u besparingen kunt bijhouden via records van "verleidingen" en bevestigde overboekingen/opgeslagen bedragen.</p>
+        <p>Wij beheren geen gebruikersaccounts en verzamelen geen gegevens waarmee wij u rechtstreeks kunnen identificeren.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) Gegevens verwerkt in de app (lokaal op het apparaat)</h2>
+        <p>Gegevens die u in de app invoert (bijvoorbeeld spaarinvoer, bedragen, datums, categorieën, doelen, instellingen) worden lokaal op uw apparaat opgeslagen.</p>
+        <p>Het wordt niet automatisch naar ons of naar onze servers verzonden.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) Functies waarvoor systeemtoegang vereist is</h2>
+        <p>De app mag systeemfuncties en gerelateerde gegevens alleen gebruiken voor zover dit nodig is voor de werking:</p>
+        <ul>
+          <li>Meldingen (UNUserNotificationCenter) - als u herinneringen inschakelt, levert het iOS-systeem meldingen op basis van uw instellingen.</li>
+          <li>Taal / regio / valuta / thema - gebruikt om de inhoud en het uiterlijk van de app op te maken (zonder naar ons te verzenden).</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) Bugrapporten/ondersteuningscontact</h2>
+        <p>Als u de optie 'Een bug rapporteren' gebruikt of contact opneemt met de ondersteuning:</p>
+        <ul>
+          <li>de app kan een e-mailconcept maken in uw mailapplicatie,</li>
+          <li>de inhoud kan diagnostische informatie bevatten (bijvoorbeeld app-versie, iOS, taal-/valuta-instellingen) - precies wat u in de e-mailinhoud ziet voordat u deze verzendt,</li>
+          <li>Verzenden vindt alleen plaats als u dit zelf goedkeurt.</li>
+        </ul>
+        <p>Een verzonden e-mail wordt uitsluitend verwerkt door uw mailprovider en door ons als ontvanger, uitsluitend voor het afhandelen van uw verzoek.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) Aankopen en abonnementen (Apple + RevenueCat)</h2>
+        <p>Als betaalde functies (abonnementen) beschikbaar zijn in de app:</p>
+        <ul>
+          <li>betalingen worden verwerkt door Apple (App Store / In-App Aankopen / StoreKit),</li>
+          <li>de app gebruikt RevenueCat als infrastructuurprovider voor abonnementsbeheer (inclusief aanbiedingspresentatie, verificatie van de abonnementsstatus en het verlenen van premiumtoegang).</li>
+        </ul>
+        <p>Als onderdeel van de abonnementsafhandeling kunnen technische gegevens met betrekking tot de aankoop worden verwerkt, zoals:</p>
+        <ul>
+          <li>transactie-/aankoopidentificatoren en productinformatie,</li>
+          <li>abonnementsstatus (actief/inactief, verlengingen),</li>
+          <li>een technische gebruikers-ID die wordt gebruikt om de abonnementsstatus te koppelen (bijvoorbeeld een anonieme app-gebruikers-ID gegenereerd door de SDK).</li>
+        </ul>
+        <p>RevenueCat verwerkt deze gegevens om abonnementsafhandelingsdiensten te leveren (als verwerker), en Apple verwerkt betalingsgerelateerde gegevens in overeenstemming met zijn eigen beleid.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) Analyse en tracking</h2>
+        <p>De app maakt geen gebruik van analysetools of advertentie-SDK's om gebruikers te volgen en verkoopt geen gegevens.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) Website (landingspagina)</h2>
+        <p>Als u onze website bezoekt, kan de hostingprovider (bijvoorbeeld GitHub Pages) automatisch standaard technische gegevens verwerken in serverlogboeken (inclusief IP-adres, browsertype, datum en tijd van het verzoek) voor beveiligings-, diagnostiek- en servicecontinuïteitsdoeleinden. De reikwijdte en regels van de verwerking vloeien voort uit het beleid van de hostingprovider.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) Gegevensontvangers</h2>
+        <p>Gegevens mogen alleen worden bekendgemaakt aan:</p>
+        <ul>
+          <li>betalings- en abonnementsdienstverleners: Apple en RevenueCat (afhandeling van abonnementen),</li>
+          <li>overheidsinstanties, indien vereist door de wet.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) Bewaartermijn</h2>
+        <ul>
+          <li>In de app ingevoerde gegevens worden lokaal opgeslagen totdat u deze verwijdert (bijvoorbeeld door vermeldingen te verwijderen of de app te verwijderen).</li>
+          <li>E-mailcorrespondentiegegevens worden bewaard zolang als nodig is om het verzoek af te handelen en (indien nodig) om zich tegen claims te verdedigen.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) Gebruikersrechten (EU/EER)</h2>
+        <p>Als wij in een bepaald geval uw persoonsgegevens verwerken (bijvoorbeeld wanneer u ons een e-mail stuurt), heeft u het recht om:</p>
+        <ul>
+          <li>toegang, rectificatie, verwijdering en beperking van de verwerking,</li>
+          <li>voorwerp,</li>
+          <li>een klacht indienen bij de bevoegde toezichthoudende autoriteit.</li>
+        </ul>
+        <p>De reikwijdte van de informatieverplichtingen volgt met name uit artikel 13 AVG.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) Beveiliging</h2>
+        <p>Wij passen redelijke organisatorische en technische maatregelen toe die passen bij de aard van de dienstverlening. Omdat app-gegevens lokaal worden opgeslagen, is een belangrijk beveiligingselement ook het beschermen van uw apparaat (toegangscode/Face ID).</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) Beleidswijzigingen</h2>
+        <p>Het beleid kan worden bijgewerkt met wijzigingen in app-functies of wettelijke vereisten. De huidige versie wordt gepubliceerd op de website van de app.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. Echte besparingen, geen aangiften.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>
