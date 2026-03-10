@@ -59,9 +59,6 @@
   data-theme-label-light="Paginathema: licht. Schakel over naar donker."
   data-theme-title-dark="Paginathema: donker"
   data-theme-title-light="Paginathema: licht"
-  data-mail-subject="Chrumek bèta – nodig me uit voor TestFlight"
-  data-mail-intro="Ik wil lid worden van de Chrumek-bètalijst."
-  data-mail-name-label="Naam"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Dit is niet weer een onkostentracker. Hier registreert u alleen de verleidingen die u heeft weerstaan ​​en de besparingen die u daadwerkelijk heeft gerealiseerd.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Sluit u aan bij de bètalijst</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Bekijk het app-proces</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Download in de App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-nl.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Binnenkort op Google Play" title="Binnenkort op Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Binnenkort op</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Sluit u aan bij de bètalijst</h2>
-      <p>We sturen u een TestFlight-uitnodiging zodra de bèta beschikbaar is. Geen spam.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek is nu beschikbaar</h2>
+      <p>Open de app-pagina in de App Store. Als die nog niet zichtbaar is, geef de uitrol nog even tijd.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Download in de App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-nl.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Binnenkort op Google Play" title="Binnenkort op Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Binnenkort op</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Meedoen</button>
-      </form>
-      <small class="final-cta-note">Door te verzenden, opent u uw e-mailapp met een vooraf ingevuld bericht.</small>
+      </div>
     </section>
   </main>
 

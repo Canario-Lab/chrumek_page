@@ -59,9 +59,6 @@
   data-theme-label-light="Тема на страницата: светлина. Превключете на тъмно."
   data-theme-title-dark="Тема на страницата: тъмна"
   data-theme-title-light="Тема на страницата: светлина"
-  data-mail-subject="Chrumek бета – моля, поканете ме в TestFlight"
-  data-mail-intro="Искам да се присъединя към бета списъка на Chrumek."
-  data-mail-name-label="Име"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Това не е друг инструмент за проследяване на разходите. Тук регистрирате само изкушенията, на които сте устояли, и спестяванията, които действително сте направили.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Присъединете се към бета списъка</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Вижте потока на приложението</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Изтеглете от App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-bg.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Скоро в Google Play" title="Скоро в Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Скоро в</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Присъединете се към бета списъка</h2>
-      <p>Ще ви изпратим покана за TestFlight веднага щом бета версията е налична. Без спам.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek вече е наличен</h2>
+      <p>Отворете страницата в App Store. Ако все още не се вижда, изчакайте още малко за разпространението.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Изтеглете от App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-bg.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Скоро в Google Play" title="Скоро в Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Скоро в</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Присъединете се</button>
-      </form>
-      <small class="final-cta-note">Изпращайки, ще отворите вашето имейл приложение с предварително попълнено съобщение.</small>
+      </div>
     </section>
   </main>
 

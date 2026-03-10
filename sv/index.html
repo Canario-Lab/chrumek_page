@@ -59,9 +59,6 @@
   data-theme-label-light="Sidtema: ljus. Byt till mörkt."
   data-theme-title-dark="Sidtema: mörkt"
   data-theme-title-light="Sidtema: ljus"
-  data-mail-subject="Chrumek beta – vänligen bjud in mig till TestFlight"
-  data-mail-intro="Jag vill gå med i Chrumek betalista."
-  data-mail-name-label="Namn"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Detta är inte en annan utgiftsspårare. Här loggar du bara frestelser du motstått och besparingar du faktiskt gjort.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Gå med i betalistan</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Se appflödet</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Ladda ner i App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-sv.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Snart på Google Play" title="Snart på Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Snart på</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Gå med i betalistan</h2>
-      <p>Vi skickar dig en TestFlight-inbjudan så snart betaversionen är tillgänglig. Ingen spam.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek finns nu i App Store</h2>
+      <p>Öppna appsidan i App Store. Om den inte syns ännu, ge spridningen lite mer tid.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Ladda ner i App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-sv.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Snart på Google Play" title="Snart på Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Snart på</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Ansluta sig till</button>
-      </form>
-      <small class="final-cta-note">Genom att skicka öppnar du din e-postapp med ett förifyllt meddelande.</small>
+      </div>
     </section>
   </main>
 

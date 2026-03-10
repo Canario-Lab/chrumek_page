@@ -59,9 +59,6 @@
   data-theme-label-light="Tema strani: svetloba. Preklopite na temno."
   data-theme-title-dark="Tema strani: temna"
   data-theme-title-light="Tema strani: svetloba"
-  data-mail-subject="Chrumek beta – povabite me na TestFlight"
-  data-mail-intro="Želim se pridružiti Chrumek beta seznamu."
-  data-mail-name-label="Ime"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">To ni še en sledilnik stroškov. Tukaj beležite samo skušnjave, ki ste se jim uprli, in prihranke, ki ste jih dejansko ustvarili.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Pridružite se beta seznamu</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Oglejte si potek aplikacije</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Prenesi iz App Stora"><img class="app-store-badge" src="../assets_badges/app-store-badge-sl.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Kmalu v Google Play" title="Kmalu v Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Kmalu v</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Pridružite se beta seznamu</h2>
-      <p>Poslali vam bomo povabilo na TestFlight takoj, ko bo beta na voljo. Brez vsiljene pošte.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek je zdaj na voljo</h2>
+      <p>Odprite stran aplikacije v trgovini App Store. Če še ni vidna, počakajte še malo na razširitev objave.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Prenesi iz App Stora"><img class="app-store-badge" src="../assets_badges/app-store-badge-sl.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Kmalu v Google Play" title="Kmalu v Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Kmalu v</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Pridruži se</button>
-      </form>
-      <small class="final-cta-note">S pošiljanjem boste odprli svojo e-poštno aplikacijo z vnaprej izpolnjenim sporočilom.</small>
+      </div>
     </section>
   </main>
 

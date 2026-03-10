@@ -59,9 +59,6 @@
   data-theme-label-light="Oldal témája: fény. Váltson sötétre."
   data-theme-title-dark="Oldal témája: sötét"
   data-theme-title-light="Oldal témája: fény"
-  data-mail-subject="Chrumek béta – kérem, hívjon meg a TestFlight-ba"
-  data-mail-intro="Szeretnék csatlakozni a Chrumek béta listához."
-  data-mail-name-label="Név"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Ez nem egy újabb költségkövető. Itt csak azokat a kísértéseket naplózza, amelyeknek ellenállt, és a ténylegesen elért megtakarításokat.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Csatlakozzon a béta listához</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Tekintse meg az alkalmazás folyamatát</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Letöltés az App Store-ból"><img class="app-store-badge" src="../assets_badges/app-store-badge-hu.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Hamarosan a Google Playen" title="Hamarosan a Google Playen">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Hamarosan a</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Csatlakozzon a béta listához</h2>
-      <p>TestFlight meghívót küldünk Önnek, amint elérhető a béta. Nincs spam.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>A Chrumek már elérhető</h2>
+      <p>Nyissa meg az alkalmazás App Store oldalát. Ha még nem látható, adjon még egy kis időt a terjedésnek.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Letöltés az App Store-ból"><img class="app-store-badge" src="../assets_badges/app-store-badge-hu.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Hamarosan a Google Playen" title="Hamarosan a Google Playen">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Hamarosan a</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Csatlakozik</button>
-      </form>
-      <small class="final-cta-note">Az elküldéssel megnyitja az e-mail alkalmazást egy előre kitöltött üzenettel.</small>
+      </div>
     </section>
   </main>
 

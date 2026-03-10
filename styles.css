@@ -365,8 +365,17 @@ h1 span {
 
 .hero-actions {
   display: flex;
+  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+  margin: 0 0 10px;
+}
+
+.store-badges {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .btn {
@@ -394,6 +403,72 @@ h1 span {
   border: 1px solid var(--line);
   color: var(--text);
   background: var(--surface-soft);
+}
+
+.app-store-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 14px;
+  transition: transform 180ms ease;
+}
+
+.app-store-badge-link:hover {
+  transform: translateY(-1px);
+}
+
+.app-store-badge-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.app-store-badge {
+  display: block;
+  height: 56px;
+  width: auto;
+}
+
+.google-play-badge {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "icon kicker"
+    "icon title";
+  align-items: center;
+  column-gap: 10px;
+  min-height: 56px;
+  padding: 8px 14px 8px 12px;
+  border-radius: 14px;
+  background: #000;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+  opacity: 0.82;
+  user-select: none;
+}
+
+.google-play-badge-icon {
+  grid-area: icon;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.google-play-badge-kicker {
+  grid-area: kicker;
+  font-size: 0.68rem;
+  line-height: 1.05;
+  color: rgba(255, 255, 255, 0.82);
+  white-space: nowrap;
+}
+
+.google-play-badge-title {
+  grid-area: title;
+  font-size: 1.28rem;
+  line-height: 1;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .stats {
@@ -541,7 +616,7 @@ h1 span {
 }
 
 .appshots {
-  padding: 4px 0 24px;
+  padding: 18px 0 24px;
 }
 
 .appshots-description {
@@ -783,6 +858,10 @@ h1 span {
   text-align: center;
   color: var(--muted);
   font-weight: 700;
+}
+
+.final-cta .store-badges {
+  justify-content: center;
 }
 
 .appshots-dots {
@@ -1401,6 +1480,29 @@ body,
   .btn,
   .hero-actions {
     width: 100%;
+  }
+
+  .store-badges {
+    width: 100%;
+  }
+
+  .app-store-badge-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .app-store-badge {
+    max-width: 100%;
+    height: 54px;
+  }
+
+  .google-play-badge {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-actions .btn-ghost {
+    width: auto;
   }
 }
 

@@ -59,9 +59,6 @@
   data-theme-label-light="Тема сторінки: світла. Перемкнути на темну."
   data-theme-title-dark="Тема сторінки: темна"
   data-theme-title-light="Тема сторінки: світла"
-  data-mail-subject="Chrumek beta – прошу запрошення в TestFlight"
-  data-mail-intro="Хочу приєднатися до бета-списку Chrumek."
-  data-mail-name-label="Ім&#x27;я"
 >
   <script>
     (function () {
@@ -200,8 +197,14 @@
         <p class="lead-note">Це не черговий трекер витрат. Тут ти записуєш лише спокуси, яким ти опирався, і заощадження, які ти реально отримав.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Приєднатися до бета-списку</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Подивитися флоу застосунку</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Завантажити в App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-uk.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Незабаром у Google Play" title="Незабаром у Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Незабаром у</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -543,16 +546,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Приєднуйся до бета-списку</h2>
-      <p>Надішлемо запрошення в TestFlight, щойно бета стане доступною. Без спаму.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Твій e-mail" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Ім&#x27;я (необов’язково)" />
+      <h2>Chrumek уже доступний</h2>
+      <p>Відкрий сторінку застосунку в App Store. Якщо її ще не видно, зачекай трохи, поки завершиться поширення.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Завантажити в App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-uk.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Незабаром у Google Play" title="Незабаром у Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Незабаром у</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Приєднуюсь</button>
-      </form>
-      <small class="final-cta-note">Після надсилання відкриється твій поштовий застосунок з готовим листом.</small>
+      </div>
     </section>
   </main>
 

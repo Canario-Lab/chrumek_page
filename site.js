@@ -44,41 +44,6 @@
     });
   }
 
-  var betaForm = document.getElementById("betaForm");
-  var betaEmail = document.getElementById("betaEmail");
-  var betaName = document.getElementById("betaName");
-
-  if (betaForm && betaEmail) {
-    betaForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      var email = betaEmail.value.trim();
-      var name = betaName ? betaName.value.trim() : "";
-
-      if (!email) {
-        betaEmail.focus();
-        return;
-      }
-
-      var subject = body.getAttribute("data-mail-subject") || "Chrumek beta - please invite me to TestFlight";
-      var intro = body.getAttribute("data-mail-intro") || "I want to join the Chrumek beta list.";
-      var nameLabel = body.getAttribute("data-mail-name-label") || "Name";
-
-      var bodyLines = [intro, "", "Email: " + email];
-      if (name) {
-        bodyLines.push(nameLabel + ": " + name);
-      }
-
-      var mailtoLink =
-        "mailto:chrumek@chrumek.app?subject=" +
-        encodeURIComponent(subject) +
-        "&body=" +
-        encodeURIComponent(bodyLines.join("\n"));
-
-      window.location.href = mailtoLink;
-    });
-  }
-
   var checklistCard = document.querySelector(".hero-panel .panel-card");
   var checklistItems = Array.prototype.slice.call(document.querySelectorAll(".hero-panel .checklist-item"));
 

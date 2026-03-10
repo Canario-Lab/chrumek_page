@@ -59,9 +59,6 @@
   data-theme-label-light="Sidetema: lys. Skift til mørkt."
   data-theme-title-dark="Sidetema: mørk"
   data-theme-title-light="Sidetema: lys"
-  data-mail-subject="Chrumek beta – inviter mig venligst til TestFlight"
-  data-mail-intro="Jeg vil tilmelde mig Chrumek beta-listen."
-  data-mail-name-label="Navn"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Dette er ikke endnu en udgiftssporing. Her logger du kun fristelser, du modstod, og besparelser, du rent faktisk har lavet.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Tilmeld dig betalisten</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Se appflowet</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Download i App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-da.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Snart i Google Play" title="Snart i Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Snart i</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Tilmeld dig betalisten</h2>
-      <p>Vi sender dig en TestFlight-invitation, så snart betaversionen er tilgængelig. Ingen spam.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek er nu tilgængelig</h2>
+      <p>Åbn appens side i App Store. Hvis den ikke er synlig endnu, så giv udbredelsen lidt mere tid.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Download i App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-da.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Snart i Google Play" title="Snart i Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Snart i</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Deltag</button>
-      </form>
-      <small class="final-cta-note">Ved at sende, åbner du din e-mail-app med en forududfyldt besked.</small>
+      </div>
     </section>
   </main>
 

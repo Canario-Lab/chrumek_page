@@ -59,9 +59,6 @@
   data-theme-label-light="Téma stránky: svetlo. Prepnúť na tmavú."
   data-theme-title-dark="Téma stránky: tmavý"
   data-theme-title-light="Téma stránky: svetlo"
-  data-mail-subject="Chrumek beta – pozvite ma na TestFlight"
-  data-mail-intro="Chcem sa pridať do beta zoznamu Chrumek."
-  data-mail-name-label="Meno"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Toto nie je ďalší nástroj na sledovanie výdavkov. Tu zaznamenávate len pokušenia, ktorým ste odolali, a úspory, ktoré ste skutočne dosiahli.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Pripojte sa k beta zoznamu</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Pozrite si priebeh aplikácie</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Stiahnuť z App Storu"><img class="app-store-badge" src="../assets_badges/app-store-badge-sk.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Čoskoro v Google Play" title="Čoskoro v Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Čoskoro v</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Pripojte sa k beta zoznamu</h2>
-      <p>Hneď ako bude beta dostupná, pošleme vám pozvánku na TestFlight. Žiadny spam.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek je už dostupný</h2>
+      <p>Otvorte stránku aplikácie v App Store. Ak ju ešte nevidno, dajte propagácii ešte chvíľu.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Stiahnuť z App Storu"><img class="app-store-badge" src="../assets_badges/app-store-badge-sk.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Čoskoro v Google Play" title="Čoskoro v Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Čoskoro v</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Pripojte sa</button>
-      </form>
-      <small class="final-cta-note">Odoslaním otvoríte svoju e-mailovú aplikáciu s predvyplnenou správou.</small>
+      </div>
     </section>
   </main>
 

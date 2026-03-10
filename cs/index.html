@@ -59,9 +59,6 @@
   data-theme-label-light="Téma stránky: světlo. Přepnout do tmy."
   data-theme-title-dark="Téma stránky: tmavý"
   data-theme-title-light="Téma stránky: světlo"
-  data-mail-subject="Chrumek beta – pozvěte mě na TestFlight"
-  data-mail-intro="Chci se přidat na Chrumek beta list."
-  data-mail-name-label="Jméno"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Toto není další sledovač výdajů. Zde zaznamenáte pouze pokušení, kterým jste odolali, a úspory, které jste skutečně vytvořili.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Připojte se k beta seznamu</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Podívejte se na průběh aplikace</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Stáhnout z App Storu"><img class="app-store-badge" src="../assets_badges/app-store-badge-cs.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Brzy v Google Play" title="Brzy v Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Brzy v</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Připojte se k beta seznamu</h2>
-      <p>Jakmile bude beta dostupná, zašleme vám pozvánku na TestFlight. Žádný spam.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek je už dostupný</h2>
+      <p>Otevřete stránku aplikace v App Store. Pokud ještě není vidět, dejte propagaci ještě chvilku.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Stáhnout z App Storu"><img class="app-store-badge" src="../assets_badges/app-store-badge-cs.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Brzy v Google Play" title="Brzy v Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Brzy v</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Připojte se</button>
-      </form>
-      <small class="final-cta-note">Odesláním otevřete svou e-mailovou aplikaci s předvyplněnou zprávou.</small>
+      </div>
     </section>
   </main>
 

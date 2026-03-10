@@ -59,9 +59,6 @@
   data-theme-label-light="Page theme: light. Switch to dark."
   data-theme-title-dark="Page theme: dark"
   data-theme-title-light="Page theme: light"
-  data-mail-subject="Chrumek beta – please invite me to TestFlight"
-  data-mail-intro="I want to join the Chrumek beta list."
-  data-mail-name-label="Name"
 >
   <script>
     (function () {
@@ -200,8 +197,14 @@
         <p class="lead-note">This is not another expense tracker. Here, you only log temptations you resisted and savings you actually made.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Join the beta list</a>
-          <a class="btn btn-ghost" href="#jak-dziala">See the app flow</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Download on the App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-en.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Coming soon on Google Play" title="Coming soon on Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Coming soon on</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -543,16 +546,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Join the beta list</h2>
-      <p>We&#x27;ll send you a TestFlight invite as soon as beta is available. No spam.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek is now available</h2>
+      <p>Open the App Store listing. If it is not visible yet, give propagation a little more time.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Download on the App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-en.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Coming soon on Google Play" title="Coming soon on Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Coming soon on</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Join</button>
-      </form>
-      <small class="final-cta-note">By sending, you&#x27;ll open your email app with a pre-filled message.</small>
+      </div>
     </section>
   </main>
 

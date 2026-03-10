@@ -59,9 +59,6 @@
   data-theme-label-light="Tema pagina: chiaro. Passa allo scuro."
   data-theme-title-dark="Tema pagina: scuro"
   data-theme-title-light="Tema pagina: chiaro"
-  data-mail-subject="Chrumek beta – invitami a TestFlight"
-  data-mail-intro="Voglio unirmi alla lista beta di Chrumek."
-  data-mail-name-label="Nome"
 >
   <script>
     (function () {
@@ -200,8 +197,14 @@
         <p class="lead-note">Non è l’ennesimo tracker delle spese. Qui registri solo le tentazioni a cui hai resistito e i risparmi che hai davvero ottenuto.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Unisciti alla beta</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Vedi il flusso dell’app</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Scarica su App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-it.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Presto su Google Play" title="Presto su Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Presto su</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -543,16 +546,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Unisciti alla lista beta</h2>
-      <p>Ti invieremo un invito TestFlight appena la beta sarà disponibile. Niente spam.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="La tua email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Nome (opzionale)" />
+      <h2>Chrumek è ora disponibile</h2>
+      <p>Apri la scheda su App Store. Se non è ancora visibile, attendi ancora un po’ per la propagazione.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Scarica su App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-it.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Presto su Google Play" title="Presto su Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Presto su</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Partecipo</button>
-      </form>
-      <small class="final-cta-note">Inviando, si aprirà la tua app di posta con un messaggio già pronto.</small>
+      </div>
     </section>
   </main>
 

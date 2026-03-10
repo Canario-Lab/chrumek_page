@@ -59,9 +59,6 @@
   data-theme-label-light="Tema stranice: svjetlo. Prebaci na tamno."
   data-theme-title-dark="Tema stranice: tamna"
   data-theme-title-light="Tema stranice: svjetlo"
-  data-mail-subject="Chrumek beta – pozovite me na TestFlight"
-  data-mail-intro="Želim se pridružiti Chrumek beta listi."
-  data-mail-name-label="Ime"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Ovo nije još jedno praćenje troškova. Ovdje bilježite samo iskušenja kojima ste odoljeli i uštede koje ste stvarno ostvarili.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Pridružite se beta listi</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Pogledajte tok aplikacije</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Preuzmi u App Storeu"><img class="app-store-badge" src="../assets_badges/app-store-badge-hr.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Uskoro na Google Playu" title="Uskoro na Google Playu">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Uskoro na</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Pridružite se beta listi</h2>
-      <p>Poslat ćemo vam pozivnicu za TestFlight čim beta bude dostupna. Nema spama.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek je sada dostupan</h2>
+      <p>Otvorite stranicu aplikacije u App Storeu. Ako još nije vidljiva, pričekajte još malo da se objava proširi.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Preuzmi u App Storeu"><img class="app-store-badge" src="../assets_badges/app-store-badge-hr.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Uskoro na Google Playu" title="Uskoro na Google Playu">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Uskoro na</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Pridruži se</button>
-      </form>
-      <small class="final-cta-note">Slanjem ćete otvoriti svoju aplikaciju za e-poštu s unaprijed ispunjenom porukom.</small>
+      </div>
     </section>
   </main>
 

@@ -59,9 +59,6 @@
   data-theme-label-light="Sivun teema: valo. Vaihda pimeään."
   data-theme-title-dark="Sivun teema: tumma"
   data-theme-title-light="Sivun teema: valo"
-  data-mail-subject="Chrumek beta – kutsu minut TestFlightiin"
-  data-mail-intro="Haluan liittyä Chrumek beta -listalle."
-  data-mail-name-label="Nimi"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Tämä ei ole toinen kulujen seuranta. Täällä kirjaat vain kiusaukset, joita vastustit, ja tosiasiallisesti tekemäsi säästöt.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Liity beta-listalle</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Katso sovelluskulku</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Lataa App Storesta"><img class="app-store-badge" src="../assets_badges/app-store-badge-fi.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Pian Google Playssa" title="Pian Google Playssa">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Pian</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Liity beta-listalle</h2>
-      <p>Lähetämme sinulle TestFlight-kutsun heti, kun beta on saatavilla. Ei roskapostia.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Chrumek on nyt saatavilla</h2>
+      <p>Avaa sovelluksen App Store -sivu. Jos sitä ei vielä näy, anna julkaisun levitä vielä hetki.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Lataa App Storesta"><img class="app-store-badge" src="../assets_badges/app-store-badge-fi.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Pian Google Playssa" title="Pian Google Playssa">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Pian</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Liity</button>
-      </form>
-      <small class="final-cta-note">Lähettämällä avaat sähköpostisovelluksesi esitäytetyllä viestillä.</small>
+      </div>
     </section>
   </main>
 

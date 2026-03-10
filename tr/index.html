@@ -59,9 +59,6 @@
   data-theme-label-light="Sayfa teması: açık. Koyu temaya geç."
   data-theme-title-dark="Sayfa teması: koyu"
   data-theme-title-light="Sayfa teması: açık"
-  data-mail-subject="Chrumek beta – TestFlight daveti istiyorum"
-  data-mail-intro="Chrumek beta listesine katılmak istiyorum."
-  data-mail-name-label="İsim"
 >
   <script>
     (function () {
@@ -200,8 +197,14 @@
         <p class="lead-note">Bu, bir harcama takipçisi değil. Burada sadece karşı koyduğun harcama dürtülerini ve elde ettiğin tasarrufları kaydedersin.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Beta listesine katıl</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Uygulama akışını gör</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="App Store’da indir"><img class="app-store-badge" src="../assets_badges/app-store-badge-tr.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Google Play yakında" title="Google Play yakında">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Yakında</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -543,16 +546,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Beta listesine katıl</h2>
-      <p>Beta hazır olur olmaz sana TestFlight daveti göndereceğiz. Spam yok.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="E-posta adresin" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="İsim (opsiyonel)" />
+      <h2>Chrumek artık yayında</h2>
+      <p>App Store sayfasını açın. Henüz görünmüyorsa yayılmanın tamamlanması için biraz daha bekleyin.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="App Store’da indir"><img class="app-store-badge" src="../assets_badges/app-store-badge-tr.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Google Play yakında" title="Google Play yakında">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Yakında</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Katılıyorum</button>
-      </form>
-      <small class="final-cta-note">Gönderince, e-posta uygulaman hazır mesajla açılır.</small>
+      </div>
     </section>
   </main>
 

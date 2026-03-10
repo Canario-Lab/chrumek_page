@@ -59,9 +59,6 @@
   data-theme-label-light="Θέμα σελίδας: φως. Εναλλαγή σε σκοτεινό."
   data-theme-title-dark="Θέμα σελίδας: σκοτεινό"
   data-theme-title-light="Θέμα σελίδας: φως"
-  data-mail-subject="Chrumek beta – προσκαλέστε με στο TestFlight"
-  data-mail-intro="Θέλω να συμμετάσχω στη λίστα Chrumek beta."
-  data-mail-name-label="Ονομα"
 >
   <script>
     (function () {
@@ -201,8 +198,14 @@
         <p class="lead-note">Αυτό δεν είναι άλλος ιχνηλάτης εξόδων. Εδώ, καταγράφετε μόνο πειρασμούς στους οποίους αντισταθήκατε και οικονομίες που κάνατε πραγματικά.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#start">Εγγραφείτε στη λίστα beta</a>
-          <a class="btn btn-ghost" href="#jak-dziala">Δείτε τη ροή της εφαρμογής</a>
+          <div class="store-badges">
+            <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Λήψη στο App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-el.svg" alt="" /></a>
+            <span class="google-play-badge" role="img" aria-label="Σύντομα στο Google Play" title="Σύντομα στο Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Σύντομα στο</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
+          </div>
         </div>
 
         <ul class="stats">
@@ -544,16 +547,18 @@
     </section>
 
     <section class="final-cta container" id="start">
-      <h2>Εγγραφείτε στη λίστα beta</h2>
-      <p>Θα σας στείλουμε μια πρόσκληση TestFlight μόλις είναι διαθέσιμη η έκδοση beta. Χωρίς ανεπιθύμητο περιεχόμενο.</p>
-      <form class="final-cta-form" id="betaForm">
-        <div class="final-cta-fields">
-          <input class="final-cta-input" id="betaEmail" name="email" type="email" required placeholder="Your email" />
-          <input class="final-cta-input" id="betaName" name="name" type="text" placeholder="Name (optional)" />
+      <h2>Το Chrumek είναι πλέον διαθέσιμο</h2>
+      <p>Ανοίξτε τη σελίδα της εφαρμογής στο App Store. Αν δεν εμφανίζεται ακόμη, δώστε λίγο χρόνο ακόμη στη διάδοση.</p>
+      <div class="final-cta-form">
+        <div class="store-badges">
+          <a class="app-store-badge-link" href="https://apps.apple.com/app/id6759116351" aria-label="Λήψη στο App Store"><img class="app-store-badge" src="../assets_badges/app-store-badge-el.svg" alt="" /></a>
+          <span class="google-play-badge" role="img" aria-label="Σύντομα στο Google Play" title="Σύντομα στο Google Play">
+  <img class="google-play-badge-icon" src="../assets_badges/google-play-icon.svg" alt="" />
+  <span class="google-play-badge-kicker">Σύντομα στο</span>
+  <span class="google-play-badge-title">Google Play</span>
+</span>
         </div>
-        <button class="btn btn-primary final-cta-submit" type="submit">Ενώνω</button>
-      </form>
-      <small class="final-cta-note">Με την αποστολή, θα ανοίξετε την εφαρμογή email σας με ένα προσυμπληρωμένο μήνυμα.</small>
+      </div>
     </section>
   </main>
 
