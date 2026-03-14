@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="theme-color" content="#ff2d55" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Chrumek 앱의 개인정보 처리방침." />
+  <title>개인정보 처리방침 - Chrumek</title>
+  <link rel="canonical" href="https://canario-lab.github.io/chrumek_page/ko/privacy/" />
+  <link rel="icon" type="image/png" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="apple-touch-icon" href="../../chrumekapp_scale44-kopia.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body
+  data-theme-label-dark="페이지 테마: 다크. 라이트로 전환."
+  data-theme-label-light="페이지 테마: 라이트. 다크로 전환."
+  data-theme-title-dark="페이지 테마: 다크"
+  data-theme-title-light="페이지 테마: 라이트"
+>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("chrum-theme");
+        document.body.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+      } catch (error) {
+        document.body.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <header class="site-header container">
+    <a class="brand" href="../">Chrumek</a>
+    <div class="header-actions">
+      <a class="legal-return" href="../">돌아가기</a>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-toggle-icon" id="themeToggleIcon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <article class="legal-article">
+      <h1>개인정보 처리방침</h1>
+
+      <section class="legal-section">
+        <h2>1) 개인정보처리자</h2>
+        <p>개인정보처리자는 다음과 같습니다.<br />Canario-Lab / Chrumek App<br />문의 이메일: chrumek@chrumek.app</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2) 범위와 목적</h2>
+        <p>Chrumek은 사지 않은 소비, 더 저렴한 선택, 그리고 실제로 저축으로 옮긴 금액을 기록해 저축 습관을 돕는 앱입니다.</p>
+        <p>이 앱은 사용자 계정을 요구하지 않으며, 원칙적으로 사용자를 직접 식별할 수 있는 개인정보를 수집하지 않습니다.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3) 앱에서 처리되는 데이터 (기기 내 로컬 저장)</h2>
+        <p>앱에 입력한 데이터(기록, 금액, 날짜, 카테고리, 목표, 각종 설정 등)는 기기 안에 로컬로 저장됩니다.</p>
+        <p>이 데이터는 자동으로 저희나 저희 서버로 전송되지 않습니다.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>4) 시스템 권한이 필요한 기능</h2>
+        <p>앱은 동작에 필요한 범위에서만 시스템 기능과 관련 데이터를 사용합니다.</p>
+        <ul>
+          <li>알림 (UNUserNotificationCenter): 알림을 켜면 iOS가 사용자의 설정에 따라 알림을 전달합니다.</li>
+          <li>언어 / 지역 / 통화 / 테마: 앱 표시 형식과 UI를 맞추기 위해서만 사용되며, 저희에게 전송되지 않습니다.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5) 버그 신고 / 고객지원 연락</h2>
+        <p>버그 신고 기능을 사용하거나 지원팀에 연락하면:</p>
+        <ul>
+          <li>앱이 메일 앱에서 초안 메일을 만들 수 있습니다.</li>
+          <li>초안에는 진단 정보(앱 버전, iOS 버전, 언어/통화 설정 등)가 포함될 수 있습니다.</li>
+          <li>메일은 사용자가 직접 발송을 확정한 경우에만 전송됩니다.</li>
+        </ul>
+        <p>전송된 메일은 사용자의 메일 서비스 제공자와 저희가 문의 대응 목적으로만 처리합니다.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6) 구매 및 구독 (Apple + RevenueCat)</h2>
+        <p>앱에서 유료 기능(구독)을 제공하는 경우:</p>
+        <ul>
+          <li>결제는 Apple(App Store / In-App Purchases / StoreKit)이 처리합니다.</li>
+          <li>앱은 구독 상태 확인, 제안 표시, Premium 권한 부여를 위해 RevenueCat을 기술 인프라로 사용합니다.</li>
+        </ul>
+        <p>구독 처리 과정에서 다음과 같은 기술 데이터가 처리될 수 있습니다.</p>
+        <ul>
+          <li>거래 / 구매 ID와 상품 정보</li>
+          <li>구독 상태(활성 / 비활성, 갱신 여부)</li>
+          <li>구독 상태를 연결하기 위한 기술 식별자(예: SDK가 생성한 익명 App User ID)</li>
+        </ul>
+        <p>RevenueCat은 구독 관리 기능을 제공하기 위해 이 데이터를 처리하고, Apple은 자사 정책에 따라 결제 관련 데이터를 처리합니다.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7) 분석 및 추적</h2>
+        <p>앱은 사용자 추적을 위한 분석 도구나 광고 SDK를 사용하지 않으며 데이터를 판매하지 않습니다.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8) 웹사이트</h2>
+        <p>웹사이트를 방문할 경우, 호스팅 제공자(예: GitHub Pages)는 보안, 진단, 서비스 유지 목적상 IP 주소, 브라우저 종류, 요청 시각 같은 표준 기술 로그를 자동으로 처리할 수 있습니다. 처리 범위와 규칙은 호스팅 제공자의 정책을 따릅니다.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>9) 데이터 수신자</h2>
+        <p>데이터는 다음의 경우에만 제공될 수 있습니다.</p>
+        <ul>
+          <li>Apple 및 RevenueCat (결제 및 구독 처리 범위 내)</li>
+          <li>법령에 따라 권한이 있는 공공기관</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>10) 보관 기간</h2>
+        <ul>
+          <li>앱에 입력한 데이터는 사용자가 삭제할 때까지 기기에 저장됩니다.</li>
+          <li>이메일 문의에 포함된 데이터는 문의 처리 및 필요한 권리 보호를 위해 필요한 기간 동안 보관됩니다.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>11) 사용자 권리 (EU / EEA)</h2>
+        <p>특정 상황에서 저희가 사용자의 개인정보를 처리하는 경우(예: 사용자가 이메일을 보낸 경우), 사용자는 다음 권리를 가집니다.</p>
+        <ul>
+          <li>열람, 정정, 삭제, 처리 제한</li>
+          <li>처리에 대한 이의 제기</li>
+          <li>관할 감독기관에 대한 민원 제기</li>
+        </ul>
+        <p>정보 제공 의무의 범위는 특히 GDPR 제13조에 따릅니다.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>12) 보안</h2>
+        <p>저희는 서비스 성격에 맞는 합리적인 기술적·조직적 보호조치를 적용합니다. 앱 데이터가 기기 내부에 저장되므로, 기기 자체를 보호하는 것(암호 / Face ID 등)도 중요합니다.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>13) 정책 변경</h2>
+        <p>이 정책은 앱 기능이나 법적 요구사항의 변경에 따라 업데이트될 수 있습니다. 최신 버전은 앱 웹사이트에 게시됩니다.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Chrumek 2026. 실제로 저축으로 옮긴 돈만 쌓입니다.</p>
+  </footer>
+
+  <script src="../../site.js" defer></script>
+</body>
+</html>
