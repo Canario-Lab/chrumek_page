@@ -65,7 +65,7 @@
         <h2>4) Značajke koje zahtijevaju pristup sustavu</h2>
         <p>Aplikacija može koristiti značajke sustava i povezane podatke samo u mjeri potrebnoj za rad:</p>
         <ul>
-          <li>Obavijesti (UNUserNotificationCenter) - ako omogućite podsjetnike, iOS sustav isporučuje obavijesti prema vašim postavkama.</li>
+          <li>Sistemske obavijesti - ako omogućite podsjetnike, operativni sustav vašeg uređaja (npr. iOS ili Android) isporučuje obavijesti prema vašim postavkama.</li>
           <li>Jezik / regija / valuta / tema - koristi se za formatiranje sadržaja i izgleda aplikacije (bez slanja nama).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Ako koristite opciju "Prijavi bug" ili kontaktirate podršku:</p>
         <ul>
           <li>aplikacija može stvoriti nacrt e-pošte u vašoj aplikaciji za poštu,</li>
-          <li>sadržaj može uključivati ​​dijagnostičke informacije (npr. verziju aplikacije, iOS, postavke jezika/valute) - točno ono što vidite u sadržaju e-pošte prije slanja,</li>
+          <li>sadržaj može uključivati ​​dijagnostičke informacije (npr. verziju aplikacije, operativni sustav uređaja, postavke jezika/valute) - točno ono što vidite u sadržaju e-pošte prije slanja,</li>
           <li>slanje se vrši samo ako to sami odobrite.</li>
         </ul>
         <p>Poslanu e-poštu obrađuje vaš davatelj usluge e-pošte i mi kao primatelj, isključivo radi obrade vašeg zahtjeva.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Kupnje i pretplate (Apple + RevenueCat)</h2>
+        <h2>6) Kupnje i pretplate (Apple / Google + RevenueCat)</h2>
         <p>Ako su značajke koje se plaćaju (pretplate) dostupne u aplikaciji:</p>
         <ul>
-          <li>plaćanja obrađuje Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>na Apple uređajima plaćanja obrađuje Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>na Android uređajima plaćanja obrađuje Google (Google Play / Google Play Billing),</li>
           <li>aplikacija koristi RevenueCat kao pružatelja infrastrukture za upravljanje pretplatom (uključujući prezentaciju ponude, provjeru statusa pretplate i dodjelu premium pristupa).</li>
         </ul>
         <p>U sklopu obrade pretplate mogu se obrađivati ​​tehnički podaci vezani uz kupnju, kao što su:</p>
@@ -94,7 +95,7 @@
           <li>status pretplate (aktivno/neaktivno, obnove),</li>
           <li>tehnički identifikator korisnika koji se koristi za povezivanje statusa pretplate (npr. anonimni korisnički ID aplikacije koji generira SDK).</li>
         </ul>
-        <p>RevenueCat obrađuje te podatke kako bi pružio usluge rukovanja pretplatama (kao procesor), a Apple obrađuje podatke u vezi s plaćanjem u skladu s vlastitim pravilima.</p>
+        <p>RevenueCat obrađuje te podatke kako bi pružio usluge rukovanja pretplatama (kao procesor), a Apple ili Google obrađuju podatke u vezi s plaćanjem u skladu s vlastitim pravilima i pravilima privatnosti.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Primatelji podataka</h2>
         <p>Podaci se mogu otkriti samo:</p>
         <ul>
-          <li>pružatelji usluga plaćanja i pretplate: Apple i RevenueCat (upravljanje pretplatama),</li>
+          <li>pružatelji usluga plaćanja i pretplate: Apple, Google i RevenueCat (u okviru obrade kupnji i pretplata),</li>
           <li>tijela javne vlasti, ako to zahtijeva zakon.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Sigurnost</h2>
-        <p>Primjenjujemo razumne organizacijske i tehničke mjere primjerene prirodi usluge. Budući da se podaci aplikacije pohranjuju lokalno, važan element sigurnosti je i zaštita vašeg uređaja (lozinka/Face ID).</p>
+        <p>Primjenjujemo razumne organizacijske i tehničke mjere primjerene prirodi usluge. Budući da se podaci aplikacije pohranjuju lokalno, važan element sigurnosti je i zaštita vašeg uređaja (npr. lozinka, PIN, biometrija).</p>
       </section>
 
       <section class="legal-section">

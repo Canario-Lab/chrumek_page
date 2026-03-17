@@ -65,7 +65,7 @@
         <h2>4) Funções que exigem acesso ao sistema</h2>
         <p>O app pode usar funções do sistema e dados relacionados somente na medida necessária para funcionar:</p>
         <ul>
-          <li>Notificações (UNUserNotificationCenter) - se você ativar lembretes, o sistema iOS entrega notificações de acordo com suas configurações.</li>
+          <li>Notificações do sistema - se você ativar lembretes, o sistema operacional do seu dispositivo (por exemplo, iOS ou Android) entrega notificações de acordo com suas configurações.</li>
           <li>Idioma / região / moeda / tema - usados para formatar conteúdo e aparência do app (sem envio para nós).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Se você usar a opção "Reportar erro" ou entrar em contato com o suporte:</p>
         <ul>
           <li>o app pode criar um rascunho de e-mail no seu aplicativo de e-mail,</li>
-          <li>o conteúdo pode incluir informações de diagnóstico (por exemplo: versão do app, iOS, configurações de idioma/moeda) - exatamente o que você vê no conteúdo do e-mail antes de enviar,</li>
+          <li>o conteúdo pode incluir informações de diagnóstico (por exemplo: versão do app, sistema operacional do dispositivo, configurações de idioma/moeda) - exatamente o que você vê no conteúdo do e-mail antes de enviar,</li>
           <li>o envio só acontece se você mesmo confirmar.</li>
         </ul>
         <p>O e-mail enviado é tratado pelo seu provedor de e-mail e por nós como destinatário, exclusivamente para tratar a solicitação.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Compras e assinaturas (Apple + RevenueCat)</h2>
+        <h2>6) Compras e assinaturas (Apple / Google + RevenueCat)</h2>
         <p>Se houver recursos pagos (assinaturas) no app:</p>
         <ul>
-          <li>os pagamentos são processados pela Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>em dispositivos Apple, os pagamentos são processados pela Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>em dispositivos Android, os pagamentos são processados pelo Google (Google Play / Google Play Billing),</li>
           <li>o app usa a RevenueCat como provedora de infraestrutura para gerenciamento de assinaturas (incluindo apresentação de ofertas, verificação do status da assinatura e concessão de acesso premium).</li>
         </ul>
         <p>No contexto de gerenciamento de assinaturas, podem ser tratados dados técnicos relacionados à compra, como:</p>
@@ -94,7 +95,7 @@
           <li>status da assinatura (ativa/inativa, renovações),</li>
           <li>identificador técnico do usuário usado para vincular o status da assinatura (por exemplo, App User ID anônimo gerado pelo SDK).</li>
         </ul>
-        <p>A RevenueCat trata esses dados para prestar o serviço de gerenciamento de assinaturas (como operadora), e a Apple trata os dados relacionados ao pagamento de acordo com suas próprias políticas.</p>
+        <p>A RevenueCat trata esses dados para prestar o serviço de gerenciamento de assinaturas (como operadora), e a Apple ou o Google tratam os dados relacionados ao pagamento de acordo com suas próprias políticas e políticas de privacidade.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Destinatários dos dados</h2>
         <p>Os dados podem ser divulgados exclusivamente para:</p>
         <ul>
-          <li>provedores de serviços de pagamento e assinatura: Apple e RevenueCat (gestão de assinaturas),</li>
+          <li>provedores de serviços de pagamento e assinatura: Apple, Google e RevenueCat (no âmbito do processamento de compras e assinaturas),</li>
           <li>autoridades públicas, se exigido por lei.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Segurança</h2>
-        <p>Aplicamos medidas organizacionais e técnicas razoáveis, adequadas à natureza do serviço. Como os dados do app são armazenados localmente, um elemento importante de segurança também é a proteção do seu dispositivo (código/Face ID).</p>
+        <p>Aplicamos medidas organizacionais e técnicas razoáveis, adequadas à natureza do serviço. Como os dados do app são armazenados localmente, um elemento importante de segurança também é a proteção do seu dispositivo (por exemplo, código, senha, PIN, biometria).</p>
       </section>
 
       <section class="legal-section">

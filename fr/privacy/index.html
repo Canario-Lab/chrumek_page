@@ -65,7 +65,7 @@
         <h2>4) Fonctions nécessitant un accès système</h2>
         <p>L'application peut utiliser des fonctions système et des données associées uniquement dans la mesure nécessaire à son fonctionnement :</p>
         <ul>
-          <li>Notifications (UNUserNotificationCenter) - si vous activez les rappels, iOS envoie les notifications conformément à vos réglages.</li>
+          <li>Notifications système - si vous activez les rappels, le système d'exploitation de votre appareil (par ex. iOS ou Android) envoie les notifications conformément à vos réglages.</li>
           <li>Langue / région / devise / thème - utilisés pour le formatage du contenu et l'apparence de l'application (sans envoi vers nous).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Si vous utilisez l'option « Signaler un bug » ou contactez le support :</p>
         <ul>
           <li>l'application peut créer un brouillon d'e-mail dans votre application de messagerie,</li>
-          <li>le contenu peut inclure des informations de diagnostic (p. ex. version de l'application, iOS, paramètres de langue/devise) - exactement ce que vous voyez dans le contenu du mail avant l'envoi,</li>
+          <li>le contenu peut inclure des informations de diagnostic (p. ex. version de l'application, système d'exploitation de l'appareil, paramètres de langue/devise) - exactement ce que vous voyez dans le contenu du mail avant l'envoi,</li>
           <li>l'envoi n'a lieu que si vous le validez vous-même.</li>
         </ul>
         <p>L'e-mail envoyé est traité par votre fournisseur de messagerie ainsi que par nous en tant que destinataire, uniquement afin de traiter la demande.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Achats et abonnements (Apple + RevenueCat)</h2>
+        <h2>6) Achats et abonnements (Apple / Google + RevenueCat)</h2>
         <p>Si des fonctionnalités payantes (abonnements) sont disponibles dans l'application :</p>
         <ul>
-          <li>les paiements sont traités par Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>sur les appareils Apple, les paiements sont traités par Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>sur les appareils Android, les paiements sont traités par Google (Google Play / Google Play Billing),</li>
           <li>l'application utilise RevenueCat comme fournisseur d'infrastructure de gestion des abonnements (notamment présentation des offres, vérification du statut d'abonnement, attribution de l'accès premium).</li>
         </ul>
         <p>Dans le cadre de la gestion des abonnements, des données techniques liées à l'achat peuvent être traitées, telles que :</p>
@@ -94,7 +95,7 @@
           <li>statut d'abonnement (actif/inactif, renouvellements),</li>
           <li>identifiant technique utilisateur utilisé pour associer le statut d'abonnement (p. ex. un App User ID anonyme généré par le SDK).</li>
         </ul>
-        <p>RevenueCat traite ces données afin de fournir le service de gestion des abonnements (en tant que sous-traitant), et Apple traite les données liées au paiement conformément à ses propres règles.</p>
+        <p>RevenueCat traite ces données afin de fournir le service de gestion des abonnements (en tant que sous-traitant), et Apple ou Google traitent les données liées au paiement conformément à leurs propres règles et politiques de confidentialité.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Destinataires des données</h2>
         <p>Les données peuvent être divulguées uniquement :</p>
         <ul>
-          <li>aux fournisseurs de services de paiement et d'abonnement : Apple et RevenueCat (gestion des abonnements),</li>
+          <li>aux fournisseurs de services de paiement et d'abonnement : Apple, Google et RevenueCat (dans le cadre de la gestion des achats et abonnements),</li>
           <li>aux autorités publiques, si la loi l'exige.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Sécurité</h2>
-        <p>Nous appliquons des mesures organisationnelles et techniques raisonnables, adaptées à la nature du service. Étant donné que les données de l'application sont stockées localement, la protection de votre appareil (code/Face ID) constitue également un élément important de sécurité.</p>
+        <p>Nous appliquons des mesures organisationnelles et techniques raisonnables, adaptées à la nature du service. Étant donné que les données de l'application sont stockées localement, la protection de votre appareil (par ex. code, mot de passe, PIN, biométrie) constitue également un élément important de sécurité.</p>
       </section>
 
       <section class="legal-section">

@@ -65,7 +65,7 @@
         <h2>4) Funkcije, ki zahtevajo sistemski dostop</h2>
         <p>Aplikacija lahko uporablja sistemske funkcije in povezane podatke samo v obsegu, ki je potreben za delovanje:</p>
         <ul>
-          <li>Obvestila (UNUserNotificationCenter) - če omogočite opomnike, sistem iOS dostavlja obvestila glede na vaše nastavitve.</li>
+          <li>Sistemska obvestila - če omogočite opomnike, operacijski sistem vaše naprave (npr. iOS ali Android) dostavlja obvestila glede na vaše nastavitve.</li>
           <li>Jezik/regija/valuta/tema – uporablja se za oblikovanje vsebine in videza aplikacije (brez pošiljanja k nam).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Če uporabljate možnost »Prijavi napako« ali se obrnete na podporo:</p>
         <ul>
           <li>aplikacija lahko ustvari osnutek e-pošte v vaši poštni aplikaciji,</li>
-          <li>vsebina lahko vključuje diagnostične informacije (npr. različico aplikacije, iOS, nastavitve jezika/valute) – točno to, kar vidite v vsebini e-pošte pred pošiljanjem,</li>
+          <li>vsebina lahko vključuje diagnostične informacije (npr. različico aplikacije, operacijski sistem naprave, nastavitve jezika/valute) – točno to, kar vidite v vsebini e-pošte pred pošiljanjem,</li>
           <li>pošiljanje poteka samo, če to sami odobrite.</li>
         </ul>
         <p>Poslano e-pošto obdelamo vaš ponudnik pošte in mi kot prejemnik, izključno za obravnavo vaše zahteve.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Nakupi in naročnine (Apple + RevenueCat)</h2>
+        <h2>6) Nakupi in naročnine (Apple / Google + RevenueCat)</h2>
         <p>Če so v aplikaciji na voljo plačljive funkcije (naročnine):</p>
         <ul>
-          <li>plačila obdeluje Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>na napravah Apple plačila obdeluje Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>na napravah Android plačila obdeluje Google (Google Play / Google Play Billing),</li>
           <li>aplikacija uporablja RevenueCat kot ponudnika infrastrukture za upravljanje naročnin (vključno s predstavitvijo ponudbe, preverjanjem statusa naročnine in odobritvijo premium dostopa).</li>
         </ul>
         <p>V okviru obravnave naročnine se lahko obdelujejo tehnični podatki v zvezi z nakupom, kot so:</p>
@@ -94,7 +95,7 @@
           <li>stanje naročnine (aktivno/neaktivno, podaljšanje),</li>
           <li>tehnični identifikator uporabnika, ki se uporablja za povezavo statusa naročnine (npr. anonimni ID uporabnika aplikacije, ki ga ustvari SDK).</li>
         </ul>
-        <p>RevenueCat obdeluje te podatke za zagotavljanje storitev upravljanja z naročninami (kot procesor), Apple pa obdeluje podatke v zvezi s plačili v skladu s svojimi pravilniki.</p>
+        <p>RevenueCat obdeluje te podatke za zagotavljanje storitev upravljanja z naročninami (kot procesor), Apple ali Google pa obdelujeta podatke v zvezi s plačili v skladu s svojimi pravilniki in pravilniki o zasebnosti.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Prejemniki podatkov</h2>
         <p>Podatki se lahko razkrijejo le:</p>
         <ul>
-          <li>ponudniki plačilnih in naročniških storitev: Apple in RevenueCat (obravnava naročnin),</li>
+          <li>ponudniki plačilnih in naročniških storitev: Apple, Google in RevenueCat (v okviru obdelave nakupov in naročnin),</li>
           <li>javnih organov, če to zahteva zakon.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Varnost</h2>
-        <p>Uporabljamo razumne organizacijske in tehnične ukrepe, ki ustrezajo naravi storitve. Ker so podatki aplikacije shranjeni lokalno, je pomemben element varnosti tudi zaščita vaše naprave (geslo/Face ID).</p>
+        <p>Uporabljamo razumne organizacijske in tehnične ukrepe, ki ustrezajo naravi storitve. Ker so podatki aplikacije shranjeni lokalno, je pomemben element varnosti tudi zaščita vaše naprave (npr. koda, geslo, PIN, biometrija).</p>
       </section>
 
       <section class="legal-section">

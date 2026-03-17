@@ -65,7 +65,7 @@
         <h2>4) Funkcje wymagające dostępu systemowego</h2>
         <p>Aplikacja może korzystać z funkcji systemowych i powiązanych danych wyłącznie w zakresie niezbędnym do działania:</p>
         <ul>
-          <li>Powiadomienia (UNUserNotificationCenter) - jeżeli włączysz przypomnienia, system iOS dostarcza powiadomienia zgodnie z Twoimi ustawieniami.</li>
+          <li>Powiadomienia systemowe - jeżeli włączysz przypomnienia, system operacyjny Twojego urządzenia (np. iOS lub Android) dostarcza powiadomienia zgodnie z Twoimi ustawieniami.</li>
           <li>Język / region / waluta / motyw - wykorzystywane do formatowania treści i wyglądu aplikacji (bez wysyłki do nas).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Jeżeli skorzystasz z opcji „Zgłoś błąd” lub kontaktu z pomocą:</p>
         <ul>
           <li>aplikacja może utworzyć wersję roboczą e-maila w Twojej aplikacji pocztowej,</li>
-          <li>treść może zawierać informacje diagnostyczne (np. wersja aplikacji, iOS, ustawienia języka/waluty) - dokładnie to, co widzisz w treści maila przed wysłaniem,</li>
+          <li>treść może zawierać informacje diagnostyczne (np. wersja aplikacji, system operacyjny urządzenia, ustawienia języka/waluty) - dokładnie to, co widzisz w treści maila przed wysłaniem,</li>
           <li>wysyłka następuje tylko, jeśli sam ją zatwierdzisz.</li>
         </ul>
         <p>Wysłany e-mail jest przetwarzany przez Twojego dostawcę poczty oraz przez nas jako odbiorcę, wyłącznie w celu obsługi zgłoszenia.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Zakupy i subskrypcje (Apple + RevenueCat)</h2>
+        <h2>6) Zakupy i subskrypcje (Apple / Google + RevenueCat)</h2>
         <p>Jeżeli w aplikacji dostępne są płatne funkcje (subskrypcje):</p>
         <ul>
-          <li>płatności są realizowane przez Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>na urządzeniach Apple płatności są realizowane przez Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>na urządzeniach z Androidem płatności są realizowane przez Google (Google Play / Google Play Billing),</li>
           <li>aplikacja korzysta z RevenueCat jako dostawcy infrastruktury do zarządzania subskrypcjami (m.in. prezentowanie ofert, weryfikacja statusu subskrypcji, przyznawanie dostępu premium).</li>
         </ul>
         <p>W ramach obsługi subskrypcji mogą być przetwarzane dane techniczne związane z zakupem, takie jak:</p>
@@ -94,7 +95,7 @@
           <li>status subskrypcji (aktywny/nieaktywny, odnowienia),</li>
           <li>techniczny identyfikator użytkownika używany do powiązania statusu subskrypcji (np. anonimowy App User ID generowany przez SDK).</li>
         </ul>
-        <p>RevenueCat przetwarza te dane w celu świadczenia usługi obsługi subskrypcji (jako podmiot przetwarzający), a Apple przetwarza dane związane z płatnością zgodnie ze swoimi zasadami.</p>
+        <p>RevenueCat przetwarza te dane w celu świadczenia usługi obsługi subskrypcji (jako podmiot przetwarzający), a Apple lub Google przetwarzają dane związane z płatnością zgodnie ze swoimi zasadami i politykami prywatności.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Odbiorcy danych</h2>
         <p>Dane mogą być ujawniane wyłącznie:</p>
         <ul>
-          <li>dostawcom usług płatności i subskrypcji: Apple oraz RevenueCat (obsługa subskrypcji),</li>
+          <li>dostawcom usług płatności i subskrypcji: Apple, Google oraz RevenueCat (w zakresie obsługi zakupów i subskrypcji),</li>
           <li>organom publicznym, jeśli wymagają tego przepisy prawa.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Bezpieczeństwo</h2>
-        <p>Stosujemy rozsądne środki organizacyjne i techniczne adekwatne do charakteru usługi. Ponieważ dane aplikacji są przechowywane lokalnie, istotnym elementem bezpieczeństwa jest również ochrona Twojego urządzenia (kod/Face ID).</p>
+        <p>Stosujemy rozsądne środki organizacyjne i techniczne adekwatne do charakteru usługi. Ponieważ dane aplikacji są przechowywane lokalnie, istotnym elementem bezpieczeństwa jest również ochrona Twojego urządzenia (np. kod, hasło, PIN, biometria).</p>
       </section>
 
       <section class="legal-section">

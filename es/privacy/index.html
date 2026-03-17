@@ -65,7 +65,7 @@
         <h2>4) Funciones que requieren acceso del sistema</h2>
         <p>La app puede utilizar funciones del sistema y datos relacionados únicamente en la medida necesaria para su funcionamiento:</p>
         <ul>
-          <li>Notificaciones (UNUserNotificationCenter) - si activa recordatorios, el sistema iOS entrega notificaciones según su configuración.</li>
+          <li>Notificaciones del sistema - si activa recordatorios, el sistema operativo de su dispositivo (por ejemplo, iOS o Android) envía notificaciones según su configuración.</li>
           <li>Idioma / región / moneda / tema - se utilizan para el formato del contenido y el aspecto de la app (sin envío a nosotros).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Si utiliza la opción "Reportar un error" o contacta con soporte:</p>
         <ul>
           <li>la app puede crear un borrador de e-mail en su aplicación de correo,</li>
-          <li>el contenido puede incluir información de diagnóstico (p. ej., versión de la app, iOS, ajustes de idioma/moneda) - exactamente lo que ve en el contenido del correo antes de enviarlo,</li>
+          <li>el contenido puede incluir información de diagnóstico (p. ej., versión de la app, sistema operativo del dispositivo, ajustes de idioma/moneda) - exactamente lo que ve en el contenido del correo antes de enviarlo,</li>
           <li>el envío solo se realiza si usted lo aprueba.</li>
         </ul>
         <p>El e-mail enviado es tratado por su proveedor de correo y por nosotros como destinatario, exclusivamente para gestionar la solicitud.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Compras y suscripciones (Apple + RevenueCat)</h2>
+        <h2>6) Compras y suscripciones (Apple / Google + RevenueCat)</h2>
         <p>Si en la app hay funciones de pago (suscripciones):</p>
         <ul>
-          <li>los pagos se procesan por Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>en dispositivos Apple, los pagos se procesan por Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>en dispositivos Android, los pagos se procesan por Google (Google Play / Google Play Billing),</li>
           <li>la app utiliza RevenueCat como proveedor de infraestructura para la gestión de suscripciones (incluida la presentación de ofertas, la verificación del estado de la suscripción y la concesión de acceso premium).</li>
         </ul>
         <p>Como parte de la gestión de suscripciones, pueden tratarse datos técnicos relacionados con la compra, como:</p>
@@ -94,7 +95,7 @@
           <li>estado de la suscripción (activa/inactiva, renovaciones),</li>
           <li>identificador técnico del usuario utilizado para vincular el estado de la suscripción (p. ej., un App User ID anónimo generado por el SDK).</li>
         </ul>
-        <p>RevenueCat trata estos datos para prestar el servicio de gestión de suscripciones (como encargado del tratamiento), y Apple trata los datos relacionados con el pago de acuerdo con sus propias políticas.</p>
+        <p>RevenueCat trata estos datos para prestar el servicio de gestión de suscripciones (como encargado del tratamiento), y Apple o Google tratan los datos relacionados con el pago de acuerdo con sus propias políticas y políticas de privacidad.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Destinatarios de los datos</h2>
         <p>Los datos solo pueden divulgarse a:</p>
         <ul>
-          <li>proveedores de servicios de pago y suscripción: Apple y RevenueCat (gestión de suscripciones),</li>
+          <li>proveedores de servicios de pago y suscripción: Apple, Google y RevenueCat (en el ámbito de la gestión de compras y suscripciones),</li>
           <li>autoridades públicas, si lo exige la ley.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Seguridad</h2>
-        <p>Aplicamos medidas organizativas y técnicas razonables y adecuadas a la naturaleza del servicio. Dado que los datos de la app se almacenan localmente, un elemento importante de la seguridad también es la protección de su dispositivo (código/Face ID).</p>
+        <p>Aplicamos medidas organizativas y técnicas razonables y adecuadas a la naturaleza del servicio. Dado que los datos de la app se almacenan localmente, un elemento importante de la seguridad también es la protección de su dispositivo (por ejemplo, código, contraseña, PIN, biometría).</p>
       </section>
 
       <section class="legal-section">

@@ -65,7 +65,7 @@
         <h2>4) Funzioni che richiedono accesso al sistema</h2>
         <p>L'app può utilizzare funzioni di sistema e dati correlati esclusivamente nella misura necessaria al funzionamento:</p>
         <ul>
-          <li>Notifiche (UNUserNotificationCenter) - se attiva i promemoria, il sistema iOS recapita le notifiche in base alle sue impostazioni.</li>
+          <li>Notifiche di sistema - se attiva i promemoria, il sistema operativo del suo dispositivo (ad es. iOS o Android) recapita le notifiche in base alle sue impostazioni.</li>
           <li>Lingua / regione / valuta / tema - utilizzati per formattare contenuti e aspetto dell'app (senza invio a noi).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Se utilizza l'opzione "Segnala un errore" o contatta il supporto:</p>
         <ul>
           <li>l'app può creare una bozza e-mail nella sua app di posta,</li>
-          <li>il contenuto può includere informazioni diagnostiche (ad es. versione app, iOS, impostazioni lingua/valuta) - esattamente ciò che vede nel testo dell'e-mail prima dell'invio,</li>
+          <li>il contenuto può includere informazioni diagnostiche (ad es. versione app, sistema operativo del dispositivo, impostazioni lingua/valuta) - esattamente ciò che vede nel testo dell'e-mail prima dell'invio,</li>
           <li>l'invio avviene solo se lo approva personalmente.</li>
         </ul>
         <p>L'e-mail inviata è trattata dal suo provider di posta e da noi come destinatario, esclusivamente per la gestione della segnalazione.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Acquisti e abbonamenti (Apple + RevenueCat)</h2>
+        <h2>6) Acquisti e abbonamenti (Apple / Google + RevenueCat)</h2>
         <p>Se nell'app sono disponibili funzioni a pagamento (abbonamenti):</p>
         <ul>
-          <li>i pagamenti sono gestiti da Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>sui dispositivi Apple i pagamenti sono gestiti da Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>sui dispositivi Android i pagamenti sono gestiti da Google (Google Play / Google Play Billing),</li>
           <li>l'app utilizza RevenueCat come fornitore dell'infrastruttura per la gestione degli abbonamenti (tra cui presentazione offerte, verifica dello stato dell'abbonamento, concessione dell'accesso premium).</li>
         </ul>
         <p>Nell'ambito della gestione degli abbonamenti possono essere trattati dati tecnici relativi all'acquisto, quali:</p>
@@ -94,7 +95,7 @@
           <li>stato dell'abbonamento (attivo/inattivo, rinnovi),</li>
           <li>identificatore tecnico utente usato per collegare lo stato dell'abbonamento (ad es. App User ID anonimo generato dall'SDK).</li>
         </ul>
-        <p>RevenueCat tratta tali dati al fine di fornire il servizio di gestione degli abbonamenti (in qualità di responsabile del trattamento), mentre Apple tratta i dati relativi al pagamento secondo le proprie regole.</p>
+        <p>RevenueCat tratta tali dati al fine di fornire il servizio di gestione degli abbonamenti (in qualità di responsabile del trattamento), mentre Apple o Google trattano i dati relativi al pagamento secondo le proprie regole e informative sulla privacy.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Destinatari dei dati</h2>
         <p>I dati possono essere comunicati esclusivamente:</p>
         <ul>
-          <li>ai fornitori di servizi di pagamento e abbonamento: Apple e RevenueCat (gestione abbonamenti),</li>
+          <li>ai fornitori di servizi di pagamento e abbonamento: Apple, Google e RevenueCat (nell'ambito della gestione di acquisti e abbonamenti),</li>
           <li>alle autorità pubbliche, se richiesto dalla legge.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Sicurezza</h2>
-        <p>Applichiamo misure organizzative e tecniche ragionevoli, adeguate alla natura del servizio. Poiché i dati dell'app sono conservati localmente, un elemento importante di sicurezza è anche la protezione del suo dispositivo (codice/Face ID).</p>
+        <p>Applichiamo misure organizzative e tecniche ragionevoli, adeguate alla natura del servizio. Poiché i dati dell'app sono conservati localmente, un elemento importante di sicurezza è anche la protezione del suo dispositivo (ad es. codice, password, PIN, biometria).</p>
       </section>
 
       <section class="legal-section">

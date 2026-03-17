@@ -65,7 +65,7 @@
         <h2>4) 시스템 권한이 필요한 기능</h2>
         <p>앱은 동작에 필요한 범위에서만 시스템 기능과 관련 데이터를 사용합니다.</p>
         <ul>
-          <li>알림 (UNUserNotificationCenter): 알림을 켜면 iOS가 사용자의 설정에 따라 알림을 전달합니다.</li>
+          <li>시스템 알림: 알림을 켜면 기기 운영체제(예: iOS 또는 Android)가 사용자의 설정에 따라 알림을 전달합니다.</li>
           <li>언어 / 지역 / 통화 / 테마: 앱 표시 형식과 UI를 맞추기 위해서만 사용되며, 저희에게 전송되지 않습니다.</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>버그 신고 기능을 사용하거나 지원팀에 연락하면:</p>
         <ul>
           <li>앱이 메일 앱에서 초안 메일을 만들 수 있습니다.</li>
-          <li>초안에는 진단 정보(앱 버전, iOS 버전, 언어/통화 설정 등)가 포함될 수 있습니다.</li>
+          <li>초안에는 진단 정보(앱 버전, 기기 운영체제, 언어/통화 설정 등)가 포함될 수 있습니다.</li>
           <li>메일은 사용자가 직접 발송을 확정한 경우에만 전송됩니다.</li>
         </ul>
         <p>전송된 메일은 사용자의 메일 서비스 제공자와 저희가 문의 대응 목적으로만 처리합니다.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) 구매 및 구독 (Apple + RevenueCat)</h2>
+        <h2>6) 구매 및 구독 (Apple / Google + RevenueCat)</h2>
         <p>앱에서 유료 기능(구독)을 제공하는 경우:</p>
         <ul>
-          <li>결제는 Apple(App Store / In-App Purchases / StoreKit)이 처리합니다.</li>
+          <li>Apple 기기에서는 결제를 Apple(App Store / In-App Purchases / StoreKit)이 처리합니다.</li>
+          <li>Android 기기에서는 결제를 Google(Google Play / Google Play Billing)이 처리합니다.</li>
           <li>앱은 구독 상태 확인, 제안 표시, Premium 권한 부여를 위해 RevenueCat을 기술 인프라로 사용합니다.</li>
         </ul>
         <p>구독 처리 과정에서 다음과 같은 기술 데이터가 처리될 수 있습니다.</p>
@@ -94,7 +95,7 @@
           <li>구독 상태(활성 / 비활성, 갱신 여부)</li>
           <li>구독 상태를 연결하기 위한 기술 식별자(예: SDK가 생성한 익명 App User ID)</li>
         </ul>
-        <p>RevenueCat은 구독 관리 기능을 제공하기 위해 이 데이터를 처리하고, Apple은 자사 정책에 따라 결제 관련 데이터를 처리합니다.</p>
+        <p>RevenueCat은 구독 관리 기능을 제공하기 위해 이 데이터를 처리하고, Apple 또는 Google은 각자의 정책 및 개인정보처리방침에 따라 결제 관련 데이터를 처리합니다.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) 데이터 수신자</h2>
         <p>데이터는 다음의 경우에만 제공될 수 있습니다.</p>
         <ul>
-          <li>Apple 및 RevenueCat (결제 및 구독 처리 범위 내)</li>
+          <li>Apple, Google 및 RevenueCat(구매 및 구독 처리 범위 내)</li>
           <li>법령에 따라 권한이 있는 공공기관</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) 보안</h2>
-        <p>저희는 서비스 성격에 맞는 합리적인 기술적·조직적 보호조치를 적용합니다. 앱 데이터가 기기 내부에 저장되므로, 기기 자체를 보호하는 것(암호 / Face ID 등)도 중요합니다.</p>
+        <p>저희는 서비스 성격에 맞는 합리적인 기술적·조직적 보호조치를 적용합니다. 앱 데이터가 기기 내부에 저장되므로, 기기 자체를 보호하는 것(예: 암호, 비밀번호, PIN, 생체 인증 등)도 중요합니다.</p>
       </section>
 
       <section class="legal-section">

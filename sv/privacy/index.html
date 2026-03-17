@@ -65,7 +65,7 @@
         <h2>4) Funktioner som kräver systemåtkomst</h2>
         <p>Appen får endast använda systemfunktioner och relaterade data i den utsträckning som behövs för driften:</p>
         <ul>
-          <li>Aviseringar (UNUserNotificationCenter) - om du aktiverar påminnelser, levererar iOS-systemet aviseringar enligt dina inställningar.</li>
+          <li>Systemaviseringar - om du aktiverar påminnelser levererar operativsystemet på din enhet (t.ex. iOS eller Android) aviseringar enligt dina inställningar.</li>
           <li>Språk / region / valuta / tema - används för att formatera appens innehåll och utseende (utan att skicka till oss).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Om du använder alternativet "Rapportera ett fel" eller kontaktar supporten:</p>
         <ul>
           <li>appen kan skapa ett e-postutkast i din e-postapplikation,</li>
-          <li>innehållet kan innehålla diagnostisk information (t.ex. appversion, iOS, språk-/valutainställningar) - exakt vad du ser i e-postinnehållet innan du skickar,</li>
+          <li>innehållet kan innehålla diagnostisk information (t.ex. appversion, operativsystemet på enheten, språk-/valutainställningar) - exakt vad du ser i e-postinnehållet innan du skickar,</li>
           <li>sändning sker endast om du själv godkänner det.</li>
         </ul>
         <p>Ett skickat e-postmeddelande behandlas av din postleverantör och av oss som mottagare, enbart för att hantera din förfrågan.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Köp och prenumerationer (Apple + RevenueCat)</h2>
+        <h2>6) Köp och prenumerationer (Apple / Google + RevenueCat)</h2>
         <p>Om betalfunktioner (prenumerationer) är tillgängliga i appen:</p>
         <ul>
-          <li>betalningar behandlas av Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>på Apple-enheter behandlas betalningar av Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>på Android-enheter behandlas betalningar av Google (Google Play / Google Play Billing),</li>
           <li>appen använder RevenueCat som en infrastrukturleverantör för prenumerationshantering (inklusive erbjudandepresentation, verifiering av prenumerationsstatus och beviljande av premiumåtkomst).</li>
         </ul>
         <p>Som en del av prenumerationshanteringen kan tekniska data relaterade till köpet behandlas, såsom:</p>
@@ -94,7 +95,7 @@
           <li>prenumerationsstatus (aktiv/inaktiv, förnyelser),</li>
           <li>en teknisk användaridentifierare som används för att länka prenumerationsstatus (t.ex. ett anonymt appanvändar-ID genererat av SDK).</li>
         </ul>
-        <p>RevenueCat behandlar dessa uppgifter för att tillhandahålla prenumerationshanteringstjänster (som processor), och Apple behandlar betalningsrelaterad data i enlighet med sina egna policyer.</p>
+        <p>RevenueCat behandlar dessa uppgifter för att tillhandahålla prenumerationshanteringstjänster (som processor), och Apple eller Google behandlar betalningsrelaterade uppgifter i enlighet med sina egna policyer och integritetspolicyer.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Datamottagare</h2>
         <p>Data får endast lämnas ut till:</p>
         <ul>
-          <li>leverantörer av betalnings- och prenumerationstjänster: Apple och RevenueCat (prenumerationshantering),</li>
+          <li>leverantörer av betalnings- och prenumerationstjänster: Apple, Google och RevenueCat (inom hantering av köp och prenumerationer),</li>
           <li>offentliga myndigheter, om så krävs enligt lag.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Säkerhet</h2>
-        <p>Vi tillämpar rimliga organisatoriska och tekniska åtgärder som är lämpliga för tjänstens karaktär. Eftersom appdata lagras lokalt är en viktig del av säkerheten också att skydda din enhet (lösenkod/Face ID).</p>
+        <p>Vi tillämpar rimliga organisatoriska och tekniska åtgärder som är lämpliga för tjänstens karaktär. Eftersom appdata lagras lokalt är en viktig del av säkerheten också att skydda din enhet (t.ex. lösenkod, lösenord, PIN, biometri).</p>
       </section>
 
       <section class="legal-section">

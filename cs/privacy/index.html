@@ -65,7 +65,7 @@
         <h2>4) Funkce vyžadující přístup k systému</h2>
         <p>Aplikace může používat systémové funkce a související data pouze v rozsahu nezbytném pro provoz:</p>
         <ul>
-          <li>Notifikace (UNUserNotificationCenter) – pokud povolíte připomenutí, systém iOS doručuje upozornění podle vašeho nastavení.</li>
+          <li>Systémová upozornění – pokud povolíte připomenutí, operační systém vašeho zařízení (např. iOS nebo Android) doručuje upozornění podle vašeho nastavení.</li>
           <li>Jazyk / region / měna / téma - používá se k formátování obsahu a vzhledu aplikace (bez zasílání nám).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Pokud použijete možnost „Nahlásit chybu“ nebo kontaktujte podporu:</p>
         <ul>
           <li>aplikace může vytvořit koncept e-mailu ve vaší poštovní aplikaci,</li>
-          <li>obsah může zahrnovat diagnostické informace (např. verzi aplikace, iOS, nastavení jazyka/měny) – přesně to, co vidíte v obsahu e-mailu před odesláním,</li>
+          <li>obsah může zahrnovat diagnostické informace (např. verzi aplikace, operační systém zařízení, nastavení jazyka/měny) – přesně to, co vidíte v obsahu e-mailu před odesláním,</li>
           <li>odeslání proběhne pouze v případě, že jej sami schválíte.</li>
         </ul>
         <p>Odeslaný e-mail zpracovává váš poskytovatel pošty a my jako příjemce výhradně za účelem vyřízení vašeho požadavku.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Nákupy a předplatné (Apple + RevenueCat)</h2>
+        <h2>6) Nákupy a předplatné (Apple / Google + RevenueCat)</h2>
         <p>Pokud jsou v aplikaci dostupné placené funkce (předplatné):</p>
         <ul>
-          <li>platby zpracovává Apple (App Store / Nákupy v aplikaci / StoreKit),</li>
+          <li>na zařízeních Apple platby zpracovává Apple (App Store / Nákupy v aplikaci / StoreKit),</li>
+          <li>na zařízeních Android platby zpracovává Google (Google Play / Google Play Billing),</li>
           <li>aplikace používá RevenueCat jako poskytovatele infrastruktury pro správu předplatného (včetně prezentace nabídky, ověření stavu předplatného a udělování prémiového přístupu).</li>
         </ul>
         <p>V rámci zpracování předplatného mohou být zpracovány technické údaje související s nákupem, jako například:</p>
@@ -94,7 +95,7 @@
           <li>stav předplatného (aktivní/neaktivní, obnovení),</li>
           <li>technický identifikátor uživatele používaný k propojení stavu předplatného (např. anonymní ID uživatele aplikace generované sadou SDK).</li>
         </ul>
-        <p>RevenueCat zpracovává tyto údaje za účelem poskytování služeb manipulace s předplatným (jako zpracovatel) a společnost Apple zpracovává údaje související s platbami v souladu se svými vlastními zásadami.</p>
+        <p>RevenueCat zpracovává tyto údaje za účelem poskytování služeb manipulace s předplatným (jako zpracovatel) a společnost Apple nebo Google zpracovává údaje související s platbami v souladu se svými vlastními zásadami a zásadami ochrany soukromí.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Příjemci dat</h2>
         <p>Údaje mohou být zpřístupněny pouze:</p>
         <ul>
-          <li>poskytovatelé platebních a předplatitelských služeb: Apple a RevenueCat (zpracování předplatného),</li>
+          <li>poskytovatelé platebních a předplatitelských služeb: Apple, Google a RevenueCat (v rozsahu zpracování nákupů a předplatného),</li>
           <li>orgány veřejné moci, vyžaduje-li to zákon.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Bezpečnost</h2>
-        <p>Uplatňujeme přiměřená organizační a technická opatření odpovídající povaze služby. Protože jsou data aplikací uložena lokálně, důležitým prvkem zabezpečení je také ochrana vašeho zařízení (heslo/Face ID).</p>
+        <p>Uplatňujeme přiměřená organizační a technická opatření odpovídající povaze služby. Protože jsou data aplikací uložena lokálně, důležitým prvkem zabezpečení je také ochrana vašeho zařízení (např. kód, heslo, PIN, biometrie).</p>
       </section>
 
       <section class="legal-section">

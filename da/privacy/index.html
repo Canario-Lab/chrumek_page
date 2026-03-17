@@ -65,7 +65,7 @@
         <h2>4) Funktioner, der kræver systemadgang</h2>
         <p>Appen må kun bruge systemfunktioner og relaterede data i det omfang, det er nødvendigt for driften:</p>
         <ul>
-          <li>Notifikationer (UNUserNotificationCenter) - hvis du aktiverer påmindelser, leverer iOS-systemet notifikationer i henhold til dine indstillinger.</li>
+          <li>Systemnotifikationer - hvis du aktiverer påmindelser, leverer operativsystemet på din enhed (f.eks. iOS eller Android) notifikationer i henhold til dine indstillinger.</li>
           <li>Sprog / region / valuta / tema - bruges til at formatere appindhold og udseende (uden at sende til os).</li>
         </ul>
       </section>
@@ -75,17 +75,18 @@
         <p>Hvis du bruger muligheden "Rapportér en fejl" eller kontakter support:</p>
         <ul>
           <li>appen kan oprette en e-mail-kladde i din mailapplikation,</li>
-          <li>indholdet kan indeholde diagnostiske oplysninger (f.eks. appversion, iOS, sprog-/valutaindstillinger) - præcis det, du ser i e-mail-indholdet før afsendelse,</li>
+          <li>indholdet kan indeholde diagnostiske oplysninger (f.eks. appversion, operativsystemet på enheden, sprog-/valutaindstillinger) - præcis det, du ser i e-mail-indholdet før afsendelse,</li>
           <li>afsendelse sker kun, hvis du selv godkender det.</li>
         </ul>
         <p>En sendt e-mail behandles af din mailudbyder og af os som modtager, udelukkende til håndtering af din anmodning.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6) Køb og abonnementer (Apple + RevenueCat)</h2>
+        <h2>6) Køb og abonnementer (Apple / Google + RevenueCat)</h2>
         <p>Hvis betalte funktioner (abonnementer) er tilgængelige i appen:</p>
         <ul>
-          <li>betalinger behandles af Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>på Apple-enheder behandles betalinger af Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>på Android-enheder behandles betalinger af Google (Google Play / Google Play Billing),</li>
           <li>appen bruger RevenueCat som en infrastrukturudbyder til abonnementsstyring (herunder tilbudspræsentation, verifikation af abonnementsstatus og tildeling af premium-adgang).</li>
         </ul>
         <p>Som en del af abonnementshåndteringen kan tekniske data relateret til købet blive behandlet, såsom:</p>
@@ -94,7 +95,7 @@
           <li>abonnementsstatus (aktiv/inaktiv, fornyelser),</li>
           <li>en teknisk bruger-id, der bruges til at linke abonnementsstatus (f.eks. et anonymt appbruger-id genereret af SDK'et).</li>
         </ul>
-        <p>RevenueCat behandler disse data for at levere abonnementshåndteringstjenester (som databehandler), og Apple behandler betalingsrelaterede data i overensstemmelse med sine egne politikker.</p>
+        <p>RevenueCat behandler disse data for at levere abonnementshåndteringstjenester (som databehandler), og Apple eller Google behandler betalingsrelaterede data i overensstemmelse med deres egne politikker og privatlivspolitikker.</p>
       </section>
 
       <section class="legal-section">
@@ -111,7 +112,7 @@
         <h2>9) Datamodtagere</h2>
         <p>Data må kun videregives til:</p>
         <ul>
-          <li>betalings- og abonnementstjenesteudbydere: Apple og RevenueCat (abonnementshåndtering),</li>
+          <li>betalings- og abonnementstjenesteudbydere: Apple, Google og RevenueCat (inden for håndtering af køb og abonnementer),</li>
           <li>offentlige myndigheder, hvis loven kræver det.</li>
         </ul>
       </section>
@@ -137,7 +138,7 @@
 
       <section class="legal-section">
         <h2>12) Sikkerhed</h2>
-        <p>Vi anvender rimelige organisatoriske og tekniske foranstaltninger, der passer til tjenestens art. Da appdata gemmes lokalt, er et vigtigt sikkerhedselement også at beskytte din enhed (adgangskode/ansigts-id).</p>
+        <p>Vi anvender rimelige organisatoriske og tekniske foranstaltninger, der passer til tjenestens art. Da appdata gemmes lokalt, er et vigtigt sikkerhedselement også at beskytte din enhed (f.eks. kode, adgangskode, PIN, biometri).</p>
       </section>
 
       <section class="legal-section">
