@@ -119,6 +119,21 @@
     }
   }
 
+  var socialLinks = Array.prototype.slice.call(
+    document.querySelectorAll("a.header-social-link[href*='facebook.com'], a.header-social-link[aria-label='Facebook']")
+  );
+  if (socialLinks.length) {
+    var polishFacebookHref = "https://www.facebook.com/profile.php?id=61588173461826";
+    var internationalFacebookHref = "https://www.facebook.com/profile.php?id=61579514051295";
+    var pageLang = (document.documentElement.getAttribute("lang") || "").toLowerCase();
+    var isPolishPage = pageLang === "pl" || pageLang.indexOf("pl-") === 0;
+    var facebookHref = isPolishPage ? polishFacebookHref : internationalFacebookHref;
+
+    socialLinks.forEach(function (link) {
+      link.setAttribute("href", facebookHref);
+    });
+  }
+
   var langSwitch = document.querySelector("[data-lang-switch]");
   if (langSwitch) {
     var langToggle = langSwitch.querySelector(".lang-toggle");
