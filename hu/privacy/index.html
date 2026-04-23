@@ -43,106 +43,134 @@
   <main class="container legal-page">
     <article class="legal-article">
       <h1>Adatvédelmi szabályzat</h1>
-
       <section class="legal-section">
-        <h2>1) Adatkezelő</h2>
+        <h2>iOS (App Store)</h2>
+        <h3>1) Adatkezelő</h3>
         <p>A személyes adatok kezelője:<br />Canario-Lab / Chrumek App<br />Kapcsolatfelvételi e-mail: chrumek@chrumek.app</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>2) Hatály és cél</h2>
+        <h3>2) Hatály és cél</h3>
         <p>A Chrumek alkalmazás a megtakarítások nyomon követésére szolgál a „kísértések” és a visszaigazolt átutalások/megtakarított összegek nyilvántartásán keresztül.</p>
         <p>Nem működtetünk felhasználói fiókokat, és nem gyűjtünk olyan adatokat, amelyek lehetővé tennék az Ön közvetlen azonosítását.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>3) Az Alkalmazásban feldolgozott adatok (helyben az eszközön)</h2>
+        <h3>3) Az Alkalmazásban feldolgozott adatok (helyben az eszközön)</h3>
         <p>Az alkalmazásban megadott adatok (pl. megtakarítási bejegyzések, összegek, dátumok, kategóriák, célok, beállítások) helyben tárolódnak az eszközön.</p>
         <p>Nem kerül automatikusan elküldésre sem nekünk, sem a szervereinknek.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>4) Rendszerhozzáférést igénylő szolgáltatások</h2>
+        <h3>4) Rendszerhozzáférést igénylő szolgáltatások</h3>
         <p>Az alkalmazás csak a működéshez szükséges mértékben használhatja a rendszerfunkciókat és a kapcsolódó adatokat:</p>
         <ul>
-          <li>Rendszerértesítések – ha engedélyezi az emlékeztetőket, az eszköz operációs rendszere (pl. iOS vagy Android) az Ön beállításai szerint küld értesítéseket.</li>
-          <li>Nyelv / régió / pénznem / téma – az alkalmazás tartalmának és megjelenésének formázására szolgál (anélkül, hogy elküldené nekünk).</li>
+          <li>Értesítések (UNUserNotificationCenter) - ha engedélyezi az emlékeztetőket, az iOS rendszer az Ön beállításai szerint küld értesítéseket.</li>
+          <li>Nyelv / régió / pénznem / téma - az alkalmazás tartalmának és megjelenésének formázására szolgál (anélkül, hogy elküldené nekünk).</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>5) Hibajelentések / Támogatási kapcsolat</h2>
-        <p>Ha a "Hiba bejelentése" opciót használja, vagy forduljon az ügyfélszolgálathoz:</p>
+        <h3>5) Hibajelentések / Támogatási kapcsolat</h3>
+        <p>Ha a &quot;Hiba bejelentése&quot; opciót használja, vagy forduljon az ügyfélszolgálathoz:</p>
         <ul>
           <li>az alkalmazás létrehozhat egy e-mail piszkozatot a levelezőalkalmazásában,</li>
-          <li>a tartalom tartalmazhat diagnosztikai információkat (pl. alkalmazás verziója, az eszköz operációs rendszere, nyelvi/pénznembeállítások) – pontosan azt, amit az e-mail tartalmában a küldés előtt lát,</li>
+          <li>a tartalom tartalmazhat diagnosztikai információkat (pl. alkalmazás verziója, iOS, nyelvi/pénznembeállítások) - pontosan mit lát az e-mail tartalmában a küldés előtt,</li>
           <li>a küldés csak akkor történik meg, ha Ön jóváhagyja.</li>
         </ul>
         <p>Az elküldött e-mailt az Ön levelezőszolgáltatója és mi, mint címzett dolgozzuk fel, kizárólag az Ön kérésének kezelésére.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>6) Vásárlások és előfizetések (Apple / Google + RevenueCat)</h2>
-        <p>Ha fizetős szolgáltatások (előfizetések) elérhetők az alkalmazásban:</p>
+        <h3>6) Vásárlások és Premium-hozzáférés (Apple + RevenueCat)</h3>
+        <p>Ha az alkalmazásban fizetős funkciók érhetők el (előfizetések vagy egyszeri, élettartamra szóló hozzáférés vásárlása):</p>
         <ul>
-          <li>Apple-eszközökön a fizetéseket az Apple dolgozza fel (App Store / Alkalmazáson belüli vásárlások / StoreKit),</li>
-          <li>Android-eszközökön a fizetéseket a Google dolgozza fel (Google Play / Google Play Billing),</li>
-          <li>az alkalmazás a RevenueCat infrastruktúra-szolgáltatót használja az előfizetések kezeléséhez (beleértve az ajánlatok bemutatását, az előfizetés állapotának ellenőrzését és a prémium hozzáférés biztosítását).</li>
+          <li>a fizetéseket az Apple dolgozza fel (App Store / In-App Purchases / StoreKit),</li>
+          <li>az alkalmazás a RevenueCatet használja infrastruktúra-szolgáltatóként a vásárlások és a Premium-hozzáférés kezeléséhez (beleértve az ajánlatok megjelenítését, a hozzáférési állapot ellenőrzését, az aktív előfizetés vagy élettartamra szóló vásárlás felismerését és a prémium hozzáférés megadását).</li>
         </ul>
-        <p>Az előfizetéskezelés részeként a vásárláshoz kapcsolódó technikai adatok feldolgozhatók, mint pl.</p>
+        <p>A vásárlások és a Premium-hozzáférés kezelése során a vásárláshoz kapcsolódó technikai adatok kerülhetnek feldolgozásra, például:</p>
         <ul>
-          <li>tranzakciós/vásárlási azonosítók és termékinformációk,</li>
-          <li>előfizetés állapota (aktív/inaktív, megújítások),</li>
-          <li>az előfizetés állapotának összekapcsolására használt technikai felhasználói azonosító (pl. az SDK által generált névtelen alkalmazás-felhasználói azonosító).</li>
+          <li>tranzakció-/vásárlásazonosítók és termékinformációk,</li>
+          <li>Premium-hozzáférési állapot (aktív/inaktív), előfizetési állapot (pl. megújítások) vagy egyszeri vásárlásra vonatkozó információ,</li>
+          <li>a Premium-hozzáférési állapot összekapcsolására használt technikai felhasználói azonosító (pl. az SDK által generált anonim App User ID).</li>
         </ul>
-        <p>A RevenueCat feldolgozza ezeket az adatokat, hogy előfizetés-kezelési szolgáltatásokat nyújtson (feldolgozóként), az Apple vagy a Google pedig saját szabályzataik és adatvédelmi irányelveik szerint dolgozza fel a fizetéssel kapcsolatos adatokat.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>7) Analytics és nyomon követés</h2>
+        <p>A RevenueCat ezeket az adatokat a vásárlások és a Premium-hozzáférés kezelésére szolgáló szolgáltatások nyújtásához dolgozza fel (adatfeldolgozóként), az Apple pedig a fizetéssel kapcsolatos adatokat saját irányelvei szerint kezeli.</p>
+        <h3>7) Analitika és nyomon követés</h3>
         <p>Az alkalmazás nem használ analitikai eszközöket vagy hirdetési SDK-kat a felhasználók nyomon követésére, és nem értékesít adatokat.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>8) Webhely (céloldal)</h2>
+        <h3>8) Webhely (céloldal)</h3>
         <p>Ha meglátogatja weboldalunkat, a tárhelyszolgáltató (pl. GitHub Pages) biztonsági, diagnosztikai és szolgáltatásfolytonossági okokból automatikusan feldolgozhatja a szervernaplókban szereplő szabványos műszaki adatokat (beleértve az IP-címet, a böngésző típusát, a kérés dátumát és időpontját). Az adatkezelés köre és szabályai a tárhelyszolgáltató szabályzatából erednek.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>9) Adatcímzettek</h2>
-        <p>Az adatokat csak a következőkkel lehet közölni:</p>
+        <h3>9) Adatcímzettek</h3>
+        <p>Az adatok kizárólag az alábbiaknak adhatók át:</p>
         <ul>
-          <li>fizetési és előfizetési szolgáltatók: Apple, Google és RevenueCat (a vásárlások és előfizetések kezelése körében),</li>
-          <li>hatóságok, ha azt törvény előírja.</li>
+          <li>fizetési és Premium-hozzáférés-kezelési szolgáltatók: Apple és RevenueCat (vásárlások és hozzáférési állapot kezelése),</li>
+          <li>hatóságoknak, ha azt jogszabály írja elő.</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>10) Tárolási időszak</h2>
+        <h3>10) Tárolási időszak</h3>
         <ul>
           <li>Az alkalmazásba bevitt adatokat a rendszer mindaddig helyileg tárolja, amíg Ön nem törli azokat (például bejegyzések törlésével vagy az alkalmazás törlésével).</li>
           <li>Az e-mail levelezés adatait addig őrizzük meg, ameddig a kérelem kezeléséhez és a követelésekkel szembeni védekezéshez szükséges (ha szükséges).</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>11) Felhasználói jogok (EU/EGT)</h2>
+        <h3>11) Felhasználói jogok (EU/EGT)</h3>
         <p>Ha egy adott esetben az Ön személyes adatait kezeljük (például amikor e-mailt küld nekünk), Önnek jogában áll:</p>
         <ul>
-          <li>hozzáférés, helyesbítés, törlés és a feldolgozás korlátozása,</li>
-          <li>objektum,</li>
-          <li>panaszt tehet az illetékes felügyeleti hatóságnál.</li>
+          <li>hozzáférés, helyesbítés, törlés és az adatkezelés korlátozása,</li>
+          <li>tárgy,</li>
+          <li>panaszt tenni az illetékes felügyeleti hatóságnál.</li>
         </ul>
         <p>A tájékoztatási kötelezettségek köre különösen a GDPR 13. cikkéből következik.</p>
+        <h3>12) Biztonság</h3>
+        <p>A szolgáltatás jellegének megfelelő ésszerű szervezési és technikai intézkedéseket alkalmazunk. Mivel az alkalmazásadatokat helyben tárolják, a biztonság fontos eleme az eszköz védelme is (jelszó/arcazonosító).</p>
+        <h3>13) Az irányelvek változásai</h3>
+        <p>A szabályzat az alkalmazás funkcióinak vagy a jogi követelmények változásaival együtt frissülhet. A jelenlegi verziót az alkalmazás honlapján teszik közzé.</p>
       </section>
-
       <section class="legal-section">
-        <h2>12) Biztonság</h2>
-        <p>A szolgáltatás jellegének megfelelő ésszerű szervezési és technikai intézkedéseket alkalmazunk. Mivel az alkalmazásadatokat helyben tárolják, a biztonság fontos eleme az eszköz védelme is (pl. kód, jelszó, PIN, biometria).</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>13) Az irányelvek változásai</h2>
+        <h2>Android (Google Play)</h2>
+        <h3>1) Adatkezelő</h3>
+        <p>A személyes adatok kezelője:<br />Canario-Lab / Chrumek App<br />Kapcsolatfelvételi e-mail: chrumek@chrumek.app</p>
+        <h3>2) Hatály és cél</h3>
+        <p>A Chrumek alkalmazás a megtakarítások nyomon követésére szolgál a „kísértések” és a visszaigazolt átutalások/megtakarított összegek nyilvántartásán keresztül.</p>
+        <p>Nem működtetünk felhasználói fiókokat, és nem gyűjtünk olyan adatokat, amelyek lehetővé tennék az Ön közvetlen azonosítását.</p>
+        <h3>3) Az Alkalmazásban feldolgozott adatok (helyben az eszközön)</h3>
+        <p>Az alkalmazásban megadott adatok (pl. megtakarítási bejegyzések, összegek, dátumok, kategóriák, célok, beállítások) helyben tárolódnak az eszközön.</p>
+        <p>Nem kerül automatikusan elküldésre sem nekünk, sem a szervereinknek.</p>
+        <h3>4) Rendszerhozzáférést igénylő szolgáltatások</h3>
+        <p>Az alkalmazás csak a működéshez szükséges mértékben használhatja a rendszerfunkciókat és a kapcsolódó adatokat:</p>
+        <ul>
+          <li>Értesítések - ha engedélyezed az emlékeztetőket, az Android rendszer az általad megadott beállítások szerint küld értesítéseket.</li>
+          <li>Nyelv / régió / pénznem / téma - az alkalmazás tartalmának és megjelenésének formázására szolgál (anélkül, hogy elküldené nekünk).</li>
+        </ul>
+        <h3>5) Hibajelentések / Támogatási kapcsolat</h3>
+        <p>Ha a &quot;Hiba bejelentése&quot; opciót használja, vagy forduljon az ügyfélszolgálathoz:</p>
+        <ul>
+          <li>az alkalmazás létrehozhat egy e-mail piszkozatot a levelezőalkalmazásában,</li>
+          <li>a tartalom tartalmazhat diagnosztikai információkat (pl. alkalmazás verziója, Android, nyelvi/pénznembeállítások) - pontosan mit lát az e-mail tartalmában a küldés előtt,</li>
+          <li>a küldés csak akkor történik meg, ha Ön jóváhagyja.</li>
+        </ul>
+        <p>Az elküldött e-mailt az Ön levelezőszolgáltatója és mi, mint címzett dolgozzuk fel, kizárólag az Ön kérésének kezelésére.</p>
+        <h3>6) Vásárlások és előfizetések (Google + RevenueCat)</h3>
+        <p>Ha fizetős szolgáltatások (előfizetések) elérhetők az alkalmazásban:</p>
+        <ul>
+          <li>a fizetéseket a Google dolgozza fel (Google Play / Google Play Billing),</li>
+          <li>az alkalmazás a RevenueCat infrastruktúra-szolgáltatót használja az előfizetések kezeléséhez (beleértve az ajánlatok bemutatását, az előfizetés állapotának ellenőrzését és a prémium hozzáférés biztosítását).</li>
+        </ul>
+        <p>Az előfizetéskezelés részeként a vásárláshoz kapcsolódó technikai adatok feldolgozhatók, mint pl.</p>
+        <ul>
+          <li>tranzakció/vásárlás azonosítók és termékinformációk,</li>
+          <li>előfizetés állapota (aktív/inaktív, megújítások),</li>
+          <li>az előfizetés állapotának összekapcsolására használt technikai felhasználói azonosító (pl. az SDK által generált névtelen alkalmazás-felhasználói azonosító).</li>
+        </ul>
+        <p>A RevenueCat feldolgozza ezeket az adatokat, hogy előfizetés-kezelési szolgáltatásokat nyújtson (feldolgozóként), a Google pedig saját szabályzatának megfelelően dolgozza fel a fizetéssel kapcsolatos adatokat.</p>
+        <h3>7) Analitika és nyomon követés</h3>
+        <p>Az alkalmazás nem használ analitikai eszközöket vagy hirdetési SDK-kat a felhasználók nyomon követésére, és nem értékesít adatokat.</p>
+        <h3>8) Webhely (céloldal)</h3>
+        <p>Ha meglátogatja weboldalunkat, a tárhelyszolgáltató (pl. GitHub Pages) biztonsági, diagnosztikai és szolgáltatásfolytonossági okokból automatikusan feldolgozhatja a szervernaplókban szereplő szabványos műszaki adatokat (beleértve az IP-címet, a böngésző típusát, a kérés dátumát és időpontját). Az adatkezelés köre és szabályai a tárhelyszolgáltató szabályzatából erednek.</p>
+        <h3>9) Adatcímzettek</h3>
+        <p>Az adatokat csak a következőkkel lehet közölni:</p>
+        <ul>
+          <li>fizetési és előfizetési szolgáltatók: Google és RevenueCat (előfizetések kezelése),</li>
+          <li>állami hatóságok, ha jogszabály előírja.</li>
+        </ul>
+        <h3>10) Tárolási időszak</h3>
+        <ul>
+          <li>Az alkalmazásba bevitt adatokat a rendszer mindaddig helyileg tárolja, amíg Ön nem törli azokat (például bejegyzések törlésével vagy az alkalmazás törlésével).</li>
+          <li>Az e-mail levelezés adatait addig őrizzük meg, ameddig a kérelem kezeléséhez és a követelésekkel szembeni védekezéshez szükséges (ha szükséges).</li>
+        </ul>
+        <h3>11) Felhasználói jogok (EU/EGT)</h3>
+        <p>Ha egy adott esetben az Ön személyes adatait kezeljük (például amikor e-mailt küld nekünk), Önnek jogában áll:</p>
+        <ul>
+          <li>hozzáférés, helyesbítés, törlés és az adatkezelés korlátozása,</li>
+          <li>tárgy,</li>
+          <li>panaszt tenni az illetékes felügyeleti hatóságnál.</li>
+        </ul>
+        <p>A tájékoztatási kötelezettségek köre különösen a GDPR 13. cikkéből következik.</p>
+        <h3>12) Biztonság</h3>
+        <p>A szolgáltatás jellegének megfelelő ésszerű szervezési és technikai intézkedéseket alkalmazunk. Mivel az alkalmazásadatokat helyben tárolják, a biztonság fontos eleme az eszköz védelme is (képernyőzár/biometria).</p>
+        <h3>13) Az irányelvek változásai</h3>
         <p>A szabályzat az alkalmazás funkcióinak vagy a jogi követelmények változásaival együtt frissülhet. A jelenlegi verziót az alkalmazás honlapján teszik közzé.</p>
       </section>
     </article>

@@ -43,106 +43,134 @@
   <main class="container legal-page">
     <article class="legal-article">
       <h1>Zásady ochrany osobných údajov</h1>
-
       <section class="legal-section">
-        <h2>1) Prevádzkovateľ údajov</h2>
+        <h2>iOS (App Store)</h2>
+        <h3>1) Prevádzkovateľ údajov</h3>
         <p>Prevádzkovateľom osobných údajov je:<br />Canario-Lab / Chrumek App<br />Kontaktný e-mail: chrumek@chrumek.app</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>2) Rozsah a účel</h2>
+        <h3>2) Rozsah a účel</h3>
         <p>Aplikácia Chrumek je aplikácia na sledovanie úspor prostredníctvom záznamov „pokušení“ a potvrdených prevodov/nasporených súm.</p>
         <p>Neprevádzkujeme používateľské účty a nezhromažďujeme údaje, ktoré nám umožňujú priamo vás identifikovať.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>3) Údaje spracované v aplikácii (lokálne v zariadení)</h2>
+        <h3>3) Údaje spracované v aplikácii (lokálne v zariadení)</h3>
         <p>Údaje, ktoré zadáte do aplikácie (napr. položky úspor, sumy, dátumy, kategórie, ciele, nastavenia), sa ukladajú lokálne vo vašom zariadení.</p>
         <p>Neposiela sa automaticky nám ani na naše servery.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>4) Funkcie vyžadujúce prístup k systému</h2>
+        <h3>4) Funkcie vyžadujúce prístup k systému</h3>
         <p>Aplikácia môže využívať funkcie systému a súvisiace údaje iba v rozsahu potrebnom na prevádzku:</p>
         <ul>
-          <li>Systémové upozornenia – ak povolíte pripomienky, operačný systém vášho zariadenia (napr. iOS alebo Android) doručuje upozornenia podľa vašich nastavení.</li>
+          <li>Oznámenia (UNUserNotificationCenter) - ak povolíte pripomienky, systém iOS doručuje upozornenia podľa vašich nastavení.</li>
           <li>Jazyk / región / mena / téma - používa sa na formátovanie obsahu a vzhľadu aplikácie (bez toho, aby ste nám ju posielali).</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>5) Hlásenia chýb / Kontakt na podporu</h2>
+        <h3>5) Hlásenia chýb / Kontakt na podporu</h3>
         <p>Ak použijete možnosť „Nahlásiť chybu“ alebo kontaktujte podporu:</p>
         <ul>
           <li>aplikácia môže vytvoriť koncept e-mailu vo vašej poštovej aplikácii,</li>
-          <li>obsah môže zahŕňať diagnostické informácie (napr. verziu aplikácie, operačný systém zariadenia, nastavenia jazyka/meny) – presne to, čo vidíte v obsahu e-mailu pred odoslaním,</li>
-          <li>odoslanie sa uskutoční iba vtedy, ak ho sami schválite.</li>
+          <li>obsah môže zahŕňať diagnostické informácie (napr. verziu aplikácie, iOS, nastavenia jazyka/meny) - presne to, čo vidíte v obsahu e-mailu pred odoslaním,</li>
+          <li>odoslanie prebehne len vtedy, ak to sami schválite.</li>
         </ul>
         <p>Odoslaný e-mail spracováva váš poskytovateľ pošty a my ako príjemca výlučne na vybavenie vašej požiadavky.</p>
+        <h3>6) Nákupy a prístup Premium (Apple + RevenueCat)</h3>
+        <p>Ak sú v aplikácii dostupné platené funkcie (predplatné alebo jednorazový nákup doživotného prístupu):</p>
+        <ul>
+          <li>platby spracúva Apple (App Store / In-App Purchases / StoreKit),</li>
+          <li>aplikácia používa RevenueCat ako poskytovateľa infraštruktúry na správu nákupov a prístupu Premium (vrátane zobrazovania ponúk, overovania stavu prístupu, rozpoznania aktívneho predplatného alebo doživotného nákupu a udelenia prémiového prístupu).</li>
+        </ul>
+        <p>V rámci správy nákupov a prístupu Premium môžu byť spracúvané technické údaje súvisiace s nákupom, napríklad:</p>
+        <ul>
+          <li>identifikátory transakcií/nákupov a informácie o produkte,</li>
+          <li>stav prístupu Premium (aktívny/neaktívny), stav predplatného (napr. obnovenia) alebo informácia o jednorazovom nákupe,</li>
+          <li>technický identifikátor používateľa používaný na prepojenie stavu prístupu Premium (napr. anonymné App User ID generované SDK).</li>
+        </ul>
+        <p>RevenueCat spracúva tieto údaje na poskytovanie služieb správy nákupov a prístupu Premium (ako sprostredkovateľ) a Apple spracúva údaje súvisiace s platbou podľa vlastných zásad.</p>
+        <h3>7) Analýza a sledovanie</h3>
+        <p>Aplikácia nepoužíva analytické nástroje ani reklamné súpravy SDK na sledovanie používateľov a nepredáva údaje.</p>
+        <h3>8) Webová stránka (vstupná stránka)</h3>
+        <p>Ak navštívite našu webovú stránku, poskytovateľ hostingu (napr. stránky GitHub) môže automaticky spracovať štandardné technické údaje v protokoloch servera (vrátane IP adresy, typu prehliadača, dátumu a času požiadavky) na účely zabezpečenia, diagnostiky a kontinuity služieb. Rozsah a pravidlá spracovania vyplývajú zo zásad poskytovateľa hostingu.</p>
+        <h3>9) Príjemcovia údajov</h3>
+        <p>Údaje môžu byť sprístupnené iba:</p>
+        <ul>
+          <li>poskytovateľom platobných služieb a správy prístupu Premium: Apple a RevenueCat (správa nákupov a stavu prístupu),</li>
+          <li>orgánom verejnej moci, ak to vyžaduje zákon.</li>
+        </ul>
+        <h3>10) Doba skladovania</h3>
+        <ul>
+          <li>Údaje zadané do aplikácie sú uložené lokálne, kým ich neodstránite (napr. vymazaním záznamov alebo odstránením aplikácie).</li>
+          <li>Údaje z e-mailovej korešpondencie sa uchovávajú tak dlho, ako je potrebné na vybavenie žiadosti a na obranu pred nárokmi (ak je to potrebné).</li>
+        </ul>
+        <h3>11) Používateľské práva (EÚ/EHP)</h3>
+        <p>Ak v danom prípade spracúvame Vaše osobné údaje (napr. keď nám pošlete e-mail), máte právo:</p>
+        <ul>
+          <li>prístup, opravu, vymazanie a obmedzenie spracovania,</li>
+          <li>predmet,</li>
+          <li>podať sťažnosť príslušnému dozornému orgánu.</li>
+        </ul>
+        <p>Rozsah informačných povinností vyplýva najmä z článku 13 GDPR.</p>
+        <h3>12) Bezpečnosť</h3>
+        <p>Uplatňujeme primerané organizačné a technické opatrenia primerané charakteru služby. Keďže dáta aplikácií sú uložené lokálne, dôležitým prvkom zabezpečenia je aj ochrana vášho zariadenia (prístupový kód/Face ID).</p>
+        <h3>13) Zmeny pravidiel</h3>
+        <p>Zásady môžu byť aktualizované so zmenami funkcií aplikácie alebo právnych požiadaviek. Aktuálna verzia bude zverejnená na webovej stránke aplikácie.</p>
       </section>
-
       <section class="legal-section">
-        <h2>6) Nákupy a predplatné (Apple / Google + RevenueCat)</h2>
+        <h2>Android (Google Play)</h2>
+        <h3>1) Prevádzkovateľ údajov</h3>
+        <p>Prevádzkovateľom osobných údajov je:<br />Canario-Lab / Chrumek App<br />Kontaktný e-mail: chrumek@chrumek.app</p>
+        <h3>2) Rozsah a účel</h3>
+        <p>Aplikácia Chrumek je aplikácia na sledovanie úspor prostredníctvom záznamov „pokušení“ a potvrdených prevodov/nasporených súm.</p>
+        <p>Neprevádzkujeme používateľské účty a nezhromažďujeme údaje, ktoré nám umožňujú priamo vás identifikovať.</p>
+        <h3>3) Údaje spracované v aplikácii (lokálne v zariadení)</h3>
+        <p>Údaje, ktoré zadáte do aplikácie (napr. položky úspor, sumy, dátumy, kategórie, ciele, nastavenia), sa ukladajú lokálne vo vašom zariadení.</p>
+        <p>Neposiela sa automaticky nám ani na naše servery.</p>
+        <h3>4) Funkcie vyžadujúce prístup k systému</h3>
+        <p>Aplikácia môže využívať funkcie systému a súvisiace údaje iba v rozsahu potrebnom na prevádzku:</p>
+        <ul>
+          <li>Oznámenia (systém upozornení Android) - ak povolíte pripomienky, systém Android doručuje upozornenia podľa vašich nastavení.</li>
+          <li>Jazyk / región / mena / téma - používa sa na formátovanie obsahu a vzhľadu aplikácie (bez toho, aby ste nám ju posielali).</li>
+        </ul>
+        <h3>5) Hlásenia chýb / Kontakt na podporu</h3>
+        <p>Ak použijete možnosť „Nahlásiť chybu“ alebo kontaktujte podporu:</p>
+        <ul>
+          <li>aplikácia môže vytvoriť koncept e-mailu vo vašej poštovej aplikácii,</li>
+          <li>obsah môže zahŕňať diagnostické informácie (napr. verziu aplikácie, Android, nastavenia jazyka/meny) - presne to, čo vidíte v obsahu e-mailu pred odoslaním,</li>
+          <li>odoslanie prebehne len vtedy, ak to sami schválite.</li>
+        </ul>
+        <p>Odoslaný e-mail spracováva váš poskytovateľ pošty a my ako príjemca výlučne na vybavenie vašej požiadavky.</p>
+        <h3>6) Nákupy a predplatné (Google Play + RevenueCat)</h3>
         <p>Ak sú v aplikácii dostupné platené funkcie (predplatné):</p>
         <ul>
-          <li>na zariadeniach Apple platby spracováva Apple (App Store / Nákupy v aplikácii / StoreKit),</li>
-          <li>na zariadeniach Android platby spracováva Google (Google Play / Google Play Billing),</li>
-          <li>aplikácia používa RevenueCat ako poskytovateľa infraštruktúry na správu predplatného (vrátane prezentácie ponuky, overenia stavu predplatného a udeľovania prémiového prístupu).</li>
+          <li>platby spracováva Google (Google Play / Google Play Billing),</li>
+          <li>aplikácia využíva RevenueCat ako poskytovateľa infraštruktúry na správu predplatného (vrátane prezentácie ponuky, overenia stavu predplatného a udeľovania prémiového prístupu).</li>
         </ul>
         <p>V rámci spracovania predplatného môžu byť spracované technické údaje súvisiace s nákupom, ako napríklad:</p>
         <ul>
           <li>identifikátory transakcie/nákupu a informácie o produkte,</li>
           <li>stav predplatného (aktívne/neaktívne, obnovenia),</li>
-          <li>technický identifikátor používateľa používaný na prepojenie stavu odberu (napr. anonymné ID používateľa aplikácie vygenerované súpravou SDK).</li>
         </ul>
-        <p>RevenueCat spracúva tieto údaje na poskytovanie služieb spracovania predplatného (ako spracovateľ) a spoločnosť Apple alebo Google spracúva údaje súvisiace s platbami v súlade so svojimi vlastnými zásadami a zásadami ochrany súkromia.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>7) Analýza a sledovanie</h2>
+        <p>– technický identifikátor používateľa používaný na prepojenie stavu odberu (napr. anonymné ID používateľa aplikácie vygenerované súpravou SDK).</p>
+        <p>RevenueCat spracúva tieto údaje na poskytovanie služieb spracovania predplatného (ako spracovateľ) a spoločnosť Google spracúva údaje súvisiace s platbami v súlade so svojimi vlastnými zásadami.</p>
+        <h3>7) Analýza a sledovanie</h3>
         <p>Aplikácia nepoužíva analytické nástroje ani reklamné súpravy SDK na sledovanie používateľov a nepredáva údaje.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>8) Webová stránka (vstupná stránka)</h2>
+        <h3>8) Webová stránka (vstupná stránka)</h3>
         <p>Ak navštívite našu webovú stránku, poskytovateľ hostingu (napr. stránky GitHub) môže automaticky spracovať štandardné technické údaje v protokoloch servera (vrátane IP adresy, typu prehliadača, dátumu a času požiadavky) na účely zabezpečenia, diagnostiky a kontinuity služieb. Rozsah a pravidlá spracovania vyplývajú zo zásad poskytovateľa hostingu.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>9) Príjemcovia údajov</h2>
+        <h3>9) Príjemcovia údajov</h3>
         <p>Údaje môžu byť poskytnuté iba:</p>
         <ul>
-          <li>poskytovatelia platobných a predplatených služieb: Apple, Google a RevenueCat (v rozsahu spracovania nákupov a predplatného),</li>
+          <li>poskytovatelia platobných a predplatených služieb: Google a RevenueCat (spracovanie predplatného),</li>
           <li>orgány verejnej moci, ak to vyžaduje zákon.</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>10) Doba skladovania</h2>
+        <h3>10) Doba skladovania</h3>
         <ul>
           <li>Údaje zadané do aplikácie sú uložené lokálne, kým ich neodstránite (napr. vymazaním záznamov alebo odstránením aplikácie).</li>
           <li>Údaje z e-mailovej korešpondencie sa uchovávajú tak dlho, ako je potrebné na vybavenie žiadosti a na obranu pred nárokmi (ak je to potrebné).</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>11) Používateľské práva (EÚ/EHP)</h2>
+        <h3>11) Používateľské práva (EÚ/EHP)</h3>
         <p>Ak v danom prípade spracúvame Vaše osobné údaje (napr. keď nám pošlete e-mail), máte právo:</p>
         <ul>
           <li>prístup, opravu, vymazanie a obmedzenie spracovania,</li>
-          <li>objekt,</li>
+          <li>predmet,</li>
           <li>podať sťažnosť príslušnému dozornému orgánu.</li>
         </ul>
         <p>Rozsah informačných povinností vyplýva najmä z článku 13 GDPR.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>12) Bezpečnosť</h2>
-        <p>Uplatňujeme primerané organizačné a technické opatrenia primerané charakteru služby. Keďže dáta aplikácií sú uložené lokálne, dôležitým prvkom zabezpečenia je aj ochrana vášho zariadenia (napr. kód, heslo, PIN, biometria).</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>13) Zmeny zásad</h2>
+        <h3>12) Bezpečnosť</h3>
+        <p>Uplatňujeme primerané organizačné a technické opatrenia primerané charakteru služby. Keďže dáta aplikácií sú uložené lokálne, dôležitým prvkom zabezpečenia je aj ochrana vášho zariadenia (prístupový kód/biometria).</p>
+        <h3>13) Zmeny pravidiel</h3>
         <p>Zásady môžu byť aktualizované so zmenami funkcií aplikácie alebo právnych požiadaviek. Aktuálna verzia bude zverejnená na webovej stránke aplikácie.</p>
       </section>
     </article>

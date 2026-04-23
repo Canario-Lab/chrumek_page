@@ -1310,6 +1310,12 @@ h1 span {
   font-size: 1.16rem;
 }
 
+.legal-section h3 {
+  margin: 18px 0 8px;
+  font-family: "Outfit", "Avenir Next", sans-serif;
+  font-size: 1.02rem;
+}
+
 .legal-section p {
   margin: 0 0 10px;
 }

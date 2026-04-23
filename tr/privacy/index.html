@@ -43,50 +43,99 @@
   <main class="container legal-page">
     <article class="legal-article">
       <h1>Gizlilik Politikası</h1>
-
       <section class="legal-section">
-        <h2>1) Veri sorumlusu</h2>
+        <h2>iOS (App Store)</h2>
+        <h3>1) Veri sorumlusu</h3>
         <p>Kişisel verilerin veri sorumlusu:<br />Canario-Lab / Chrumek App<br />İletişim e-postası: chrumek@chrumek.app</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>2) Kapsam ve amaç</h2>
-        <p>Chrumek uygulaması, "cazibe" kayıtları ve onaylanmış transferler/ayrılan tutarlar üzerinden tasarruf takibi için kullanılan bir uygulamadır.</p>
+        <h3>2) Kapsam ve amaç</h3>
+        <p>Chrumek uygulaması, &quot;cazibe&quot; kayıtları ve onaylanmış transferler/ayrılan tutarlar üzerinden tasarruf takibi için kullanılan bir uygulamadır.</p>
         <p>Kullanıcı hesabı tutmuyoruz ve sizi doğrudan tanımlamaya imkân veren verileri toplamıyoruz.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>3) Uygulamada işlenen veriler (cihazda yerel olarak)</h2>
+        <h3>3) Uygulamada işlenen veriler (cihazda yerel olarak)</h3>
         <p>Uygulamaya girdiğiniz veriler (ör. tasarruf kayıtları, tutarlar, tarihler, kategoriler, hedefler, ayarlar) cihazınızda yerel olarak saklanır.</p>
         <p>Bu veriler bize veya sunucularımıza otomatik olarak gönderilmez.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>4) Sistem erişimi gerektiren işlevler</h2>
+        <h3>4) Sistem erişimi gerektiren işlevler</h3>
         <p>Uygulama, sistem işlevlerini ve ilgili verileri yalnızca çalışması için gerekli ölçüde kullanabilir:</p>
         <ul>
-          <li>Sistem bildirimleri - hatırlatmaları açarsanız cihazınızın işletim sistemi (ör. iOS veya Android) bildirimleri ayarlarınıza göre iletir.</li>
+          <li>Bildirimler (UNUserNotificationCenter) - hatırlatmaları açarsanız iOS sistemi bildirimleri ayarlarınıza göre iletir.</li>
           <li>Dil / bölge / para birimi / tema - uygulama içeriğinin ve görünümünün biçimlendirilmesi için kullanılır (bize gönderilmeden).</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>5) Hata bildirimi / destekle iletişim</h2>
-        <p>"Hata bildir" seçeneğini kullanırsanız veya destekle iletişime geçerseniz:</p>
+        <h3>5) Hata bildirimi / destekle iletişim</h3>
+        <p>&quot;Hata bildir&quot; seçeneğini kullanırsanız veya destekle iletişime geçerseniz:</p>
         <ul>
           <li>uygulama, posta uygulamanızda bir e-posta taslağı oluşturabilir,</li>
-          <li>içerik teşhis bilgileri içerebilir (ör. uygulama sürümü, cihazın işletim sistemi, dil/para birimi ayarları) - gönderimden önce e-posta içeriğinde gördüğünüzle birebir aynıdır,</li>
+          <li>içerik teşhis bilgileri içerebilir (ör. uygulama sürümü, iOS, dil/para birimi ayarları) - gönderimden önce e-posta içeriğinde gördüğünüzle birebir aynıdır,</li>
           <li>gönderim yalnızca siz onaylarsanız gerçekleşir.</li>
         </ul>
         <p>Gönderilen e-posta, e-posta sağlayıcınız tarafından ve alıcı olarak tarafımızca yalnızca bildirimin işlenmesi amacıyla işlenir.</p>
+        <h3>6) Satın alımlar ve Premium erişim (Apple + RevenueCat)</h3>
+        <p>Uygulamada ücretli özellikler (abonelikler veya tek seferlik ömür boyu erişim satın alımı) sunuluyorsa:</p>
+        <ul>
+          <li>ödemeler Apple tarafından işlenir (App Store / In-App Purchases / StoreKit),</li>
+          <li>uygulama, satın alımlar ve Premium erişim yönetimi için altyapı sağlayıcısı olarak RevenueCat’i kullanır (teklif sunumu, erişim durumu doğrulaması, aktif abonelik veya ömür boyu satın alımı tanıma ve premium erişim verme dahil).</li>
+        </ul>
+        <p>Satın alımların ve Premium erişimin yönetimi kapsamında satın alımla ilgili teknik veriler işlenebilir, örneğin:</p>
+        <ul>
+          <li>işlem/satın alma tanımlayıcıları ve ürün bilgileri,</li>
+          <li>Premium erişim durumu (aktif/pasif), abonelik durumu (ör. yenilemeler) veya tek seferlik satın alım bilgisi,</li>
+          <li>Premium erişim durumunu ilişkilendirmek için kullanılan teknik kullanıcı tanımlayıcısı (ör. SDK tarafından oluşturulan anonim App User ID).</li>
+        </ul>
+        <p>RevenueCat bu verileri satın alma ve Premium erişim yönetimi hizmetleri sağlamak için işler (veri işleyen olarak); Apple ise ödeme ile ilgili verileri kendi politikalarına göre işler.</p>
+        <h3>7) Analitik ve izleme</h3>
+        <p>Uygulama, kullanıcıları izlemek amacıyla analitik araçlar veya reklam SDK&#39;ları kullanmaz ve veri satmaz.</p>
+        <h3>8) Web sitesi (açılış sayfası)</h3>
+        <p>Web sitemizi ziyaret ederseniz, barındırma sağlayıcısı (ör. GitHub Pages) sunucu loglarında standart teknik verileri (IP adresi, tarayıcı türü, istek tarihi ve saati dâhil) güvenlik, teşhis ve hizmet sürekliliğini sağlama amaçlarıyla otomatik olarak işleyebilir. İşleme kapsamı ve kuralları, barındırma sağlayıcısının politikalarından kaynaklanır.</p>
+        <h3>9) Veri alıcıları</h3>
+        <p>Veriler yalnızca şunlara açıklanabilir:</p>
+        <ul>
+          <li>ödeme ve Premium erişim yönetimi sağlayıcıları: Apple ve RevenueCat (satın alma ve erişim durumu yönetimi),</li>
+          <li>yasaların gerektirmesi halinde kamu makamları.</li>
+        </ul>
+        <h3>10) Saklama süresi</h3>
+        <ul>
+          <li>Uygulamaya girilen veriler, siz silene kadar cihazda yerel olarak saklanır (ör. kayıtları silme veya uygulamayı kaldırma).</li>
+          <li>E-posta yazışması verilerini, bildirimin işlenmesi ve taleplere karşı savunma için gerekli olduğu süre boyunca saklarız (gerekliyse).</li>
+        </ul>
+        <h3>11) Kullanıcı hakları (AB/AEA)</h3>
+        <p>Belirli bir durumda kişisel verilerinizi işlersek (ör. bize e-posta yazdığınızda), şu haklara sahipsiniz:</p>
+        <ul>
+          <li>verilere erişim, düzeltme, silme, işlemenin kısıtlanması,</li>
+          <li>itiraz etme,</li>
+          <li>yetkili denetim makamına şikâyette bulunma.</li>
+        </ul>
+        <p>Bilgilendirme yükümlülüklerinin kapsamı özellikle GDPR&#39;nin 13. maddesinden kaynaklanır.</p>
+        <h3>12) Güvenlik</h3>
+        <p>Hizmetin niteliğine uygun makul idari ve teknik önlemler uyguluyoruz. Uygulama verileri yerel olarak saklandığı için cihazınızın korunması da (kod/Face ID) güvenliğin önemli bir unsurudur.</p>
+        <h3>13) Politika değişiklikleri</h3>
+        <p>Politika, uygulama işlevlerindeki veya yasal gerekliliklerdeki değişikliklerle birlikte güncellenebilir. Güncel sürüm uygulamanın web sitesinde yayımlanacaktır.</p>
       </section>
-
       <section class="legal-section">
-        <h2>6) Satın alımlar ve abonelikler (Apple / Google + RevenueCat)</h2>
+        <h2>Android (Google Play)</h2>
+        <h3>1) Veri sorumlusu</h3>
+        <p>Kişisel verilerin veri sorumlusu:<br />Canario-Lab / Chrumek App<br />İletişim e-postası: chrumek@chrumek.app</p>
+        <h3>2) Kapsam ve amaç</h3>
+        <p>Chrumek uygulaması, &quot;cazibe&quot; kayıtları ve onaylanmış transferler/ayrılan tutarlar üzerinden tasarruf takibi için kullanılan bir uygulamadır.</p>
+        <p>Kullanıcı hesabı tutmuyoruz ve sizi doğrudan tanımlamaya imkân veren verileri toplamıyoruz.</p>
+        <h3>3) Uygulamada işlenen veriler (cihazda yerel olarak)</h3>
+        <p>Uygulamaya girdiğiniz veriler (ör. tasarruf kayıtları, tutarlar, tarihler, kategoriler, hedefler, ayarlar) cihazınızda yerel olarak saklanır.</p>
+        <p>Bu veriler bize veya sunucularımıza otomatik olarak gönderilmez.</p>
+        <h3>4) Sistem erişimi gerektiren işlevler</h3>
+        <p>Uygulama, sistem işlevlerini ve ilgili verileri yalnızca çalışması için gerekli ölçüde kullanabilir:</p>
+        <ul>
+          <li>Bildirimler (Android sistemi) - hatırlatmaları açarsanız Android sistemi bildirimleri ayarlarınıza göre iletir.</li>
+          <li>Dil / bölge / para birimi / tema - uygulama içeriğinin ve görünümünün biçimlendirilmesi için kullanılır (bize gönderilmeden).</li>
+        </ul>
+        <h3>5) Hata bildirimi / destekle iletişim</h3>
+        <p>&quot;Hata bildir&quot; seçeneğini kullanırsanız veya destekle iletişime geçerseniz:</p>
+        <ul>
+          <li>uygulama, posta uygulamanızda bir e-posta taslağı oluşturabilir,</li>
+          <li>içerik teşhis bilgileri içerebilir (ör. uygulama sürümü, Android, dil/para birimi ayarları) - gönderimden önce e-posta içeriğinde gördüğünüzle birebir aynıdır,</li>
+          <li>gönderim yalnızca siz onaylarsanız gerçekleşir.</li>
+        </ul>
+        <p>Gönderilen e-posta, e-posta sağlayıcınız tarafından ve alıcı olarak tarafımızca yalnızca bildirimin işlenmesi amacıyla işlenir.</p>
+        <h3>6) Satın alımlar ve abonelikler (Google Play + RevenueCat)</h3>
         <p>Uygulamada ücretli özellikler (abonelikler) mevcutsa:</p>
         <ul>
-          <li>Apple cihazlarda ödemeler Apple tarafından işlenir (App Store / In-App Purchases / StoreKit),</li>
-          <li>Android cihazlarda ödemeler Google tarafından işlenir (Google Play / Google Play Billing),</li>
+          <li>ödemeler Google tarafından işlenir (Google Play / Google Play Billing),</li>
           <li>uygulama, abonelik yönetimi altyapısı sağlayıcısı olarak RevenueCat kullanır (tekliflerin gösterilmesi, abonelik durumunun doğrulanması, premium erişimin verilmesi dâhil).</li>
         </ul>
         <p>Abonelik yönetimi kapsamında satın alımla ilgili teknik veriler işlenebilir; örneğin:</p>
@@ -95,54 +144,33 @@
           <li>abonelik durumu (aktif/pasif, yenilemeler),</li>
           <li>abonelik durumunu ilişkilendirmek için kullanılan teknik kullanıcı kimliği (ör. SDK tarafından oluşturulan anonim App User ID).</li>
         </ul>
-        <p>RevenueCat bu verileri abonelik hizmetini sağlamak amacıyla (veri işleyen olarak) işler; Apple veya Google ise ödemeyle ilgili verileri kendi politikaları ve gizlilik politikaları uyarınca işler.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>7) Analitik ve izleme</h2>
-        <p>Uygulama, kullanıcıları izlemek amacıyla analitik araçlar veya reklam SDK'ları kullanmaz ve veri satmaz.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>8) Web sitesi (landing page)</h2>
+        <p>RevenueCat bu verileri abonelik hizmetini sağlamak amacıyla (veri işleyen olarak) işler; Google ise ödemeyle ilgili verileri kendi kurallarına göre işler.</p>
+        <h3>7) Analitik ve izleme</h3>
+        <p>Uygulama, kullanıcıları izlemek amacıyla analitik araçlar veya reklam SDK&#39;ları kullanmaz ve veri satmaz.</p>
+        <h3>8) Web sitesi (landing page)</h3>
         <p>Web sitemizi ziyaret ederseniz, barındırma sağlayıcısı (ör. GitHub Pages) sunucu loglarında standart teknik verileri (IP adresi, tarayıcı türü, istek tarihi ve saati dâhil) güvenlik, teşhis ve hizmet sürekliliğini sağlama amaçlarıyla otomatik olarak işleyebilir. İşleme kapsamı ve kuralları, barındırma sağlayıcısının politikalarından kaynaklanır.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>9) Verilerin alıcıları</h2>
+        <h3>9) Verilerin alıcıları</h3>
         <p>Veriler yalnızca şu taraflara açıklanabilir:</p>
         <ul>
-          <li>ödeme ve abonelik hizmeti sağlayıcıları: Apple, Google ve RevenueCat (satın alma ve abonelik işlemleri kapsamında),</li>
+          <li>ödeme ve abonelik hizmeti sağlayıcıları: Google ve RevenueCat (abonelik yönetimi),</li>
           <li>kanunun gerektirdiği durumlarda kamu kurumları.</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>10) Saklama süresi</h2>
+        <h3>10) Saklama süresi</h3>
         <ul>
           <li>Uygulamaya girilen veriler, siz silene kadar cihazda yerel olarak saklanır (ör. kayıtları silme veya uygulamayı kaldırma).</li>
           <li>E-posta yazışması verilerini, bildirimin işlenmesi ve taleplere karşı savunma için gerekli olduğu süre boyunca saklarız (gerekliyse).</li>
         </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>11) Kullanıcı hakları (AB/AEA)</h2>
+        <h3>11) Kullanıcı hakları (AB/AEA)</h3>
         <p>Belirli bir durumda kişisel verilerinizi işlersek (ör. bize e-posta yazdığınızda), şu haklara sahipsiniz:</p>
         <ul>
           <li>verilere erişim, düzeltme, silme, işlemenin kısıtlanması,</li>
           <li>itiraz etme,</li>
           <li>yetkili denetim makamına şikâyette bulunma.</li>
         </ul>
-        <p>Bilgilendirme yükümlülüklerinin kapsamı özellikle GDPR Madde 13'ten kaynaklanır.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>12) Güvenlik</h2>
-        <p>Hizmetin niteliğine uygun makul idari ve teknik önlemler uyguluyoruz. Uygulama verileri yerel olarak saklandığı için cihazınızın korunması da (ör. kod, parola, PIN, biyometri) güvenliğin önemli bir unsurudur.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>13) Politika değişiklikleri</h2>
+        <p>Bilgilendirme yükümlülüklerinin kapsamı özellikle GDPR Madde 13&#39;ten kaynaklanır.</p>
+        <h3>12) Güvenlik</h3>
+        <p>Hizmetin niteliğine uygun makul idari ve teknik önlemler uyguluyoruz. Uygulama verileri yerel olarak saklandığı için cihazınızın korunması da (ekran kilidi / biyometri) güvenliğin önemli bir unsurudur.</p>
+        <h3>13) Politika değişiklikleri</h3>
         <p>Politika, uygulama işlevlerindeki veya yasal gerekliliklerdeki değişikliklerle birlikte güncellenebilir. Güncel sürüm uygulamanın web sitesinde yayımlanacaktır.</p>
       </section>
     </article>
